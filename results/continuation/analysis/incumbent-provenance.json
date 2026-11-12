@@ -1,0 +1,98 @@
+{
+  "common_initial_count": 6,
+  "interpretation": "Method names identify separate live histories. An initial-design winner is not an adaptive discovery; tied later measurements do not increase the incumbent.",
+  "methods": {
+    "gp": {
+      "all_tied_maximum_observations": [
+        {
+          "config_id": "a15d9493236d",
+          "decision_method_used": "shared_initial_design",
+          "feasible": true,
+          "method": "gp",
+          "phase": "shared_initial_design",
+          "quality_goodput": 0.4,
+          "run_id": "live-gp-00",
+          "trial": 1
+        }
+      ],
+      "best_adaptive_quality_goodput": 0.36666666666666664,
+      "best_initial_quality_goodput": 0.4,
+      "incremental_best_goodput_after_initial": 0.0,
+      "incumbent": {
+        "config_id": "a15d9493236d",
+        "decision_method_used": "shared_initial_design",
+        "feasible": true,
+        "method": "gp",
+        "phase": "shared_initial_design",
+        "quality_goodput": 0.4,
+        "run_id": "live-gp-00",
+        "trial": 1
+      }
+    },
+    "neural": {
+      "all_tied_maximum_observations": [
+        {
+          "config_id": "824c39833bb8",
+          "decision_method_used": "shared_initial_design",
+          "feasible": true,
+          "method": "neural",
+          "phase": "shared_initial_design",
+          "quality_goodput": 0.43333333333333335,
+          "run_id": "live-neural-05",
+          "trial": 6
+        }
+      ],
+      "best_adaptive_quality_goodput": 0.3888888888888889,
+      "best_initial_quality_goodput": 0.43333333333333335,
+      "incremental_best_goodput_after_initial": 0.0,
+      "incumbent": {
+        "config_id": "824c39833bb8",
+        "decision_method_used": "shared_initial_design",
+        "feasible": true,
+        "method": "neural",
+        "phase": "shared_initial_design",
+        "quality_goodput": 0.43333333333333335,
+        "run_id": "live-neural-05",
+        "trial": 6
+      }
+    },
+    "random": {
+      "all_tied_maximum_observations": [
+        {
+          "config_id": "a283852d32ee",
+          "decision_method_used": "random",
+          "feasible": true,
+          "method": "random",
+          "phase": "adaptive",
+          "quality_goodput": 0.43333333333333335,
+          "run_id": "live-random-09",
+          "trial": 10
+        }
+      ],
+      "best_adaptive_quality_goodput": 0.43333333333333335,
+      "best_initial_quality_goodput": 0.3888888888888889,
+      "incremental_best_goodput_after_initial": 0.04444444444444445,
+      "incumbent": {
+        "config_id": "a283852d32ee",
+        "decision_method_used": "random",
+        "feasible": true,
+        "method": "random",
+        "phase": "adaptive",
+        "quality_goodput": 0.43333333333333335,
+        "run_id": "live-random-09",
+        "trial": 10
+      }
+    }
+  },
+  "selected_finalist": {
+    "config_id": "824c39833bb8",
+    "decision_method_used": "shared_initial_design",
+    "feasible": true,
+    "method": "neural",
+    "phase": "shared_initial_design",
+    "quality_goodput": 0.43333333333333335,
+    "run_id": "live-neural-05",
+    "trial": 6
+  },
+  "source": "measured"
+}

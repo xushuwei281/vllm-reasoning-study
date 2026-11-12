@@ -1,0 +1,2388 @@
+{
+  "admission_margin_s": 30,
+  "common_initial_count": 6,
+  "created_at_utc": "2026-11-03T12:00:05.655302+00:00",
+  "limitations": [
+    "Single workload and one search seed; no search-seed uncertainty estimate.",
+    "Shared prompt content supports conditional configuration generalization only.",
+    "Internal neural validation has1-2groups and is not independent final validation.",
+    "All failed trials and external cloud allocation time remain charged."
+  ],
+  "measurement_question_count": 54,
+  "method_budget_s": 3175,
+  "method_order": "rotated round-robin",
+  "method_version": "mlp-ensemble-v2-train-only-log-target-standardization",
+  "methods": [
+    "random",
+    "gp",
+    "neural"
+  ],
+  "nominal_per_method_slot_s": 3000,
+  "nominal_trial_slot_s": 300,
+  "protocol": {
+    "reserved_wall_seconds": 300
+  },
+  "quality_gate": {
+    "confidence": 0.95,
+    "execution_criterion": "empirical-paired-accuracy",
+    "margin": 0.02,
+    "method": "exact-paired-harmful-discordance-v1",
+    "question_count": 150
+  },
+  "question_count": 56,
+  "question_ids": [
+    "gsm8k:train:00022",
+    "gsm8k:train:00030",
+    "gsm8k:train:00042",
+    "gsm8k:train:00052",
+    "gsm8k:train:00054",
+    "gsm8k:train:00058",
+    "gsm8k:train:00108",
+    "gsm8k:train:00126",
+    "gsm8k:train:00131",
+    "gsm8k:train:00168",
+    "gsm8k:train:00176",
+    "gsm8k:train:00178",
+    "gsm8k:train:00201",
+    "gsm8k:train:00204",
+    "gsm8k:train:00229",
+    "gsm8k:train:00231",
+    "gsm8k:train:00232",
+    "gsm8k:train:00233",
+    "gsm8k:train:00265",
+    "gsm8k:train:00294",
+    "gsm8k:train:00295",
+    "gsm8k:train:00308",
+    "gsm8k:train:00339",
+    "gsm8k:train:00343",
+    "gsm8k:train:00359",
+    "gsm8k:train:00366",
+    "gsm8k:train:00372",
+    "gsm8k:train:00383",
+    "gsm8k:train:00389",
+    "gsm8k:train:00410",
+    "gsm8k:train:00454",
+    "gsm8k:train:00477",
+    "gsm8k:train:00510",
+    "gsm8k:train:00519",
+    "gsm8k:train:00548",
+    "gsm8k:train:00550",
+    "gsm8k:train:00552",
+    "gsm8k:train:00554",
+    "gsm8k:train:00578",
+    "gsm8k:train:00594",
+    "gsm8k:train:00614",
+    "gsm8k:train:00619",
+    "gsm8k:train:00625",
+    "gsm8k:train:00631",
+    "gsm8k:train:00639",
+    "gsm8k:train:00659",
+    "gsm8k:train:00662",
+    "gsm8k:train:00688",
+    "gsm8k:train:00706",
+    "gsm8k:train:00707",
+    "gsm8k:train:00708",
+    "gsm8k:train:00709",
+    "gsm8k:train:00768",
+    "gsm8k:train:00774",
+    "gsm8k:train:00791",
+    "gsm8k:train:00800"
+  ],
+  "reference_accuracy": 0.8333333333333334,
+  "reference_run_id": "cloud-default-profile-00",
+  "search_seed": 11,
+  "source_hashes": {
+    "scripts/build_report.py": "5f2292b0d745a472bce92e38c64b274eba98b16ea707b5652e7c6ecc477a8b1f",
+    "scripts/download_model.py": "df415089ba71f4a6e99a44ff468b679b2e42d9b7e50a0eebfe125e113fee6613",
+    "scripts/hf_continuation.py": "7fb7906782012336b255a5adcc077b8ec5b4278359dddb85e21e02b38b511457",
+    "scripts/hf_validation.py": "bc7142f751894f0a33f4feebd125e10335ea87e9a701d25e66a08302fa3ec3df",
+    "scripts/render_report_pdf.py": "ece1525b96921e7d6cd70527e08f7aa027c2b93a40a69d8861f9ee11913e209c",
+    "scripts/train_pilot_diagnostic.py": "8822a763320c015142ec7df64feec2555eb8cc5d3d10a41ee35fdd18e28a4e0c",
+    "src/vllm_tuner/__init__.py": "9aaaf82a0962a7199e1ed6dbeeccb09e2ba0d010b7789109653275e1643e63e0",
+    "src/vllm_tuner/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "src/vllm_tuner/accounting.py": "74d701b7bc75b43cdeca692f7fc7e4716c68de220d8f2304046ca222c5e140f8",
+    "src/vllm_tuner/benchmark.py": "9bf0fc19bb4662cec63e135efd72437a0b9a742d855e9d09d15780de1bf6e2ac",
+    "src/vllm_tuner/cli.py": "abd4141c5d88e6b7f1046ce790308f943facae29d9ec0dd8038d9b99df5d9d05",
+    "src/vllm_tuner/config.py": "8242de766d6191a3baf0ded1940ae9f2ed305750a3dac5762806a4eed03dac41",
+    "src/vllm_tuner/data.py": "5e928cb715231d04d683d47b92eacd99cbd6f33e4b2708172da0785e4a910ad0",
+    "src/vllm_tuner/environment.py": "1b3175bff5d31868f11dacc16670d0e86237007f006ffe6f1076c9883645e4c2",
+    "src/vllm_tuner/evaluation.py": "7da410d10c8df8d29fd18cd0b388c175751eb5caba79a81551870c5f30a14c9b",
+    "src/vllm_tuner/experiment.py": "a6b0564bdaf4885eb397d2595ec96c429250500706d48ce815c93f2ad41c9d72",
+    "src/vllm_tuner/fake_server.py": "2fd26250d6b9efd2cd32847fbf15920de6cdf6d708be868be849d89328a600f5",
+    "src/vllm_tuner/fixed_compute.py": "100e5add68fea6c32e05f72ce2a008d5ef1f3ac9054e5caf03868d6e724d96b6",
+    "src/vllm_tuner/lifecycle.py": "4ee9062a4662aa2152fdc1746ad555f24cd337309174b158cfdbcfa46fae05a5",
+    "src/vllm_tuner/live_analysis.py": "bbefc4060adfc7b524d472ac3fdba163464d96a91b7efa140e96fb1f60813b57",
+    "src/vllm_tuner/neural_artifacts.py": "373f235133b2d3a11b22685cc79760781f91241c587dfa1ad29a08da18dbafbb",
+    "src/vllm_tuner/plots.py": "57462bdb371c3a8b290be11567accbd2a6f0ea01ea46595fb3b396a9e6765ff2",
+    "src/vllm_tuner/replay.py": "2d23cd7a475720b5f519692d59cf05b180b7726671baceca010b12c2b8f56b63",
+    "src/vllm_tuner/search.py": "b115ec65600d4af1d881f600ced23f804c7db54e4965cc08dfb995e36f65751a",
+    "src/vllm_tuner/statistics.py": "9d11cce8d28b074c068bdbf06f1e467c847fe954a0083be7230b617136d91fa5",
+    "src/vllm_tuner/surrogate.py": "69b04864fb67aaa99e8bf31abab6fa02be0799d1e37957717a42786a7addad89"
+  },
+  "study_hash": "d30df9497aea6363d74de32759a49c511d5a7f571373bab9022a26b7cea45736",
+  "trace_seed": 11,
+  "traces": [
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.107484438290303,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.843835079976479,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.542436113401786,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.103696427962273,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.82476887080057,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.528288134014527,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.171218808151856,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.956368004253058,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.5715101755555,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.29339374566785,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.958612185765446,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.441302249141117,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.200197696967553,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.909017870318475,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.46994734986824,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.16367305995716,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.79306580030332,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.55465991359524,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.16246883802974,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.81142691137771,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.4756882085204,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.261556551826914,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.945923567242204,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.60013570287294,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.21656413507801,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.91951142424559,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.47151863426277,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.23257329503409,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.94532354888917,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.49712306800026,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.256083803502406,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.88386624522981,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.59800282868098,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.19421877644308,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.78160497234893,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.51633436540251,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.10919535689158,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.82721202699234,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.57004566622093,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.25581172521717,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.86168787806733,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.5326865134399,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.1217786411102,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.95314569957834,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.43818523067003,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.12593835475947,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.8157989581624,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.6159339432113,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.27443893792336,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.78466666171624,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.53444331642689,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.12094422293438,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.93857607532443,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.61400404948698,
+        "phase": "measure"
+      }
+    ],
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.146170792951374,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.814814575235388,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.601794247122452,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.12237999941698,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.929051162615487,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.490296384861637,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.125522643348614,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.803764375995705,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.5199305941861,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.120741075139364,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.851569492969155,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.618526665586938,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.140024584953775,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.889796887906513,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.43735805588462,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.11966391614511,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.83525502505216,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.47862348895913,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.244892911826035,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.92476757318548,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.57243869186931,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.188786052200285,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.957677772741135,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.61822239192522,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.20238039514178,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.812439130169,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.561186448853356,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.190431943908585,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.79435886951669,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.56403064340486,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.27938817257411,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.90614343645812,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.440276619054146,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.29761834286559,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.76811203782792,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.49691202114535,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.19938800242062,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.87179051007374,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.45818138370564,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.18211533924003,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.93641874244965,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.43560204337568,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.24926607676085,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.9094588022547,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.57341529320978,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.24692498400753,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.79884549105634,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.46780837937516,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.26350147726001,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.82807343589946,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.5047358557914,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.1665528787824,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.9399298163302,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.61482165331445,
+        "phase": "measure"
+      }
+    ],
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.27019879868429,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.898976748343141,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.526277734436523,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.236142272179068,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.818376969674187,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.535300867737988,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.159011785231495,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.892486592504174,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.580691111439826,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.174317289351116,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.857385996010546,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.5909264440488,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.2472553212439,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.960388319923076,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.446445494176885,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.243023620047296,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.944268108815265,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.49265393136958,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.154801509701514,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.7746535775538,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.50285185877094,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.19590385178187,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.86699440412791,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.43340584559645,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.234262401799604,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.9209234498117,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.52309431209652,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.26182831849839,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.77844182048365,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.52467876592601,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.28222161776459,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.84380052281068,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.51077956640493,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.15233195600005,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.82792889135077,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.60684201211896,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.10681073852585,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.95490998186105,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.5935615454339,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.16685819307722,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.82691423483362,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.58260088985611,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.19063532240149,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.82953580674446,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.58724995494786,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.1140019598713,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.89886187864215,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.50977234589799,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.1916819219762,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.81370405185703,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.62573409988585,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.17368638785629,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.86270777500759,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.46088888601601,
+        "phase": "measure"
+      }
+    ],
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.298657662681897,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.96471167403729,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.457085579159786,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.298190414381356,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.811727601598644,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.632503447304554,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.2030582669396,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.86647202935849,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.566430365174124,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.227174943721636,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.85234518475586,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.595497067227463,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.18357511709517,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.95908288126146,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.557414540055795,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.14200625420782,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.87326969979332,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.4792633604047,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.21527335838866,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.816408561340104,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.5380128042311,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.185120734495314,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.8367144092309,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.489382306992816,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.226144140236315,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.966451530858514,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.44239819729435,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.14754098366295,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.92107453535179,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.517123140059034,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.239684024774085,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.95077451018659,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.5532393090883,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.10917780721743,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.95770595726353,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.56599074464407,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.12063373586099,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.84326957835096,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.60866332317688,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.12582153259892,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.89751674760323,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.53290626464974,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.20719918905202,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.9478499827069,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.61568725362719,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.13501250132204,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.84080113861856,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.45177338595578,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.27779674881248,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.9507096476954,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.49943781668038,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.26467383877785,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.81024159891207,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.52689172726804,
+        "phase": "measure"
+      }
+    ],
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.230985958937701,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.812911749683721,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.57904905053697,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.109541368472925,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.799735674861143,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.520849390807136,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.17727237655667,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.92749395843379,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.49575952647779,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.149452925964745,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.80739585220815,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.624756793470937,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.13717234154924,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.782743893507266,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.50622290942553,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.2810259337837,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.8835649180671,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.5120711028153,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.20952654367007,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.78223550883824,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.55152988468255,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.283118938303915,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.84811637183538,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.5869067942525,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.11317410103594,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.83988274951383,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.60751375549257,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.26759758269378,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.795887903456375,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.50550083817624,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.24952218668949,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.90908721782138,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.485588965904064,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.25497166657325,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.8254691496946,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.5399586844319,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.13866432057827,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.8191472724586,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.53534785595511,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.14661750086927,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.90502776191093,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.6321148913744,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.11345393330548,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.79575612255263,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.60214261828177,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.24093247565578,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.85335268940736,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.46480140982005,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.20384043445016,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.92966828721543,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.51711800135138,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.26174342441468,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.93892684236314,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.46144346921639,
+        "phase": "measure"
+      }
+    ],
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.21011687843503,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.899434402014695,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.511299170563069,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.112031053997713,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.907273281024942,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.536173618018775,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.194031241605895,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.882414882076436,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.49190606728274,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.259047615947516,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.948919205991952,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.556780901168093,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.107654970377563,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.87944999388976,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.6209645061151,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.16688246597876,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.897264949892914,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.45832125919104,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.279795157297045,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.873097530083,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.48603427920655,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.16614527995202,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.91124358530061,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.54689096911267,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.16913764978474,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.87271993860781,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.60107656838178,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.16087794345939,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.91113083692476,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.523874941461955,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.20901435819347,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.85429196897067,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.55066543375144,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.26147958104977,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.85918101577481,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.58184428804378,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.20579040472964,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.93850834749045,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.45534229466644,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.11219746386415,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.77933975941399,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.46197559176814,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.25203796270088,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.82860797590418,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.57500953380533,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.10151837663405,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.76841007183603,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.54605639825495,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.15701005464905,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.84770518531168,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.46370273300572,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.18860475391158,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.86492839715594,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.47956495802336,
+        "phase": "measure"
+      }
+    ],
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.262404722348041,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.829788239876342,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.449303447527537,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.144159263691316,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.934348261733987,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.447641029497,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.182013593801454,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.944075756335188,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.502105465238103,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.162034563643623,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.955588448672653,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.60041064810165,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.27193450965654,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.933514573563556,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.579842711324176,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.192658166491555,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.82681049449795,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.462881404388455,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.17394670840173,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.84295570376705,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.56864931870298,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.1983812220045,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.771874577360265,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.4943232545496,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.18516106828555,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.86859490571387,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.54718495685549,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.26995234276995,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.87699322960269,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.566345593743335,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.29973671441334,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.87686615575335,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.46379683018888,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.10534587774572,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.82437149880188,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.61731474786149,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.23276952771093,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.77502245205808,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.5298583338291,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.28060960664811,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.9040952475801,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.60179512377876,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.23840502629389,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.90750390916847,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.4994885549083,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.28468500273836,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.86553794825934,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.48739119501613,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.2386186390234,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.86048048660003,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.6023630426578,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.29405354179111,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.7739284637613,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.53571565710926,
+        "phase": "measure"
+      }
+    ],
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.163475797531733,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.959136764084802,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.464467034837083,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.12163520083078,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.80393503002712,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.581119439164556,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.294659898284507,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.88784133085823,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.473246477686015,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.111253204839773,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.93355083864411,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.532819234196346,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.220367661255185,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.869502127573337,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.48612140399562,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.12279200232121,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.846682645698,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.55586029538355,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.2775264379441,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.79028656778662,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.581492635304976,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.21466492910612,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.94866561885071,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.571899143962305,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.12134791291017,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.834838256303875,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.58378921175676,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.156477100901085,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.8745420419267,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.455921127715676,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.178186521856624,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.83757890232141,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.594469600202615,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.29140834278414,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.9579483070925,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.54773107672636,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.13389159591691,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.84308154504107,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.48189906167832,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.23487974835619,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.9334296534451,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.53095223607552,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.11869525701155,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.79702409971996,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.55876457040316,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.19915705026222,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.85690116080215,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.49752085706717,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.15428216101101,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.8910356325885,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.59350727900686,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.1323856059661,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.91450412729789,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.6290603772006,
+        "phase": "measure"
+      }
+    ],
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.18395020828697,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.78703843483048,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.591015418160936,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.101347922485097,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.834668195658455,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.556705187924916,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.187390956669514,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.84929923522592,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.52464100536606,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.220611585488047,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.894460795963724,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.52025620988877,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.18287442887377,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.85498928437325,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.43583294894465,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.24877208898587,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.895653691798,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.58809826983508,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.2344192493144,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.83945393280439,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.58819923679791,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.267852972340705,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.82295494734914,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.55166781280921,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.13505310954889,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.8512238484146,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.44188772086916,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.27123597899356,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.95899679762618,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.58518580884788,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.22067800061203,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.77895422642686,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.520195981883354,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.18711533031917,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.7672597376999,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.58315145535182,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.17185278444545,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.82272803462288,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.57433480492506,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.14554538042715,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.83691616567309,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.6010183202392,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.27859333199012,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.95259161464566,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.50498353621613,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.13810348867409,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.82785628617252,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.60948880844546,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.2948555516368,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.82921078874305,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.46136041977321,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.29653481053285,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.82237363914504,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.61110327484637,
+        "phase": "measure"
+      }
+    ],
+    [
+      {
+        "intended_arrival_s": 0.1,
+        "phase": "warmup"
+      },
+      {
+        "intended_arrival_s": 5.1,
+        "phase": "ramp"
+      },
+      {
+        "intended_arrival_s": 10.123761459060805,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 11.840684216100788,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 13.493095126657021,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 15.269237705809926,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 16.792475938668023,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 18.539242991158144,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 20.211449560282993,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 21.82118066754136,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 23.581254112140826,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 25.21109040190558,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 26.95853896642641,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 28.488446024971008,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 30.28433250650805,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 31.928640537545242,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 33.440645885131616,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 35.16011020765344,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 36.78683119491836,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 38.624900034964675,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 40.181229031640356,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 41.86122543633429,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 43.61987578075224,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 45.19688355643184,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 46.83689101979423,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 48.536438907400736,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 50.27999798898282,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 51.82192584658185,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 53.43681535067618,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 55.27937186075994,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 56.867948675910434,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 58.62827023369583,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 60.24298437331796,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 61.95708464446524,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 63.56686373529587,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 65.10716222162948,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 66.81930466563207,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 68.53442190527896,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 70.23443136359107,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 71.81266281010659,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 73.44231020123593,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 75.15991949551835,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 76.92758158735448,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 78.4515497814743,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 80.25938245002408,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 81.77037708828895,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 83.48350529256382,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 85.19872034589609,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 86.95098389906114,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 88.46111359391647,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 90.11223664727304,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 91.94460170377441,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 93.44242678839011,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 95.2468673174403,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 96.87008882883285,
+        "phase": "measure"
+      },
+      {
+        "intended_arrival_s": 98.47572543050342,
+        "phase": "measure"
+      }
+    ]
+  ],
+  "trial_bound_s": 445.0,
+  "trials_per_method": 10
+}

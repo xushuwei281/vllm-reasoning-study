@@ -1,0 +1,11 @@
+{
+  "best_measured": {
+    "config_id": "a283852d32ee",
+    "quality_goodput": 0.43333333333333335,
+    "scenario_id": "cloud-short-development"
+  },
+  "needs_independent_validation": true,
+  "optimizer_cpu_seconds": 0.0006161699999722714,
+  "optimizer_wall_seconds": 0.0005035300000599818,
+  "spent_accelerator_seconds": 3000.001140786002
+}

@@ -1,0 +1,4 @@
+run_id,status,scenario_id,config_id,offered,completed,accuracy,quality_goodput,p99_e2e_s,p99_completed_e2e_s,peak_memory_bytes,accelerator_seconds
+pilot-metal-default-001,ok,pilot-low,e31482f67207,4,0,0.0,0.0,,,,165.92042654199759
+screen-metal-00,ok,screen-short,30de19ea8644,2,2,0.0,0.0,66.80370962497545,66.80370962497545,,145.6634052079753
+allowance-metal-2048-00,ok,allowance-2048,30de19ea8644,2,1,0.5,0.01,,86.32140216697007,,259.58759645797545

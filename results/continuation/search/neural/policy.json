@@ -1,0 +1,51 @@
+{
+  "format_version": 1,
+  "settings": {
+    "method": "neural",
+    "seed": 11,
+    "beta": 1.0,
+    "p99_limit_s": null,
+    "neural_epochs": 200,
+    "minimum_neural_groups": 6,
+    "default_config_id": null,
+    "neural_target_standardization": true
+  },
+  "rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 142231634183583599241308901332361415022,
+      "inc": 7937318808080196428804369945471644491
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "selected": [
+    "[\"b99a5a32245f\",\"cloud-short-development\"]",
+    "[\"3f49dcccf7a4\",\"cloud-short-development\"]",
+    "[\"3ca7dc843e77\",\"cloud-short-development\"]",
+    "[\"a283852d32ee\",\"cloud-short-development\"]"
+  ],
+  "last_decision": {
+    "requested_method": "neural",
+    "observations_seen": 9,
+    "candidate_count": 3,
+    "method_used": "neural",
+    "acquisition": 0.22470980258016604,
+    "prediction": {
+      "goodput_mean": 0.22914981842041016,
+      "goodput_std": 0.0037419351283460855,
+      "p99_mean": 79.33000946044922,
+      "p99_std": 0.02763218991458416,
+      "feasible_probability": 0.9648680090904236
+    },
+    "model_artifact": {
+      "directory": "/workspace/study/project/results/continuation/search/neural/models/proposal-004-9fedc84b51b4",
+      "checkpoint": "/workspace/study/project/results/continuation/search/neural/models/proposal-004-9fedc84b51b4/ensemble.pt",
+      "report": "/workspace/study/project/results/continuation/search/neural/models/proposal-004-9fedc84b51b4/report.json",
+      "proposal_sha256": "9fedc84b51b4cdd54a8dc5143921a4c3e31948bc87062ebfb81af2fe62ed013c"
+    },
+    "selected_key": "[\"a283852d32ee\",\"cloud-short-development\"]",
+    "optimizer_cpu_seconds": 27.345031359000018,
+    "optimizer_wall_seconds": 2.249896659001024
+  }
+}

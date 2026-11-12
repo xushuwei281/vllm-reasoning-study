@@ -1,0 +1,22 @@
+{
+  "backend": "metal_mlx",
+  "runtime_installed": true,
+  "device_count": 1,
+  "allowed_tp_sizes": [
+    1
+  ],
+  "supported_precisions": [
+    "bf16",
+    "fp16"
+  ],
+  "chunked_prefill": true,
+  "prefix_caching": true,
+  "max_model_len": 4096,
+  "attention_heads": 16,
+  "kv_heads": 8,
+  "max_memory_fraction": 0.65,
+  "quantization_evidence": null,
+  "disaggregation": false,
+  "HCCL": false,
+  "requires_live_smoke": true
+}

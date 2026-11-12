@@ -1,0 +1,9 @@
+GitHub publication check - 12 November 2026
+
+Command from the compact repository root:
+python -m pytest -q --disable-warnings
+
+262 passed, 14 warnings in 5.01s
+
+Warnings: existing Matplotlib/Pyparsing deprecations. No accelerator allocation.
+All 26 frozen execution source files and all 14 measured-analysis input hashes match the archived records.

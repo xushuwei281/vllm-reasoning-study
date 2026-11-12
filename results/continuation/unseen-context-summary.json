@@ -1,0 +1,1041 @@
+{
+  "actual_accelerator_seconds": 600.000241144,
+  "admission_checks": [
+    {
+      "allowed": true,
+      "arms_remaining": 2,
+      "effective_budget_seconds_remaining": 15670.190472691938,
+      "job_deadline_epoch": 1793720426.572,
+      "job_seconds_remaining": 1918.863900899887,
+      "latest_optional_completion_epoch": 1793720126.572,
+      "reasons": [],
+      "required_seconds": 1190,
+      "unreconciled_allocation_seconds": 20.42241217958326
+    },
+    {
+      "allowed": true,
+      "arms_remaining": 2,
+      "effective_budget_seconds_remaining": 15666.024583190367,
+      "job_deadline_epoch": 1793720426.572,
+      "job_seconds_remaining": 1914.6980113983154,
+      "latest_optional_completion_epoch": 1793720126.572,
+      "reasons": [],
+      "required_seconds": 1190,
+      "unreconciled_allocation_seconds": 24.588301681154917
+    },
+    {
+      "allowed": true,
+      "arms_remaining": 1,
+      "effective_budget_seconds_remaining": 15365.945131629393,
+      "job_deadline_epoch": 1793720426.572,
+      "job_seconds_remaining": 1614.6185598373413,
+      "latest_optional_completion_epoch": 1793720126.572,
+      "reasons": [],
+      "required_seconds": 745,
+      "unreconciled_allocation_seconds": 24.66765314612894
+    }
+  ],
+  "arms": [
+    {
+      "arm": "default",
+      "config": {
+        "chunked_prefill": true,
+        "gpu_memory_utilization": 0.8,
+        "kv_cache_dtype": "auto",
+        "max_num_batched_tokens": null,
+        "max_num_seqs": null,
+        "precision": "bf16",
+        "prefix_caching": false,
+        "tensor_parallel_size": 1
+      },
+      "cost": {
+        "accelerator_seconds": 300.0001000960001,
+        "admission_bound_overshoot_seconds": 0,
+        "admission_wall_seconds": 445.0,
+        "allocated_after_shutdown_seconds": 130.7558319439995,
+        "allocated_devices": 1,
+        "allocated_idle_padding_seconds": 130.3746154469991,
+        "effective_startup_timeout_seconds": 180.0,
+        "lifecycle_status": "stopped",
+        "optimizer_cpu_seconds": 0.0,
+        "reservation_timing_policy": "minimum_allocated_slot",
+        "reserved_slot_seconds": 300,
+        "server_lifecycle_seconds": 169.2442681520006,
+        "slot_overshoot_seconds": 0.00010009600009652786,
+        "startup_seconds": 39.01530765999996,
+        "wall_seconds": 300.0001000960001
+      },
+      "execution_status": "ok",
+      "full_measurement_cohort_accuracy": 0.8888888888888888,
+      "full_measurement_deadline_accuracy": 0.6296296296296297,
+      "measurement_cohort_size": 54,
+      "measurement_outcomes": [
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04591",
+          "recorded": true,
+          "sampling_seed": 13726
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04603",
+          "recorded": true,
+          "sampling_seed": 13727
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04623",
+          "recorded": true,
+          "sampling_seed": 13728
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:04638",
+          "recorded": true,
+          "sampling_seed": 13729
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04660",
+          "recorded": true,
+          "sampling_seed": 13730
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04689",
+          "recorded": true,
+          "sampling_seed": 13731
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04721",
+          "recorded": true,
+          "sampling_seed": 13732
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04812",
+          "recorded": true,
+          "sampling_seed": 13733
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04835",
+          "recorded": true,
+          "sampling_seed": 13734
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04839",
+          "recorded": true,
+          "sampling_seed": 13735
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04935",
+          "recorded": true,
+          "sampling_seed": 13736
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04940",
+          "recorded": true,
+          "sampling_seed": 13737
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05024",
+          "recorded": true,
+          "sampling_seed": 13738
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05042",
+          "recorded": true,
+          "sampling_seed": 13739
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05060",
+          "recorded": true,
+          "sampling_seed": 13740
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05063",
+          "recorded": true,
+          "sampling_seed": 13741
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05065",
+          "recorded": true,
+          "sampling_seed": 13742
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05097",
+          "recorded": true,
+          "sampling_seed": 13743
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05133",
+          "recorded": true,
+          "sampling_seed": 13744
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05163",
+          "recorded": true,
+          "sampling_seed": 13745
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05178",
+          "recorded": true,
+          "sampling_seed": 13746
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05224",
+          "recorded": true,
+          "sampling_seed": 13747
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05231",
+          "recorded": true,
+          "sampling_seed": 13748
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05263",
+          "recorded": true,
+          "sampling_seed": 13749
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05294",
+          "recorded": true,
+          "sampling_seed": 13750
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05312",
+          "recorded": true,
+          "sampling_seed": 13751
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05316",
+          "recorded": true,
+          "sampling_seed": 13752
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05319",
+          "recorded": true,
+          "sampling_seed": 13753
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05347",
+          "recorded": true,
+          "sampling_seed": 13754
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05373",
+          "recorded": true,
+          "sampling_seed": 13755
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05375",
+          "recorded": true,
+          "sampling_seed": 13756
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05399",
+          "recorded": true,
+          "sampling_seed": 13757
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05401",
+          "recorded": true,
+          "sampling_seed": 13758
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05410",
+          "recorded": true,
+          "sampling_seed": 13759
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05437",
+          "recorded": true,
+          "sampling_seed": 13760
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05462",
+          "recorded": true,
+          "sampling_seed": 13761
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05469",
+          "recorded": true,
+          "sampling_seed": 13762
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05483",
+          "recorded": true,
+          "sampling_seed": 13763
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05517",
+          "recorded": true,
+          "sampling_seed": 13764
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05619",
+          "recorded": true,
+          "sampling_seed": 13765
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05640",
+          "recorded": true,
+          "sampling_seed": 13766
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05687",
+          "recorded": true,
+          "sampling_seed": 13767
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05708",
+          "recorded": true,
+          "sampling_seed": 13768
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05733",
+          "recorded": true,
+          "sampling_seed": 13769
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05754",
+          "recorded": true,
+          "sampling_seed": 13770
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05818",
+          "recorded": true,
+          "sampling_seed": 13771
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05874",
+          "recorded": true,
+          "sampling_seed": 13772
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05885",
+          "recorded": true,
+          "sampling_seed": 13773
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05890",
+          "recorded": true,
+          "sampling_seed": 13774
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05896",
+          "recorded": true,
+          "sampling_seed": 13775
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05974",
+          "recorded": true,
+          "sampling_seed": 13776
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:06030",
+          "recorded": true,
+          "sampling_seed": 13777
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:06052",
+          "recorded": true,
+          "sampling_seed": 13778
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:06069",
+          "recorded": true,
+          "sampling_seed": 13779
+        }
+      ],
+      "metrics": {
+        "accuracy": 0.8888888888888888,
+        "completed": 54,
+        "completed_in_window": 37,
+        "completed_requests_per_s": 0.4111111111111111,
+        "correct_completed_in_window": 34,
+        "correct_per_allocated_accelerator_second": 0.37777777777777777,
+        "deadline_constrained_accuracy": 0.6296296296296297,
+        "dispatched_requests_per_s": 0.6,
+        "drain_completed": 17,
+        "drain_duration_s": 29.371343593000347,
+        "error_count": 0,
+        "error_rate": 0.0,
+        "feasible": true,
+        "final_tokens_all": null,
+        "generated_output_tokens_all": 72927,
+        "input_tokens_per_s": 176.65555555555557,
+        "itl_observation_note": "Chunk gaps are transport observations; missing per-chunk token counts prohibit complete ITL reconstruction.",
+        "known_output_tokens_sum": 72927,
+        "latency_goodput": 0.4111111111111111,
+        "measurement_duration_s": 90,
+        "memory_constraint_status": "not_configured",
+        "missing_token_usage_count": 0,
+        "offered": 54,
+        "offered_requests_per_s": 0.6,
+        "output_tokens_per_s": 490.85555555555555,
+        "p50_completed_arrival_e2e_s": 17.550872899407118,
+        "p50_completed_client_queue_s": 0.0008259018496445947,
+        "p50_completed_e2e_s": 17.54971981900235,
+        "p50_completed_tpot_s": 0.01706260431085551,
+        "p50_completed_ttft_s": 0.05563231699852622,
+        "p95_completed_arrival_e2e_s": 62.30758302277091,
+        "p95_completed_client_queue_s": 0.002008803001473325,
+        "p95_completed_e2e_s": 62.306132492998586,
+        "p95_completed_tpot_s": 0.01992670144413654,
+        "p95_completed_ttft_s": 0.06734039100047085,
+        "p99_client_queue_s": 0.002160363424010825,
+        "p99_completed_arrival_e2e_s": 73.13451506969707,
+        "p99_completed_client_queue_s": 0.002160363424010825,
+        "p99_completed_e2e_s": 73.13356539300003,
+        "p99_completed_tpot_s": 0.020389403564217146,
+        "p99_completed_ttft_s": 0.07047651600078098,
+        "p99_e2e_censored": false,
+        "p99_e2e_population": "all measurement-cohort arrivals; failures occupy infinite tail ranks",
+        "p99_e2e_s": 73.13356539300003,
+        "peak_memory_bytes": 20078133248.0,
+        "quality_constraint_status": "reference_self; candidate comparisons require development baseline",
+        "quality_goodput": 0.37777777777777777,
+        "quality_goodput_per_accelerator": 0.37777777777777777,
+        "quality_slo_completed_in_window": 34,
+        "reasoning_tokens_all": null,
+        "single_token_chunk_gap_p99_s": null,
+        "slo_constrained_accuracy": 0.6296296296296297,
+        "slo_violation_count": 0,
+        "status_counts": {
+          "ok": 54
+        },
+        "stream_chunk_gap_p99_s": 0.022525249001773773,
+        "tail_sample_warning": true,
+        "truncated_count": 2,
+        "unfinished_at_window_end": 17
+      },
+      "missing_measurement_records": 0,
+      "run_id": "unseen-context-default-seed13724",
+      "source": "measured"
+    },
+    {
+      "arm": "tuned",
+      "config": {
+        "chunked_prefill": true,
+        "gpu_memory_utilization": 0.8,
+        "kv_cache_dtype": "auto",
+        "max_num_batched_tokens": 1024,
+        "max_num_seqs": 32,
+        "precision": "bf16",
+        "prefix_caching": false,
+        "tensor_parallel_size": 1
+      },
+      "cost": {
+        "accelerator_seconds": 300.00014104799993,
+        "admission_bound_overshoot_seconds": 0,
+        "admission_wall_seconds": 445.0,
+        "allocated_after_shutdown_seconds": 125.74982547300169,
+        "allocated_devices": 1,
+        "allocated_idle_padding_seconds": 125.46082025000214,
+        "effective_startup_timeout_seconds": 180.0,
+        "lifecycle_status": "stopped",
+        "optimizer_cpu_seconds": 0.0,
+        "reservation_timing_policy": "minimum_allocated_slot",
+        "reserved_slot_seconds": 300,
+        "server_lifecycle_seconds": 174.25031557499824,
+        "slot_overshoot_seconds": 0.00014104799993219785,
+        "startup_seconds": 36.532373732999986,
+        "wall_seconds": 300.00014104799993
+      },
+      "execution_status": "ok",
+      "full_measurement_cohort_accuracy": 0.8888888888888888,
+      "full_measurement_deadline_accuracy": 0.6851851851851852,
+      "measurement_cohort_size": 54,
+      "measurement_outcomes": [
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04591",
+          "recorded": true,
+          "sampling_seed": 13726
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04603",
+          "recorded": true,
+          "sampling_seed": 13727
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04623",
+          "recorded": true,
+          "sampling_seed": 13728
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04638",
+          "recorded": true,
+          "sampling_seed": 13729
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04660",
+          "recorded": true,
+          "sampling_seed": 13730
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04689",
+          "recorded": true,
+          "sampling_seed": 13731
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04721",
+          "recorded": true,
+          "sampling_seed": 13732
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04812",
+          "recorded": true,
+          "sampling_seed": 13733
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04835",
+          "recorded": true,
+          "sampling_seed": 13734
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04839",
+          "recorded": true,
+          "sampling_seed": 13735
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:04935",
+          "recorded": true,
+          "sampling_seed": 13736
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:04940",
+          "recorded": true,
+          "sampling_seed": 13737
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05024",
+          "recorded": true,
+          "sampling_seed": 13738
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05042",
+          "recorded": true,
+          "sampling_seed": 13739
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05060",
+          "recorded": true,
+          "sampling_seed": 13740
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05063",
+          "recorded": true,
+          "sampling_seed": 13741
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05065",
+          "recorded": true,
+          "sampling_seed": 13742
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05097",
+          "recorded": true,
+          "sampling_seed": 13743
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05133",
+          "recorded": true,
+          "sampling_seed": 13744
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05163",
+          "recorded": true,
+          "sampling_seed": 13745
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05178",
+          "recorded": true,
+          "sampling_seed": 13746
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05224",
+          "recorded": true,
+          "sampling_seed": 13747
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05231",
+          "recorded": true,
+          "sampling_seed": 13748
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05263",
+          "recorded": true,
+          "sampling_seed": 13749
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05294",
+          "recorded": true,
+          "sampling_seed": 13750
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05312",
+          "recorded": true,
+          "sampling_seed": 13751
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05316",
+          "recorded": true,
+          "sampling_seed": 13752
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05319",
+          "recorded": true,
+          "sampling_seed": 13753
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05347",
+          "recorded": true,
+          "sampling_seed": 13754
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05373",
+          "recorded": true,
+          "sampling_seed": 13755
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05375",
+          "recorded": true,
+          "sampling_seed": 13756
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05399",
+          "recorded": true,
+          "sampling_seed": 13757
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05401",
+          "recorded": true,
+          "sampling_seed": 13758
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05410",
+          "recorded": true,
+          "sampling_seed": 13759
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05437",
+          "recorded": true,
+          "sampling_seed": 13760
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05462",
+          "recorded": true,
+          "sampling_seed": 13761
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05469",
+          "recorded": true,
+          "sampling_seed": 13762
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05483",
+          "recorded": true,
+          "sampling_seed": 13763
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05517",
+          "recorded": true,
+          "sampling_seed": 13764
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05619",
+          "recorded": true,
+          "sampling_seed": 13765
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05640",
+          "recorded": true,
+          "sampling_seed": 13766
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05687",
+          "recorded": true,
+          "sampling_seed": 13767
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:train:05708",
+          "recorded": true,
+          "sampling_seed": 13768
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05733",
+          "recorded": true,
+          "sampling_seed": 13769
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05754",
+          "recorded": true,
+          "sampling_seed": 13770
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05818",
+          "recorded": true,
+          "sampling_seed": 13771
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05874",
+          "recorded": true,
+          "sampling_seed": 13772
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05885",
+          "recorded": true,
+          "sampling_seed": 13773
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05890",
+          "recorded": true,
+          "sampling_seed": 13774
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05896",
+          "recorded": true,
+          "sampling_seed": 13775
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:05974",
+          "recorded": true,
+          "sampling_seed": 13776
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:06030",
+          "recorded": true,
+          "sampling_seed": 13777
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:06052",
+          "recorded": true,
+          "sampling_seed": 13778
+        },
+        {
+          "correct": true,
+          "deadline_correct": false,
+          "question_id": "gsm8k:train:06069",
+          "recorded": true,
+          "sampling_seed": 13779
+        }
+      ],
+      "metrics": {
+        "accuracy": 0.8888888888888888,
+        "completed": 54,
+        "completed_in_window": 39,
+        "completed_requests_per_s": 0.43333333333333335,
+        "correct_completed_in_window": 37,
+        "correct_per_allocated_accelerator_second": 0.4111111111111111,
+        "deadline_constrained_accuracy": 0.6851851851851852,
+        "dispatched_requests_per_s": 0.6,
+        "drain_completed": 15,
+        "drain_duration_s": 36.92882119400019,
+        "error_count": 0,
+        "error_rate": 0.0,
+        "feasible": true,
+        "final_tokens_all": null,
+        "generated_output_tokens_all": 72252,
+        "input_tokens_per_s": 186.32222222222222,
+        "itl_observation_note": "Chunk gaps are transport observations; missing per-chunk token counts prohibit complete ITL reconstruction.",
+        "known_output_tokens_sum": 72252,
+        "latency_goodput": 0.43333333333333335,
+        "measurement_duration_s": 90,
+        "memory_constraint_status": "not_configured",
+        "missing_token_usage_count": 0,
+        "offered": 54,
+        "offered_requests_per_s": 0.6,
+        "output_tokens_per_s": 500.84444444444443,
+        "p50_completed_arrival_e2e_s": 17.579940010748793,
+        "p50_completed_client_queue_s": 0.0007389190014066571,
+        "p50_completed_e2e_s": 17.578777916001854,
+        "p50_completed_tpot_s": 0.016491262986281115,
+        "p50_completed_ttft_s": 0.05567711299954681,
+        "p95_completed_arrival_e2e_s": 61.67300946878302,
+        "p95_completed_client_queue_s": 0.001315782135272059,
+        "p95_completed_e2e_s": 61.672509328996966,
+        "p95_completed_tpot_s": 0.01864924596360576,
+        "p95_completed_ttft_s": 0.06709891600257833,
+        "p99_client_queue_s": 0.0014819626008772957,
+        "p99_completed_arrival_e2e_s": 70.56510890347988,
+        "p99_completed_client_queue_s": 0.0014819626008772957,
+        "p99_completed_e2e_s": 70.56411878200015,
+        "p99_completed_tpot_s": 0.01886444844470812,
+        "p99_completed_ttft_s": 0.06919885800016345,
+        "p99_e2e_censored": false,
+        "p99_e2e_population": "all measurement-cohort arrivals; failures occupy infinite tail ranks",
+        "p99_e2e_s": 70.56411878200015,
+        "peak_memory_bytes": 19925041152.0,
+        "quality_constraint_status": "pass",
+        "quality_goodput": 0.4111111111111111,
+        "quality_goodput_per_accelerator": 0.4111111111111111,
+        "quality_slo_completed_in_window": 37,
+        "reasoning_tokens_all": null,
+        "single_token_chunk_gap_p99_s": null,
+        "slo_constrained_accuracy": 0.6851851851851852,
+        "slo_violation_count": 0,
+        "status_counts": {
+          "ok": 54
+        },
+        "stream_chunk_gap_p99_s": 0.02182084300147835,
+        "tail_sample_warning": true,
+        "truncated_count": 2,
+        "unfinished_at_window_end": 15
+      },
+      "missing_measurement_records": 0,
+      "run_id": "unseen-context-tuned-seed13724",
+      "source": "measured"
+    }
+  ],
+  "core_selection_unchanged": true,
+  "interpretation": "Independent unseen-context diagnostic; one run per arm, 54 measured questions, no robust P99 or population noninferiority claim",
+  "official_test_data_accessed": false,
+  "paired_accuracy_difference": {
+    "bootstrap_samples": 2000,
+    "candidate_accuracy": 0.8888888888888888,
+    "ci": [
+      -0.07407407407407407,
+      0.07407407407407407
+    ],
+    "confidence": 0.95,
+    "degenerate_bootstrap": false,
+    "difference_candidate_minus_reference": 0.0,
+    "method": "paired question-cluster percentile bootstrap; equal question weights",
+    "paired_requests": 54,
+    "quality_gate_usable": true,
+    "question_clusters": 54,
+    "reference_accuracy": 0.8888888888888888,
+    "seed": 13724,
+    "warning": null
+  },
+  "paired_deadline_accuracy_difference": {
+    "bootstrap_samples": 2000,
+    "candidate_accuracy": 0.6851851851851852,
+    "ci": [
+      -0.018518518518518517,
+      0.12962962962962962
+    ],
+    "confidence": 0.95,
+    "degenerate_bootstrap": false,
+    "difference_candidate_minus_reference": 0.05555555555555555,
+    "method": "paired question-cluster percentile bootstrap; equal question weights",
+    "paired_requests": 54,
+    "quality_gate_usable": true,
+    "question_clusters": 54,
+    "reference_accuracy": 0.6296296296296297,
+    "seed": 13724,
+    "warning": null
+  },
+  "plan_hash": "a38bbf5f19054161f187f1734daa8495c974cd9a7fc553d09fb6f3e0e4234e02",
+  "reason": null,
+  "secondary_only": true,
+  "status": "completed"
+}

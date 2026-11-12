@@ -1,0 +1,225 @@
+{
+  "decoding": {
+    "max_tokens": 32,
+    "seed": 1
+  },
+  "prompt_hashes": [
+    "ab8c9f78ab2d809091a677f59ea526b36cfafb12c2030216852000e154667741"
+  ],
+  "protocol": {
+    "arrival_rate": 40,
+    "drain_s": 1,
+    "max_in_flight": 50,
+    "measurement_s": 1,
+    "ramp_s": 0.1,
+    "telemetry_interval_s": 0.1,
+    "timeout_s": 1,
+    "warmup_s": 0.1
+  },
+  "question_ids": [
+    "synthetic:2plus2"
+  ],
+  "source": "synthetic",
+  "trace": [
+    {
+      "intended_arrival_s": 0.1025328839042739,
+      "phase": "ramp"
+    },
+    {
+      "intended_arrival_s": 0.13762930928350567,
+      "phase": "ramp"
+    },
+    {
+      "intended_arrival_s": 0.20227381011516415,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.21597496410007644,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.2167312185302604,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.222899135929256,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.24049702412590984,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.24116938421791753,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.24671167594700955,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.27294897597757384,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.2926322073336339,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.2988578678078045,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.32110308546534855,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.362546537820926,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.36270953703478265,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.4036836835870464,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.4336284321113836,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.4440258092738481,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.44825046597602985,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.5270385321869875,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.5372977554340146,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.5397310717175136,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.5422740388424043,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.5892878823832328,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.6124291190571332,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.6535723675422647,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.6862808783034213,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.7054899389041756,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.795895318546426,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.8077871856176506,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.8278635042548127,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.8720750288694502,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.8961674339976214,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.9456269323812068,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.967157330914928,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.9976405702211237,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 0.9988132587275459,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.005279232986225,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.013819949415717,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.0158988374771918,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.0225237343869917,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.0251855802497787,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.033327919748986,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.058571291637348,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.0699179423853509,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.081476011141662,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.0873534740530055,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.0951179570815053,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.1640967769151436,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 1.1902023927827905,
+      "phase": "measure"
+    }
+  ]
+}

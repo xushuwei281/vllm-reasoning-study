@@ -1,0 +1,12 @@
+{"time_s": 0.016596540983300656, "prometheus": "vllm:num_requests_running 0\nvllm:num_requests_waiting 0\n"}
+{"time_s": 0.11871041596168652, "prometheus": "vllm:num_requests_running 1\nvllm:num_requests_waiting 0\n"}
+{"time_s": 0.22769066598266363, "prometheus": "vllm:num_requests_running 3\nvllm:num_requests_waiting 0\n"}
+{"time_s": 0.3311226249788888, "prometheus": "vllm:num_requests_running 1\nvllm:num_requests_waiting 0\n"}
+{"time_s": 0.43694137496640906, "prometheus": "vllm:num_requests_running 0\nvllm:num_requests_waiting 0\n"}
+{"time_s": 0.5485004999791272, "prometheus": "vllm:num_requests_running 2\nvllm:num_requests_waiting 0\n"}
+{"time_s": 0.6536093750037253, "prometheus": "vllm:num_requests_running 0\nvllm:num_requests_waiting 0\n"}
+{"time_s": 0.7603964579757303, "prometheus": "vllm:num_requests_running 0\nvllm:num_requests_waiting 0\n"}
+{"time_s": 0.8666797910118476, "prometheus": "vllm:num_requests_running 0\nvllm:num_requests_waiting 0\n"}
+{"time_s": 0.9743289579637349, "prometheus": "vllm:num_requests_running 0\nvllm:num_requests_waiting 0\n"}
+{"time_s": 1.077275124960579, "prometheus": "vllm:num_requests_running 2\nvllm:num_requests_waiting 0\n"}
+{"time_s": 1.1816730829887092, "prometheus": "vllm:num_requests_running 1\nvllm:num_requests_waiting 0\n"}

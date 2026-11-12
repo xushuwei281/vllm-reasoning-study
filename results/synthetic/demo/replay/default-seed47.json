@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "settings": {
+    "method": "default",
+    "seed": 47,
+    "beta": 1.0,
+    "p99_limit_s": null,
+    "neural_epochs": 100,
+    "minimum_neural_groups": 6,
+    "default_config_id": null
+  },
+  "rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 136594948491642963282487076308961489066,
+      "inc": 335126774553957544239705392126533740537
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "selected": [
+    "[\"a37c7c21314f\",\"mid\"]"
+  ],
+  "last_decision": {
+    "requested_method": "default",
+    "observations_seen": 0,
+    "candidate_count": 18,
+    "method_used": "default",
+    "selected_key": "[\"a37c7c21314f\",\"mid\"]",
+    "optimizer_cpu_seconds": 5.600000000027805e-05,
+    "optimizer_wall_seconds": 5.458400119096041e-05
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "format_version": 1,
+  "settings": {
+    "method": "gp",
+    "seed": 29,
+    "beta": 1.0,
+    "p99_limit_s": null,
+    "neural_epochs": 100,
+    "minimum_neural_groups": 6,
+    "default_config_id": null
+  },
+  "rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 224997755487229040423713121079649906808,
+      "inc": 324578853959563259313782255636610858361
+    },
+    "has_uint32": 0,
+    "uinteger": 2174637713
+  },
+  "selected": [
+    "[\"af1b9c6c4157\",\"mid\"]",
+    "[\"e111f677bb23\",\"mid\"]",
+    "[\"21ba8cf00626\",\"mid\"]",
+    "[\"9e402b1232e2\",\"mid\"]",
+    "[\"87e6b31f19b9\",\"mid\"]"
+  ],
+  "last_decision": {
+    "requested_method": "gp",
+    "observations_seen": 10,
+    "candidate_count": 8,
+    "method_used": "gp",
+    "acquisition": 5.766505731989848e-06,
+    "prediction": {
+      "log_goodput_mean": 0.06909297010011986,
+      "log_goodput_std": 0.002454196843182866,
+      "feasible_probability": 0.9545454545454546,
+      "expected_improvement": 6.041101243036983e-06
+    },
+    "selected_key": "[\"87e6b31f19b9\",\"mid\"]",
+    "optimizer_cpu_seconds": 0.0037970000000000503,
+    "optimizer_wall_seconds": 0.0037975829909555614
+  }
+}

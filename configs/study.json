@@ -1,0 +1,115 @@
+{
+  "title": "Learning to Tune vLLM for Compute-Budgeted Small-Model Reasoning",
+  "status": "PROVISIONAL_REQUIRES_COMPLETION_AND_QUALITY_GATE",
+  "model": {
+    "name": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "max_model_len": 4096,
+    "attention_heads": 16,
+    "kv_heads": 8,
+    "license": "Apache-2.0"
+  },
+  "decoding": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "max_tokens": 2048,
+    "seed": 724
+  },
+  "slos": {
+    "ttft_s": 5.0,
+    "tpot_s": 0.1,
+    "e2e_s": 180.0
+  },
+  "constraints": {
+    "max_accuracy_drop": 0.02,
+    "max_error_rate": 0.01
+  },
+  "budget": {
+    "total_accelerator_seconds": 28800,
+    "validation_fraction": 0.25,
+    "allocated_devices": 1,
+    "search_method_seconds": 5400,
+    "initial_points": 6,
+    "seeds": [
+      11,
+      29,
+      47
+    ]
+  },
+  "benchmark": {
+    "warmup_s": 20,
+    "ramp_s": 20,
+    "measurement_s": 120,
+    "drain_s": 190,
+    "timeout_s": 180,
+    "max_in_flight": 512,
+    "telemetry_interval_s": 1
+  },
+  "final": {
+    "minimum_completed": 1000,
+    "repetitions": 3,
+    "reasoning_allowances": [
+      1024,
+      2048
+    ],
+    "deadline_s": 600,
+    "question_count": 128
+  },
+  "space": {
+    "max_num_batched_tokens": [
+      256,
+      512,
+      1024
+    ],
+    "max_num_seqs": [
+      1,
+      2,
+      4
+    ],
+    "gpu_memory_utilization": [
+      0.5
+    ]
+  },
+  "fixed_config": {
+    "precision": "bf16",
+    "tensor_parallel_size": 1,
+    "chunked_prefill": true,
+    "prefix_caching": false,
+    "kv_cache_dtype": "auto"
+  },
+  "workloads": [
+    {
+      "scenario_id": "short-low",
+      "profile": "short",
+      "arrival_rate": 0.05,
+      "burstiness": 1.0,
+      "output_token_limit": 2048
+    },
+    {
+      "scenario_id": "short-mid",
+      "profile": "short",
+      "arrival_rate": 0.1,
+      "burstiness": 1.0,
+      "output_token_limit": 2048
+    },
+    {
+      "scenario_id": "short-high",
+      "profile": "short",
+      "arrival_rate": 0.2,
+      "burstiness": 1.0,
+      "output_token_limit": 2048
+    },
+    {
+      "scenario_id": "unseen-mix",
+      "profile": "mixed",
+      "arrival_rate": 0.15,
+      "burstiness": 1.0,
+      "output_token_limit": 2048,
+      "partition": "holdout"
+    }
+  ],
+  "planning_note": "Only2 scheduler dimensions initially. BF16 baseline output allowance must be development-selected after truncation diagnostic. Proposed final sizes are aspirational, not a claim they fit8h on this host."
+}

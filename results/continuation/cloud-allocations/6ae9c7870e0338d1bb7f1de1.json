@@ -1,0 +1,38 @@
+{
+  "launch": {
+    "id": "6ae9c7870e0338d1bb7f1de1",
+    "created_at": "2026-11-03 11:37:43.455000+00:00",
+    "local_submitted_epoch": 1793705863.6129851,
+    "url": "https://huggingface.co/jobs/xxshuwei/6ae9c7870e0338d1bb7f1de1",
+    "flavor": "a10g-large",
+    "devices": 1,
+    "timeout_seconds": 14400,
+    "maximum_usd_including_port_and_rounding": 6.065166666666666,
+    "price_per_minute_usd": 0.025,
+    "port_price_per_hour_usd": 0.01,
+    "source": "https://huggingface.co/docs/hub/jobs-pricing",
+    "base_url": "https://6ae9c7870e0338d1bb7f1de1--8765.hf.jobs"
+  },
+  "terminal": {
+    "id": "6ae9c7870e0338d1bb7f1de1",
+    "created_at": "2026-11-03 11:37:43.455000+00:00",
+    "started_at": null,
+    "finished_at": "2026-11-03 11:39:00.957000+00:00",
+    "status": {
+      "stage": "ERROR",
+      "message": "Job container failed to start: failed to create containerd task: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: exec: \"python\": executable file not found in $PATH",
+      "expose_urls": [
+        "https://6ae9c7870e0338d1bb7f1de1--8765.hf.jobs"
+      ],
+      "ssh_url": null
+    },
+    "durations": {
+      "scheduling_secs": null,
+      "running_secs": null,
+      "total_secs": 77
+    },
+    "flavor": "a10g-large",
+    "retry": 0
+  },
+  "charge_policy": "Conservatively charge creation-to-finish, including unbilled image scheduling, because exact hardware allocation timestamp unavailable."
+}

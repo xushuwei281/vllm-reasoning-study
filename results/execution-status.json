@@ -1,0 +1,10 @@
+{
+  "final_fixed_compute": "NOT EVALUATED",
+  "human_peer_review": "PENDING",
+  "measured_optimizer_comparison": "NOT EVALUATED",
+  "measured_runs": 3,
+  "measurement_request_instances": 8,
+  "official_test_used": false,
+  "reserved_accelerator_seconds": 571.1714282079483,
+  "status": "implementation_and_bounded_feasibility_study"
+}

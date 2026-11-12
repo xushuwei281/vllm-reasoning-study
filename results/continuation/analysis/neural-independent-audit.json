@@ -1,0 +1,549 @@
+{
+  "aggregate": {
+    "feasibility_brier": 0.1309473216148822,
+    "goodput_abs_error": 0.10686505320999358,
+    "goodput_two_std_contains_actual": 0.25,
+    "p99_abs_error": 10.567316365215902,
+    "p99_two_std_contains_actual": 0.25,
+    "prior_mean_goodput_abs_error": 0.09710097001763666,
+    "prior_mean_p99_abs_error": 9.825244958904896
+  },
+  "all_checkpoints_reload_and_predict": true,
+  "all_future_rows_excluded": true,
+  "all_live_trials_feasible": true,
+  "all_train_only_transforms_verified": true,
+  "live_trace_audit": {
+    "enabled": true,
+    "expected_trace_hashes": [
+      "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+      "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+      "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+      "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+      "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+      "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+      "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+      "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+      "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+      "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37"
+    ],
+    "methods": {
+      "gp": {
+        "matched_trials": 10,
+        "trials": [
+          {
+            "actual_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "audit_status": "matched",
+            "expected_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "run_id": "live-gp-00",
+            "run_status": "ok",
+            "trace_id": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "trial": 1
+          },
+          {
+            "actual_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "audit_status": "matched",
+            "expected_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "run_id": "live-gp-01",
+            "run_status": "ok",
+            "trace_id": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "trial": 2
+          },
+          {
+            "actual_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "audit_status": "matched",
+            "expected_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "run_id": "live-gp-02",
+            "run_status": "ok",
+            "trace_id": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "trial": 3
+          },
+          {
+            "actual_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "audit_status": "matched",
+            "expected_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "run_id": "live-gp-03",
+            "run_status": "ok",
+            "trace_id": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "trial": 4
+          },
+          {
+            "actual_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "audit_status": "matched",
+            "expected_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "run_id": "live-gp-04",
+            "run_status": "ok",
+            "trace_id": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "trial": 5
+          },
+          {
+            "actual_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "audit_status": "matched",
+            "expected_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "run_id": "live-gp-05",
+            "run_status": "ok",
+            "trace_id": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "trial": 6
+          },
+          {
+            "actual_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "audit_status": "matched",
+            "expected_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "run_id": "live-gp-06",
+            "run_status": "ok",
+            "trace_id": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "trial": 7
+          },
+          {
+            "actual_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "audit_status": "matched",
+            "expected_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "run_id": "live-gp-07",
+            "run_status": "ok",
+            "trace_id": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "trial": 8
+          },
+          {
+            "actual_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "audit_status": "matched",
+            "expected_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "run_id": "live-gp-08",
+            "run_status": "ok",
+            "trace_id": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "trial": 9
+          },
+          {
+            "actual_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "audit_status": "matched",
+            "expected_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "run_id": "live-gp-09",
+            "run_status": "ok",
+            "trace_id": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "trial": 10
+          }
+        ],
+        "unverified_failed_trials": 0
+      },
+      "neural": {
+        "matched_trials": 10,
+        "trials": [
+          {
+            "actual_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "audit_status": "matched",
+            "expected_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "run_id": "live-neural-00",
+            "run_status": "ok",
+            "trace_id": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "trial": 1
+          },
+          {
+            "actual_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "audit_status": "matched",
+            "expected_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "run_id": "live-neural-01",
+            "run_status": "ok",
+            "trace_id": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "trial": 2
+          },
+          {
+            "actual_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "audit_status": "matched",
+            "expected_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "run_id": "live-neural-02",
+            "run_status": "ok",
+            "trace_id": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "trial": 3
+          },
+          {
+            "actual_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "audit_status": "matched",
+            "expected_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "run_id": "live-neural-03",
+            "run_status": "ok",
+            "trace_id": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "trial": 4
+          },
+          {
+            "actual_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "audit_status": "matched",
+            "expected_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "run_id": "live-neural-04",
+            "run_status": "ok",
+            "trace_id": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "trial": 5
+          },
+          {
+            "actual_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "audit_status": "matched",
+            "expected_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "run_id": "live-neural-05",
+            "run_status": "ok",
+            "trace_id": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "trial": 6
+          },
+          {
+            "actual_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "audit_status": "matched",
+            "expected_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "run_id": "live-neural-06",
+            "run_status": "ok",
+            "trace_id": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "trial": 7
+          },
+          {
+            "actual_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "audit_status": "matched",
+            "expected_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "run_id": "live-neural-07",
+            "run_status": "ok",
+            "trace_id": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "trial": 8
+          },
+          {
+            "actual_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "audit_status": "matched",
+            "expected_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "run_id": "live-neural-08",
+            "run_status": "ok",
+            "trace_id": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "trial": 9
+          },
+          {
+            "actual_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "audit_status": "matched",
+            "expected_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "run_id": "live-neural-09",
+            "run_status": "ok",
+            "trace_id": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "trial": 10
+          }
+        ],
+        "unverified_failed_trials": 0
+      },
+      "random": {
+        "matched_trials": 10,
+        "trials": [
+          {
+            "actual_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "audit_status": "matched",
+            "expected_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "run_id": "live-random-00",
+            "run_status": "ok",
+            "trace_id": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "trial": 1
+          },
+          {
+            "actual_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "audit_status": "matched",
+            "expected_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "run_id": "live-random-01",
+            "run_status": "ok",
+            "trace_id": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "trial": 2
+          },
+          {
+            "actual_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "audit_status": "matched",
+            "expected_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "run_id": "live-random-02",
+            "run_status": "ok",
+            "trace_id": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "trial": 3
+          },
+          {
+            "actual_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "audit_status": "matched",
+            "expected_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "run_id": "live-random-03",
+            "run_status": "ok",
+            "trace_id": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "trial": 4
+          },
+          {
+            "actual_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "audit_status": "matched",
+            "expected_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "run_id": "live-random-04",
+            "run_status": "ok",
+            "trace_id": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "trial": 5
+          },
+          {
+            "actual_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "audit_status": "matched",
+            "expected_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "run_id": "live-random-05",
+            "run_status": "ok",
+            "trace_id": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "trial": 6
+          },
+          {
+            "actual_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "audit_status": "matched",
+            "expected_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "run_id": "live-random-06",
+            "run_status": "ok",
+            "trace_id": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "trial": 7
+          },
+          {
+            "actual_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "audit_status": "matched",
+            "expected_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "run_id": "live-random-07",
+            "run_status": "ok",
+            "trace_id": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "trial": 8
+          },
+          {
+            "actual_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "audit_status": "matched",
+            "expected_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "run_id": "live-random-08",
+            "run_status": "ok",
+            "trace_id": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "trial": 9
+          },
+          {
+            "actual_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "audit_status": "matched",
+            "expected_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "run_id": "live-random-09",
+            "run_status": "ok",
+            "trace_id": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "trial": 10
+          }
+        ],
+        "unverified_failed_trials": 0
+      }
+    },
+    "note": "Actual hashes are checked against the same per-index plan across methods. Failed rows without an actual hash remain charged and are explicitly unverified."
+  },
+  "prospective": [
+    {
+      "all_member_final_training_losses_lower_than_first": true,
+      "checkpoint_max_prediction_absolute_difference": 0.0,
+      "checkpoint_sha256": "ffb9e318c41ac068f87876954baab78cba4db05ca73591b9afb8505fbbae9721",
+      "config": {
+        "chunked_prefill": true,
+        "gpu_memory_utilization": 0.8,
+        "kv_cache_dtype": "auto",
+        "max_num_batched_tokens": 1024,
+        "max_num_seqs": 64,
+        "precision": "bf16",
+        "prefix_caching": false,
+        "tensor_parallel_size": 1
+      },
+      "feasibility_brier": 0.16465911555214063,
+      "goodput_abs_error": 0.04069491558604771,
+      "goodput_two_std_contains_actual": false,
+      "member_best_epochs": [
+        28,
+        21,
+        22
+      ],
+      "observations_seen": 6,
+      "observed_feasible": true,
+      "observed_goodput": 0.3888888888888889,
+      "observed_p99": 73.72741884499919,
+      "p99_abs_error": 0.8703365871297137,
+      "p99_two_std_contains_actual": true,
+      "prediction": {
+        "feasible_probability": 0.5942178964614868,
+        "goodput_mean": 0.3481939733028412,
+        "goodput_std": 0.001047802623361349,
+        "p99_mean": 74.5977554321289,
+        "p99_std": 0.5574964880943298
+      },
+      "prior_mean_goodput": 0.31851851851851853,
+      "prior_mean_goodput_abs_error": 0.07037037037037036,
+      "prior_mean_p99": 75.15576182833304,
+      "prior_mean_p99_abs_error": 1.4283429833338488,
+      "proposal_sha256": "960be403e45e6683aeb542d6a00d89757e5431659e579b09290e36b4040230cb",
+      "run_id": "live-neural-06",
+      "training_records": 5,
+      "validation_records": 1
+    },
+    {
+      "all_member_final_training_losses_lower_than_first": true,
+      "checkpoint_max_prediction_absolute_difference": 0.0,
+      "checkpoint_sha256": "94be4d39c6cd47e306d06b979f8cbaaf321474ba0da5567150f629a9dacfc679",
+      "config": {
+        "chunked_prefill": true,
+        "gpu_memory_utilization": 0.8,
+        "kv_cache_dtype": "auto",
+        "max_num_batched_tokens": 512,
+        "max_num_seqs": 32,
+        "precision": "bf16",
+        "prefix_caching": false,
+        "tensor_parallel_size": 1
+      },
+      "feasibility_brier": 0.18655560030837037,
+      "goodput_abs_error": 0.0023700985643598793,
+      "goodput_two_std_contains_actual": true,
+      "member_best_epochs": [
+        19,
+        7,
+        16
+      ],
+      "observations_seen": 7,
+      "observed_feasible": true,
+      "observed_goodput": 0.34444444444444444,
+      "observed_p99": 76.04484776099889,
+      "p99_abs_error": 1.7354681833621726,
+      "p99_two_std_contains_actual": false,
+      "prediction": {
+        "feasible_probability": 0.5680791735649109,
+        "goodput_mean": 0.3468145430088043,
+        "goodput_std": 0.009308647364377975,
+        "p99_mean": 74.30937957763672,
+        "p99_std": 0.5948652625083923
+      },
+      "prior_mean_goodput": 0.3285714285714286,
+      "prior_mean_goodput_abs_error": 0.015873015873015817,
+      "prior_mean_p99": 74.95171283071393,
+      "prior_mean_p99_abs_error": 1.0931349302849611,
+      "proposal_sha256": "20c62a064d64580ed55babe7a3b9fbb93911e54061178bc0c03fcab3837d3ab2",
+      "run_id": "live-neural-07",
+      "training_records": 6,
+      "validation_records": 1
+    },
+    {
+      "all_member_final_training_losses_lower_than_first": true,
+      "checkpoint_max_prediction_absolute_difference": 5.960464477539063e-08,
+      "checkpoint_sha256": "4cf9ff85096598ac2f7b565984cfed86a9540d2acd23f59e16ba1328658356df",
+      "config": {
+        "chunked_prefill": true,
+        "gpu_memory_utilization": 0.8,
+        "kv_cache_dtype": "auto",
+        "max_num_batched_tokens": 512,
+        "max_num_seqs": 8,
+        "precision": "bf16",
+        "prefix_caching": false,
+        "tensor_parallel_size": 1
+      },
+      "feasibility_brier": 0.17134031381374726,
+      "goodput_abs_error": 0.224656128221088,
+      "goodput_two_std_contains_actual": false,
+      "member_best_epochs": [
+        28,
+        2,
+        20
+      ],
+      "observations_seen": 8,
+      "observed_feasible": true,
+      "observed_goodput": 0.1111111111111111,
+      "observed_p99": 91.87304408000091,
+      "p99_abs_error": 17.291958874922784,
+      "p99_two_std_contains_actual": false,
+      "prediction": {
+        "feasible_probability": 0.586067259311676,
+        "goodput_mean": 0.3357672393321991,
+        "goodput_std": 0.011004505679011345,
+        "p99_mean": 74.58108520507812,
+        "p99_std": 0.2713877260684967
+      },
+      "prior_mean_goodput": 0.3305555555555556,
+      "prior_mean_goodput_abs_error": 0.2194444444444445,
+      "prior_mean_p99": 75.08835469699955,
+      "prior_mean_p99_abs_error": 16.784689383001364,
+      "proposal_sha256": "2fae08f0bfedc90f7d8ede13a5684d26993fc885f82d355653e32c9afba59370",
+      "run_id": "live-neural-08",
+      "training_records": 6,
+      "validation_records": 2
+    },
+    {
+      "all_member_final_training_losses_lower_than_first": true,
+      "checkpoint_max_prediction_absolute_difference": 6.752088665962219e-09,
+      "checkpoint_sha256": "4891d89e87fafc1c6ad2d74b9eda85233846ba3d153cb6cf174bb9284b38d967",
+      "config": {
+        "chunked_prefill": true,
+        "gpu_memory_utilization": 0.8,
+        "kv_cache_dtype": "auto",
+        "max_num_batched_tokens": 1024,
+        "max_num_seqs": 16,
+        "precision": "bf16",
+        "prefix_caching": false,
+        "tensor_parallel_size": 1
+      },
+      "feasibility_brier": 0.00123425678527056,
+      "goodput_abs_error": 0.15973907046847874,
+      "goodput_two_std_contains_actual": false,
+      "member_best_epochs": [
+        120,
+        147,
+        143
+      ],
+      "observations_seen": 9,
+      "observed_feasible": true,
+      "observed_goodput": 0.3888888888888889,
+      "observed_p99": 56.95850764500028,
+      "p99_abs_error": 22.371501815448937,
+      "p99_two_std_contains_actual": false,
+      "prediction": {
+        "feasible_probability": 0.9648680090904236,
+        "goodput_mean": 0.22914981842041016,
+        "goodput_std": 0.0037419351283460855,
+        "p99_mean": 79.33000946044922,
+        "p99_std": 0.02763218991458416
+      },
+      "prior_mean_goodput": 0.3061728395061729,
+      "prior_mean_goodput_abs_error": 0.08271604938271598,
+      "prior_mean_p99": 76.9533201839997,
+      "prior_mean_p99_abs_error": 19.994812538999412,
+      "proposal_sha256": "9fedc84b51b4cdd54a8dc5143921a4c3e31948bc87062ebfb81af2fe62ed013c",
+      "run_id": "live-neural-09",
+      "training_records": 7,
+      "validation_records": 2
+    }
+  ],
+  "replay": [
+    {
+      "beta": 1.0,
+      "final_best": 0.43333333333333335,
+      "first_attainment_trial": 5,
+      "initial_best": 0.43333333333333335,
+      "seed": 11
+    },
+    {
+      "beta": 0.0,
+      "final_best": 0.43333333333333335,
+      "first_attainment_trial": 5,
+      "initial_best": 0.43333333333333335,
+      "seed": 11
+    },
+    {
+      "beta": 1.0,
+      "final_best": 0.43333333333333335,
+      "first_attainment_trial": 5,
+      "initial_best": 0.43333333333333335,
+      "seed": 29
+    },
+    {
+      "beta": 0.0,
+      "final_best": 0.43333333333333335,
+      "first_attainment_trial": 5,
+      "initial_best": 0.43333333333333335,
+      "seed": 29
+    },
+    {
+      "beta": 1.0,
+      "final_best": 0.43333333333333335,
+      "first_attainment_trial": 5,
+      "initial_best": 0.43333333333333335,
+      "seed": 47
+    },
+    {
+      "beta": 0.0,
+      "final_best": 0.43333333333333335,
+      "first_attainment_trial": 5,
+      "initial_best": 0.43333333333333335,
+      "seed": 47
+    }
+  ],
+  "replay_artifact_sha256": "d1939ea2020ab9b51795783009dcbb0e86f2bb5cdfd6d6bc7eba92b13e8a7620",
+  "replay_maximum": 0.43333333333333335,
+  "replay_table_reconstructed_sha256": "7e580717e68cbd211c003cca7984ba98a550d91255020a07557a2a13619039c6",
+  "scope": "local measured-search ML integrity and post-hoc replay audit; no final experiment status inference",
+  "verified_checkpoints": 4,
+  "verified_manifest_payload_files": 12
+}

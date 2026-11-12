@@ -1,0 +1,9 @@
+{
+  "candidate_identical_to_default": false,
+  "final_allowed": true,
+  "freeze_hash": "269b08b441e96fc943269bbb8c90c1623f88178788051272d18a4477b6a0a450",
+  "official_test_accessed": false,
+  "quality_claim_status": "empirical_pass_statistical_noninferiority_inconclusive",
+  "selected_method": "neural",
+  "status": "validated_and_frozen"
+}

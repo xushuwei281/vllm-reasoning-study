@@ -1,0 +1,86 @@
+{
+  "mean_absolute_error": 0.10686505320999358,
+  "prior_mean_baseline_mae": 0.09710097001763666,
+  "prospective_selected_proposals": [
+    {
+      "absolute_error": 0.04069491558604771,
+      "artifact_directory": "results/continuation/search/neural/models/proposal-001-960be403e45e",
+      "artifact_sha256": "960be403e45e6683aeb542d6a00d89757e5431659e579b09290e36b4040230cb",
+      "config": "batch 1024, seq 64",
+      "observations_seen": 6,
+      "observed_feasible": true,
+      "observed_quality_goodput": 0.3888888888888889,
+      "prediction": {
+        "feasible_probability": 0.5942178964614868,
+        "goodput_mean": 0.3481939733028412,
+        "goodput_std": 0.001047802623361349,
+        "p99_mean": 74.5977554321289,
+        "p99_std": 0.5574964880943298
+      },
+      "prior_mean_absolute_error": 0.07037037037037036,
+      "prior_observation_mean": 0.31851851851851853,
+      "run_id": "live-neural-06"
+    },
+    {
+      "absolute_error": 0.0023700985643598793,
+      "artifact_directory": "results/continuation/search/neural/models/proposal-002-20c62a064d64",
+      "artifact_sha256": "20c62a064d64580ed55babe7a3b9fbb93911e54061178bc0c03fcab3837d3ab2",
+      "config": "batch 512, seq 32",
+      "observations_seen": 7,
+      "observed_feasible": true,
+      "observed_quality_goodput": 0.34444444444444444,
+      "prediction": {
+        "feasible_probability": 0.5680791735649109,
+        "goodput_mean": 0.3468145430088043,
+        "goodput_std": 0.009308647364377975,
+        "p99_mean": 74.30937957763672,
+        "p99_std": 0.5948652625083923
+      },
+      "prior_mean_absolute_error": 0.015873015873015817,
+      "prior_observation_mean": 0.3285714285714286,
+      "run_id": "live-neural-07"
+    },
+    {
+      "absolute_error": 0.224656128221088,
+      "artifact_directory": "results/continuation/search/neural/models/proposal-003-2fae08f0bfed",
+      "artifact_sha256": "2fae08f0bfedc90f7d8ede13a5684d26993fc885f82d355653e32c9afba59370",
+      "config": "batch 512, seq 8",
+      "observations_seen": 8,
+      "observed_feasible": true,
+      "observed_quality_goodput": 0.1111111111111111,
+      "prediction": {
+        "feasible_probability": 0.586067259311676,
+        "goodput_mean": 0.3357672393321991,
+        "goodput_std": 0.011004505679011345,
+        "p99_mean": 74.58108520507812,
+        "p99_std": 0.2713877260684967
+      },
+      "prior_mean_absolute_error": 0.2194444444444445,
+      "prior_observation_mean": 0.3305555555555556,
+      "run_id": "live-neural-08"
+    },
+    {
+      "absolute_error": 0.15973907046847874,
+      "artifact_directory": "results/continuation/search/neural/models/proposal-004-9fedc84b51b4",
+      "artifact_sha256": "9fedc84b51b4cdd54a8dc5143921a4c3e31948bc87062ebfb81af2fe62ed013c",
+      "config": "batch 1024, seq 16",
+      "observations_seen": 9,
+      "observed_feasible": true,
+      "observed_quality_goodput": 0.3888888888888889,
+      "prediction": {
+        "feasible_probability": 0.9648680090904236,
+        "goodput_mean": 0.22914981842041016,
+        "goodput_std": 0.0037419351283460855,
+        "p99_mean": 79.33000946044922,
+        "p99_std": 0.02763218991458416
+      },
+      "prior_mean_absolute_error": 0.08271604938271598,
+      "prior_observation_mean": 0.3061728395061729,
+      "run_id": "live-neural-09"
+    }
+  ],
+  "source": "measured",
+  "verified_artifact_report_count": 4,
+  "verified_guided_proposal_count": 4,
+  "warning": "Only adaptively selected future proposals; not an unbiased whole-space generalization test. Checksums verify retained provenance consistency, not an independent timestamp attestation."
+}

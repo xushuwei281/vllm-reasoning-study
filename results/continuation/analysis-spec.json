@@ -1,0 +1,60 @@
+{
+  "analysis_id": "continuation-local-v1",
+  "bootstrap": {
+    "confidence": 0.95,
+    "method": "paired question-cluster percentile bootstrap",
+    "multiplicity": "Descriptive marginal intervals; no familywise significance claim.",
+    "samples": 2000,
+    "seed": 724
+  },
+  "completion_gate": "Exactly four arms per frozen seed and verified terminal cloud reconciliation plus no active ledger reservation; otherwise incomplete.",
+  "configuration_repeat_summary": "Arithmetic mean and observed minimum/maximum across measured repeats; range is not a confidence interval.",
+  "contrasts": [
+    {
+      "name": "tuned_minus_default_short",
+      "weights": {
+        "default_short": -1,
+        "tuned_short": 1
+      }
+    },
+    {
+      "name": "tuned_minus_default_long",
+      "weights": {
+        "default_long": -1,
+        "tuned_long": 1
+      }
+    },
+    {
+      "name": "allowance_effect_default",
+      "weights": {
+        "default_long": 1,
+        "default_short": -1
+      }
+    },
+    {
+      "name": "allowance_effect_tuned",
+      "weights": {
+        "tuned_long": 1,
+        "tuned_short": -1
+      }
+    },
+    {
+      "name": "serving_by_allowance_interaction",
+      "weights": {
+        "default_long": -1,
+        "default_short": 1,
+        "tuned_long": 1,
+        "tuned_short": -1
+      }
+    }
+  ],
+  "existing_comparisons": "Retain existing fixed-compute comparison intervals verbatim with original method metadata; separately label these preregistered additional contrasts.",
+  "heldout_results_seen": false,
+  "pairing": "Exact question_id and sampling_seed matches across four arms; average seeds within each question before resampling question clusters. Entire frozen cohort retained.",
+  "primary_endpoint": "deadline_constrained_accuracy",
+  "registered_at_utc": "2026-11-03T12:11:33.795867+00:00",
+  "schema_version": 1,
+  "search_cost": "Clone derived trial cost with the unique matching cloud-overhead-roundNN-METHOD finish event added once. Shared setup and unassigned allocation remain separate. Raw records immutable.",
+  "secondary_endpoint": "accuracy",
+  "spec_sha256": "a41acf862de1503fc6da6abbf2e6db548b5c6c35881bb582772ebe443ee24fe0"
+}

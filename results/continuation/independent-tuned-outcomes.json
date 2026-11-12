@@ -1,0 +1,752 @@
+[
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00038",
+    "sampling_seed": 724
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:00061",
+    "sampling_seed": 725
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00087",
+    "sampling_seed": 726
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00161",
+    "sampling_seed": 727
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00171",
+    "sampling_seed": 728
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00205",
+    "sampling_seed": 729
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00248",
+    "sampling_seed": 730
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00258",
+    "sampling_seed": 731
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00262",
+    "sampling_seed": 732
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:00288",
+    "sampling_seed": 733
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00298",
+    "sampling_seed": 734
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00306",
+    "sampling_seed": 735
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00337",
+    "sampling_seed": 736
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00348",
+    "sampling_seed": 737
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00357",
+    "sampling_seed": 738
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00384",
+    "sampling_seed": 739
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00391",
+    "sampling_seed": 740
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00411",
+    "sampling_seed": 741
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00461",
+    "sampling_seed": 742
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:00501",
+    "sampling_seed": 743
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00571",
+    "sampling_seed": 744
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00580",
+    "sampling_seed": 745
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:00618",
+    "sampling_seed": 746
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00658",
+    "sampling_seed": 747
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00663",
+    "sampling_seed": 748
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00666",
+    "sampling_seed": 749
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00692",
+    "sampling_seed": 750
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00694",
+    "sampling_seed": 751
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00702",
+    "sampling_seed": 752
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00739",
+    "sampling_seed": 753
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00810",
+    "sampling_seed": 754
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00912",
+    "sampling_seed": 755
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00914",
+    "sampling_seed": 756
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00916",
+    "sampling_seed": 757
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00933",
+    "sampling_seed": 758
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:00993",
+    "sampling_seed": 759
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01048",
+    "sampling_seed": 760
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01115",
+    "sampling_seed": 761
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:01149",
+    "sampling_seed": 762
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01254",
+    "sampling_seed": 763
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01256",
+    "sampling_seed": 764
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01301",
+    "sampling_seed": 765
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:01307",
+    "sampling_seed": 766
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01350",
+    "sampling_seed": 767
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01376",
+    "sampling_seed": 768
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:01385",
+    "sampling_seed": 769
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01441",
+    "sampling_seed": 770
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01538",
+    "sampling_seed": 771
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01541",
+    "sampling_seed": 772
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01585",
+    "sampling_seed": 773
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01601",
+    "sampling_seed": 774
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01645",
+    "sampling_seed": 775
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01704",
+    "sampling_seed": 776
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:01733",
+    "sampling_seed": 777
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01736",
+    "sampling_seed": 778
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01742",
+    "sampling_seed": 779
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01764",
+    "sampling_seed": 780
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01883",
+    "sampling_seed": 781
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:01928",
+    "sampling_seed": 782
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01941",
+    "sampling_seed": 783
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01942",
+    "sampling_seed": 784
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:01953",
+    "sampling_seed": 785
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02029",
+    "sampling_seed": 786
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02071",
+    "sampling_seed": 787
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02086",
+    "sampling_seed": 788
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02101",
+    "sampling_seed": 789
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02105",
+    "sampling_seed": 790
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02123",
+    "sampling_seed": 791
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02140",
+    "sampling_seed": 792
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02146",
+    "sampling_seed": 793
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:02147",
+    "sampling_seed": 794
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02264",
+    "sampling_seed": 795
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02268",
+    "sampling_seed": 796
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02293",
+    "sampling_seed": 797
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02344",
+    "sampling_seed": 798
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02351",
+    "sampling_seed": 799
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:02405",
+    "sampling_seed": 800
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02406",
+    "sampling_seed": 801
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:02421",
+    "sampling_seed": 802
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:02424",
+    "sampling_seed": 803
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02483",
+    "sampling_seed": 804
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02501",
+    "sampling_seed": 805
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02506",
+    "sampling_seed": 806
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02529",
+    "sampling_seed": 807
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02553",
+    "sampling_seed": 808
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02558",
+    "sampling_seed": 809
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02563",
+    "sampling_seed": 810
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02568",
+    "sampling_seed": 811
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02581",
+    "sampling_seed": 812
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02597",
+    "sampling_seed": 813
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02659",
+    "sampling_seed": 814
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02682",
+    "sampling_seed": 815
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:02688",
+    "sampling_seed": 816
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02798",
+    "sampling_seed": 817
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02839",
+    "sampling_seed": 818
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02903",
+    "sampling_seed": 819
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02911",
+    "sampling_seed": 820
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:02953",
+    "sampling_seed": 821
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03016",
+    "sampling_seed": 822
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03039",
+    "sampling_seed": 823
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03067",
+    "sampling_seed": 824
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03106",
+    "sampling_seed": 825
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:03113",
+    "sampling_seed": 826
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03130",
+    "sampling_seed": 827
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03131",
+    "sampling_seed": 828
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03142",
+    "sampling_seed": 829
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03206",
+    "sampling_seed": 830
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03311",
+    "sampling_seed": 831
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03328",
+    "sampling_seed": 832
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03353",
+    "sampling_seed": 833
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:03440",
+    "sampling_seed": 834
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03496",
+    "sampling_seed": 835
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03545",
+    "sampling_seed": 836
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03555",
+    "sampling_seed": 837
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03579",
+    "sampling_seed": 838
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03621",
+    "sampling_seed": 839
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03628",
+    "sampling_seed": 840
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03630",
+    "sampling_seed": 841
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03637",
+    "sampling_seed": 842
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03643",
+    "sampling_seed": 843
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03660",
+    "sampling_seed": 844
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03795",
+    "sampling_seed": 845
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:03824",
+    "sampling_seed": 846
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03843",
+    "sampling_seed": 847
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03862",
+    "sampling_seed": 848
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03865",
+    "sampling_seed": 849
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03866",
+    "sampling_seed": 850
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03887",
+    "sampling_seed": 851
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03934",
+    "sampling_seed": 852
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:03984",
+    "sampling_seed": 853
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04008",
+    "sampling_seed": 854
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04062",
+    "sampling_seed": 855
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04087",
+    "sampling_seed": 856
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04095",
+    "sampling_seed": 857
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04191",
+    "sampling_seed": 858
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:04201",
+    "sampling_seed": 859
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04221",
+    "sampling_seed": 860
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04256",
+    "sampling_seed": 861
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04265",
+    "sampling_seed": 862
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04320",
+    "sampling_seed": 863
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04326",
+    "sampling_seed": 864
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04327",
+    "sampling_seed": 865
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04368",
+    "sampling_seed": 866
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04395",
+    "sampling_seed": 867
+  },
+  {
+    "correct": false,
+    "question_id": "gsm8k:train:04403",
+    "sampling_seed": 868
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04413",
+    "sampling_seed": 869
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04424",
+    "sampling_seed": 870
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04443",
+    "sampling_seed": 871
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04479",
+    "sampling_seed": 872
+  },
+  {
+    "correct": true,
+    "question_id": "gsm8k:train:04486",
+    "sampling_seed": 873
+  }
+]

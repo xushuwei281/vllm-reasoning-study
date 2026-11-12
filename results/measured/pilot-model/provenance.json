@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "636f051b3411da5d42121adfd0ea8cb300db9ea5076b82cb66d57e12959141d0",
+  "default_resolution_sha256": "4dc5bb49257033215f36885d016bd32526c8d1a343d8e883053c321d270df8fe",
+  "derived_inputs_sha256": "f01ac75d56475d25f934796073e908caff7761d9d75b11a02557cc016decd6c5",
+  "epochs_limit": 100,
+  "input_journal": "outputs/vllm-reasoning-study/results/measured/observations.jsonl",
+  "input_sha256": "0c39b185a829131a87b6c4954aa137cc8539a096b720362e0944c80eb7a2643a",
+  "numpy_version": "2.2.6",
+  "runtime": "CPU only; all vLLM servers stopped before fitting",
+  "script_sha256": "343425af07125e6e559f34574919d2f3bfa50919b379522745d4dc10122a3957",
+  "seed": 724,
+  "torch_version": "2.7.1"
+}

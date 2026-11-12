@@ -1,0 +1,11 @@
+{
+  "actual_wall_seconds": 1.2143440829822794,
+  "inter_token_latency": "unavailable within multi-token chunks; chunk gaps saved separately",
+  "offered": 50,
+  "recorded": 50,
+  "source": "synthetic",
+  "trace_hash": "8b5ee6d0b180eb593531e1eb337785a2dd08b343159a37be0ac778eb9fa07b16",
+  "ttft_observation": "first nonempty text-bearing SSE chunk; transport/chunk coalescing may delay observation",
+  "window_end_s": 1.2,
+  "window_start_s": 0.2
+}

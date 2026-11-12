@@ -1,0 +1,121 @@
+{
+  "analyzer_sha256": "52fcb75a2312b6914e9134c3be73496f0ef516b77f451ec4171ac320890d6df6",
+  "arms": [
+    {
+      "arm": "default",
+      "client_dispatch_delay_p95_s": 0.0020854953339153326,
+      "end_window_client_outstanding": 2,
+      "error_count": 0,
+      "input_sha256": {
+        "results/continuation/runs/independent-default-n150-seed724/collection.json": "f63719005e6268eec1a990e66b602e0700ae94689d8883646d8c1fb061dd1dce",
+        "results/continuation/runs/independent-default-n150-seed724/execution-protocol.json": "f466452dfddd174ed13ae55ba6ec6ae1547102b748470b19019153c6658b67c2",
+        "results/continuation/runs/independent-default-n150-seed724/observation.json": "e0763b9939147a18418f42374e7b00c39420895a3870ecad63a9a1c9c79528b8",
+        "results/continuation/runs/independent-default-n150-seed724/offered.jsonl": "48642f1d0bdf92e5b52bf6ba6182e47dad1b33a5c2a33f89e6a6570898bb21a1",
+        "results/continuation/runs/independent-default-n150-seed724/plan.json": "d253bd4d5c04e22be888a5d0578d9a80b924a89404e58e8b3a6d8c6a068298c7",
+        "results/continuation/runs/independent-default-n150-seed724/queue.jsonl": "7bbfa02972bb49658bb7bf2416f414f30f077094814eeca9ace3cdc6a2c477ef",
+        "results/continuation/runs/independent-default-n150-seed724/requests.jsonl": "3811b39e028dab2a8bf339771f5319a78d8f20318b5631b7ed9c57533c7ae7e2",
+        "results/continuation/runs/independent-default-n150-seed724/telemetry.jsonl": "a785d2f03d978e07fd63fba5dc72a0e42de6bdf3bd7b36764d23c988bc5c7bae"
+      },
+      "last_offered_arrival_s": 248.33333333333334,
+      "last_recorded_client_outstanding": 0,
+      "measurement_requests": 150,
+      "measurement_window_s": [
+        0,
+        300
+      ],
+      "missing_terminal_records": 0,
+      "offered_measurement_requests": 150,
+      "peak_client_outstanding": 30,
+      "peak_device_memory_bytes": 20078133248.0,
+      "peak_engine_running": 30.0,
+      "peak_engine_waiting": 0.0,
+      "queue_slope_note": "Descriptive OLS slope on a one-second grid through last offered arrival; excludes the quiet tail and is not a stability test or confidence interval",
+      "queue_slope_per_second": 0.0720847260007773,
+      "queue_slope_window_s": [
+        0,
+        248.33333333333334
+      ],
+      "raw_paths": [
+        "results/continuation/runs/independent-default-n150-seed724/observation.json",
+        "results/continuation/runs/independent-default-n150-seed724/execution-protocol.json",
+        "results/continuation/runs/independent-default-n150-seed724/plan.json",
+        "results/continuation/runs/independent-default-n150-seed724/collection.json",
+        "results/continuation/runs/independent-default-n150-seed724/requests.jsonl",
+        "results/continuation/runs/independent-default-n150-seed724/offered.jsonl",
+        "results/continuation/runs/independent-default-n150-seed724/queue.jsonl",
+        "results/continuation/runs/independent-default-n150-seed724/telemetry.jsonl"
+      ],
+      "recorded_requests": 150,
+      "run_id": "independent-default-n150-seed724",
+      "status": "complete",
+      "telemetry_samples": 306,
+      "truncated_count": 17,
+      "warnings": []
+    },
+    {
+      "arm": "tuned",
+      "client_dispatch_delay_p95_s": 0.002002866666458658,
+      "end_window_client_outstanding": 1,
+      "error_count": 0,
+      "input_sha256": {
+        "results/continuation/runs/independent-tuned-n150-seed724/collection.json": "35b5a389ac8ce36bf5e25759468749f9c3795c813e540f5d8323d080f9d5182b",
+        "results/continuation/runs/independent-tuned-n150-seed724/execution-protocol.json": "f466452dfddd174ed13ae55ba6ec6ae1547102b748470b19019153c6658b67c2",
+        "results/continuation/runs/independent-tuned-n150-seed724/observation.json": "1bcb13e58bc6a8c701871098b89ee59f4a7ba121e7fe6fc0b0196b1c41d17ba8",
+        "results/continuation/runs/independent-tuned-n150-seed724/offered.jsonl": "48642f1d0bdf92e5b52bf6ba6182e47dad1b33a5c2a33f89e6a6570898bb21a1",
+        "results/continuation/runs/independent-tuned-n150-seed724/plan.json": "d253bd4d5c04e22be888a5d0578d9a80b924a89404e58e8b3a6d8c6a068298c7",
+        "results/continuation/runs/independent-tuned-n150-seed724/queue.jsonl": "d93f145c8683f1ac9107d742f500253b83999e78c8dc91e85d5c84ff57a21cef",
+        "results/continuation/runs/independent-tuned-n150-seed724/requests.jsonl": "5d5968055c1689d419399dc3bfad295c968b55c6d14d16db4afe6c9ba20c9960",
+        "results/continuation/runs/independent-tuned-n150-seed724/telemetry.jsonl": "fcd7bafc2e4b252bacd0bdf7e69eafaafcecdd074951ee700f29519882a1ce2b"
+      },
+      "last_offered_arrival_s": 248.33333333333334,
+      "last_recorded_client_outstanding": 0,
+      "measurement_requests": 150,
+      "measurement_window_s": [
+        0,
+        300
+      ],
+      "missing_terminal_records": 0,
+      "offered_measurement_requests": 150,
+      "peak_client_outstanding": 27,
+      "peak_device_memory_bytes": 20289945600.0,
+      "peak_engine_running": 27.0,
+      "peak_engine_waiting": 0.0,
+      "queue_slope_note": "Descriptive OLS slope on a one-second grid through last offered arrival; excludes the quiet tail and is not a stability test or confidence interval",
+      "queue_slope_per_second": 0.05164166342790517,
+      "queue_slope_window_s": [
+        0,
+        248.33333333333334
+      ],
+      "raw_paths": [
+        "results/continuation/runs/independent-tuned-n150-seed724/observation.json",
+        "results/continuation/runs/independent-tuned-n150-seed724/execution-protocol.json",
+        "results/continuation/runs/independent-tuned-n150-seed724/plan.json",
+        "results/continuation/runs/independent-tuned-n150-seed724/collection.json",
+        "results/continuation/runs/independent-tuned-n150-seed724/requests.jsonl",
+        "results/continuation/runs/independent-tuned-n150-seed724/offered.jsonl",
+        "results/continuation/runs/independent-tuned-n150-seed724/queue.jsonl",
+        "results/continuation/runs/independent-tuned-n150-seed724/telemetry.jsonl"
+      ],
+      "recorded_requests": 150,
+      "run_id": "independent-tuned-n150-seed724",
+      "status": "complete",
+      "telemetry_samples": 298,
+      "truncated_count": 16,
+      "warnings": []
+    }
+  ],
+  "limitations": [
+    "One run per arm; no between-run or robust P99 claim.",
+    "Client outstanding includes service and network time; engine waiting is a distinct sampled metric.",
+    "GPU memory is sampled whole-device usage, not model-only memory or active compute utilization.",
+    "Independent validation is a finite cohort with a quiet tail, not 300 seconds of constant .6/s arrivals."
+  ],
+  "phase": "independent_development_validation",
+  "plot_files": [
+    "independent_stability.png",
+    "independent_stability.svg"
+  ],
+  "schema_version": 1,
+  "source": "measured",
+  "status": "complete"
+}

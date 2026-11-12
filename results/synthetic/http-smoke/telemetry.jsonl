@@ -1,0 +1,12 @@
+{"client_active_requests": 0, "device_memory_bytes": null, "time_s": 0.0003630829742178321, "vllm:num_requests_running": 0.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 1, "device_memory_bytes": null, "time_s": 0.1169991249917075, "vllm:num_requests_running": 1.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 3, "device_memory_bytes": null, "time_s": 0.22030891600297764, "vllm:num_requests_running": 3.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 1, "device_memory_bytes": null, "time_s": 0.3287300829542801, "vllm:num_requests_running": 1.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 0, "device_memory_bytes": null, "time_s": 0.43141220801044255, "vllm:num_requests_running": 0.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 2, "device_memory_bytes": null, "time_s": 0.5391444999841042, "vllm:num_requests_running": 2.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 0, "device_memory_bytes": null, "time_s": 0.6493319579749368, "vllm:num_requests_running": 0.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 0, "device_memory_bytes": null, "time_s": 0.7561410409980454, "vllm:num_requests_running": 0.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 0, "device_memory_bytes": null, "time_s": 0.8626248749787919, "vllm:num_requests_running": 0.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 1, "device_memory_bytes": null, "time_s": 0.967188915994484, "vllm:num_requests_running": 0.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 2, "device_memory_bytes": null, "time_s": 1.0746993749635294, "vllm:num_requests_running": 2.0, "vllm:num_requests_waiting": 0.0}
+{"client_active_requests": 1, "device_memory_bytes": null, "time_s": 1.177945290983189, "vllm:num_requests_running": 1.0, "vllm:num_requests_waiting": 0.0}

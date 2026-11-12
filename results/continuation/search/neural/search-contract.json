@@ -1,0 +1,9 @@
+{
+  "accelerator_budget_s": 3175,
+  "candidate_hash": "f22c0cddb35b45c8d639aa2ac1125df7dd306a04402688d84844d7ccd85246bf",
+  "initial_points": 6,
+  "maximum_trial_cost_s": 445.0,
+  "method": "neural",
+  "neural_epochs": 200,
+  "seed": 11
+}

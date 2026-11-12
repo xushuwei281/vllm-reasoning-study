@@ -1,0 +1,15 @@
+{
+  "base_url": "https://6ae9c82a0e0338d1bb7f1ecf--8765.hf.jobs",
+  "created_at": "2026-11-03 11:40:26.572000+00:00",
+  "devices": 1,
+  "flavor": "a10g-large",
+  "id": "6ae9c82a0e0338d1bb7f1ecf",
+  "local_submitted_epoch": 1793706026.7243898,
+  "maximum_usd_including_port_and_rounding": 6.065166666666666,
+  "port_price_per_hour_usd": 0.01,
+  "preallocation_charged_accelerator_seconds": 648.6734282079483,
+  "price_per_minute_usd": 0.025,
+  "source": "https://huggingface.co/docs/hub/jobs-pricing",
+  "timeout_seconds": 14400,
+  "url": "https://huggingface.co/jobs/xxshuwei/6ae9c82a0e0338d1bb7f1ecf"
+}

@@ -1,0 +1,8 @@
+{
+  "count": 1319,
+  "dataset": "GSM8K",
+  "revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+  "sha256": "900446590ddd988364ffde3a6e37937ae7d55ecfc8ae03a92f901ef35e08f035",
+  "source": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/test.jsonl",
+  "split": "test"
+}

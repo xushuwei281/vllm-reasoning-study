@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "settings": {
+    "method": "random",
+    "seed": 11,
+    "beta": 1.0,
+    "p99_limit_s": null,
+    "neural_epochs": 200,
+    "minimum_neural_groups": 6,
+    "default_config_id": null,
+    "neural_target_standardization": true
+  },
+  "rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 221254199352843659186242910468673896256,
+      "inc": 7937318808080196428804369945471644491
+    },
+    "has_uint32": 0,
+    "uinteger": 2144382090
+  },
+  "selected": [
+    "[\"3ca7dc843e77\",\"cloud-short-development\"]",
+    "[\"3f49dcccf7a4\",\"cloud-short-development\"]",
+    "[\"a51616051a1d\",\"cloud-short-development\"]",
+    "[\"a283852d32ee\",\"cloud-short-development\"]"
+  ],
+  "last_decision": {
+    "requested_method": "random",
+    "observations_seen": 9,
+    "candidate_count": 3,
+    "method_used": "random",
+    "selected_key": "[\"a283852d32ee\",\"cloud-short-development\"]",
+    "optimizer_cpu_seconds": 0.00014895999998998377,
+    "optimizer_wall_seconds": 0.00011979200098721776
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "candidate": {
+    "config": {
+      "chunked_prefill": true,
+      "gpu_memory_utilization": 0.5,
+      "kv_cache_dtype": "auto",
+      "max_num_batched_tokens": 512,
+      "max_num_seqs": 1,
+      "precision": "bf16",
+      "prefix_caching": false,
+      "tensor_parallel_size": 1
+    },
+    "config_id": "30de19ea8644",
+    "known_valid": true,
+    "scenario_id": "allowance-2048",
+    "workload": {
+      "arrival_rate": 0.02,
+      "burstiness": 0.0,
+      "input_tokens_max": 88,
+      "input_tokens_mean": 86.0,
+      "input_tokens_p95": 87.8,
+      "output_token_limit": 2048,
+      "profile": "short",
+      "scenario_id": "allowance-2048"
+    }
+  },
+  "question_ids": [
+    "gsm8k:train:00022",
+    "gsm8k:train:00030"
+  ],
+  "seed": 900,
+  "trace": [
+    {
+      "intended_arrival_s": 0.1,
+      "phase": "warmup"
+    },
+    {
+      "intended_arrival_s": 5.1,
+      "phase": "ramp"
+    },
+    {
+      "intended_arrival_s": 11.178879874104148,
+      "phase": "measure"
+    },
+    {
+      "intended_arrival_s": 61.32425059621127,
+      "phase": "measure"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+# Evaluation protocol and audit decisions
+
+Status: **implementation tested on CPU; three real Metal development pilots completed; no feasible finalist was established**. See `pilot_design.md` and immutable raw results for its exact scope. Final serving/optimizer/quality experiments are **NOT EVALUATED**. This protocol remains provisional until a real accelerator pilot establishes feasible loads and durations. The model, dataset split, prompt, parser, sampling seeds, SLOs, quality margin, selected configurations, and two reasoning allowances must be frozen and hashed before opening held-out test answers. Changing these after final outcomes invalidates a confirmatory comparison.
+
+## Task, generation, and parser
+
+Use the pinned Qwen/Qwen3-1.7B checkpoint with its exact tokenizer and chat template. The model card identifies an Apache-2.0, 1.7B model and supports thinking mode. It recommends temperature 0.6, top-p 0.95, top-k 20, min-p 0 for that mode, discourages greedy decoding, and recommends a boxed final answer for math. Its suggested output allowance is much larger than this small-budget study's provisional 2,048 tokens; our lower allowance is an explicit resource constraint whose truncation rate must be reported. No claim of the model's strongest possible reasoning performance follows. [Qwen3-1.7B model card](https://huggingface.co/Qwen/Qwen3-1.7B), checked 2026-11-03.
+
+GSM8K's official repository provides separate training and test JSONL files. Each has questions and worked solutions whose final numeric answer follows a `####` marker. Training examples alone supply calibration, prompt profiling, serving search, parser development, and token-allowance selection. The test portion supplies final held-out question answers. [GSM8K repository](https://github.com/openai/grade-school-math), checked 2026-11-03.
+
+`parse_numeric_answer` accepts a full numeric line after `####` or a balanced `\boxed{...}` expression; it normalizes exact integers, signed decimals, properly grouped commas, slash fractions, and `\frac`/`\dfrac`. It rejects malformed grouping, zero denominators, units, NaN, ambiguous disagreeing markers, unfinished boxes, and incidental last numbers. If a `</think>` marker is present, only text after the final closing marker is eligible. An unfinished explicit thinking block is invalid. The thinking-mode collector also requires a closing `</think>` token, because the opening token may already occur in the prompt rather than in generated text. Multiple agreeing final markers are accepted. This strict parser may reject a mathematically correct free-form answer, which is a measurable output-format failure rather than a reason to repair an answer with gold information.
+
+`score_answer` requires transport status `ok`, finish reason `stop`, and a valid exact numeric match. Length-limited, timed-out, cancelled, errored, incomplete, and malformed answers are incorrect. Gold text remains evaluator-only. Freeze the parser before test access; review invalid outputs using development examples only. `test_evaluation.py` supplies synthetic edge cases without using held-out GSM8K examples.
+
+## Window, populations, and primary objective
+
+Use warmup, four finite-rate ramp stages, a steady measurement window `[a,b)`, and bounded drain. Preserve the timestamped offered trace. Arrival generation is independent of request completion; an in-flight safety cap records an explicit rejection, so it cannot silently turn load into a closed-loop benchmark. Log intended arrival, actual dispatch, first nonempty text-bearing stream chunk, completion/terminal observation, status, usage, finish reason, and actual sampled seed for every offered request. Record client CPU pressure and dispatch delay; cap rejections or growing dispatch delay invalidate a server-capacity interpretation.
+
+The primary request population comprises `phase=measure` requests with intended arrivals in `[a,b)`. The primary numerator counts those requests that also finish before `b`, are scored correct, and satisfy every applicable SLO. Divide by `b-a`. Requests finishing exactly at `b` belong to drain. Warmup/ramp requests never enter the numerator even when they finish during measurement. This conservative cohort-window intersection makes startup/carry-in treatment explicit and identical across configurations; it is not an estimator of steady-state throughput with zero boundary bias. Use long independent validation windows to reduce that bias.
+
+Report separately:
+
+- Full-cohort answer accuracy, including correct answers completed during bounded drain; all offered cohort members remain in its denominator.
+- Window-deadline accuracy, counting any correct answer finished before `b` over the full offered cohort.
+- SLO-constrained accuracy, requiring correctness and every SLO before `b` over the full cohort.
+- Ordinary latency goodput and quality-adjusted goodput, each divided by measurement duration.
+- Completed requests, output tokens, and input tokens per measurement second for the same cohort-window intersection.
+- Errors, timeouts, rejections, truncations, unfinished-at-boundary requests, drain completions, and drain duration.
+
+The stock engine metrics expose timing and token-processing measurements, not GSM8K answer correctness. Keep raw `/metrics` text and client traces; correctness is added by this evaluator. Metric availability must be checked against the pinned installed release. [vLLM production metrics](https://docs.vllm.ai/en/stable/usage/metrics/), checked 2026-11-03.
+
+## Timing definitions and tail censoring
+
+TTFT is the first nonempty text-bearing streaming-chunk timestamp minus actual dispatch. It measures client-observed first-token delivery; transport or multi-token chunk coalescing can delay the observation relative to engine generation. TPOT is `(completion-first_token)/(output_tokens-1)` for successful outputs containing at least two authoritative server-counted tokens. It includes final stream-delivery overhead. One-token outputs have undefined TPOT and are explicitly exempt from only that SLO. Unknown usage does not receive the exemption. Completion E2E is dispatch-to-completion; arrival-to-completion and dispatch-minus-arrival are also reported. The evaluator requires both dispatch and arrival E2E to meet the declared E2E limit so a client queue cannot hide a violation.
+
+Inter-chunk gaps remain separate from TPOT and token-level ITL. If per-chunk token counts are unknown, exact token ITL is unavailable. The collector records this limitation instead of assigning every chunk one token or dividing a chunk gap into invented token timestamps. Separately re-encoded thinking/final token counts are marked estimates and cannot replace authoritative total server usage. Missing usage yields null generated-token totals plus `known_output_tokens_sum` and `missing_token_usage_count`, not a zero-token claim.
+
+All P50/P95/P99 quantiles use the empirical nearest-rank convention. Names containing `completed` refer to successful completed requests after drain. The primary `p99_e2e_s` uses the full offered cohort, placing failed or censored requests at infinite service-latency ranks. If these failures reach the 99th percentile, it is null with `p99_e2e_censored=true`; the completed-only P99 remains available but cannot establish unconditional service quality. With fewer than 1,000 completed requests, `tail_sample_warning=true`. A P99 point from only a handful of requests is not evidence of a reliable tail SLO.
+
+Report client outstanding work and pre-dispatch waiting separately from the engine waiting queue. Device-memory measurements require an accelerator monitor scoped to the reserved fleet; host RSS is not an accelerator-memory substitute. Absence of samples is null, and a specified memory constraint cannot pass without evidence.
+
+## Quality constraints and uncertainty
+
+Short screening feasibility uses observed development accuracy relative to the observed reference, the error threshold, and any configured measured memory limit. With no reference accuracy it remains pending/infeasible. A screen is a noisy acquisition decision, not proof of final quality preservation.
+
+For final comparisons, use identical frozen questions and sampling seeds. `paired_accuracy_ci(reference,candidate)` returns a candidate-minus-reference accuracy interval by resampling whole question clusters; every repeated seed for a question moves together. It rejects mismatched question cohorts and repeated-seed counts. Materialize unoffered, timed-out, and unanswered questions as false before calculation. For a nondegenerate interval with adequate question clusters, declare noninferiority only when the paired 95% interval's lower bound is at least minus the allowed drop; a point estimate inside the margin is insufficient. An interval crossing the boundary is inconclusive. `quality_gate_usable=false` flags fewer than 30 question clusters or identical question-level differences; these require a stronger justified method or an inconclusive quality result. Thirty clusters is an operational warning threshold, not a theorem of sufficient statistical power. Very small cohorts can produce unstable or degenerate bootstrap intervals; this implementation does not certify nominal coverage for rare failures or tiny samples.
+
+`block_bootstrap_mean_ci` resamples independent runs first, then whole nonoverlapping time blocks within each selected run. It estimates a mean-latency interval with equal run weight, not a P99 confidence interval. Check 5/10/20-second block sensitivity and inspect nonstationarity; no block choice cures sustained queue growth. A single run receives an explicit warning and does not establish across-deployment reproducibility. Report individual run P99s and their sample sizes; expand final independent repeats when the pilot budget permits. These are transparent resampling procedures, not a claim that every adjacent request is independent.
+
+## Resources, budget, and resume semantics
+
+`BudgetLedger` charges `reserved_devices * actual_reservation_wall_seconds`, including startup, warmup, measurement, drain, restart, failed work, shutdown, and idle reserved devices. CPU optimizer time is a separate field. If devices stay reserved during optimizer training, that elapsed wall time remains inside the reservation. Summing overlapping request latencies is never a cost measure. Keep deployment and tuning ledgers separate.
+
+The provisional total is eight accelerator-hours with 25% protected for validation/failures. Admission uses a maximum wall duration; the runner must enforce that bound. Final actual overruns are recorded in full and flagged, not clipped to fit the budget. Any non-validation reservation is barred from spending the protected fraction. A single active reservation enforces a coordinated queue; concurrent ablations would distort measurements. An interrupted active run holds its maximum reservation cost until explicitly recovered with actual elapsed time. Never silently rerun it under the same ID.
+
+`RunJournal` writes immutable JSONL records keyed by run ID. Repeating an identical write is idempotent; conflicting data for the same ID fails. Ledger policy is immutable. JSON corruption fails loudly for audit rather than dropping expensive failures. The implementation uses advisory filesystem locking and fsync for append events; external manual edits can still violate provenance, so publish file hashes with the final artifact.
+
+The provisional loads in `study.json` are conservative starting points, not a claim of achievable saturation. At 0.1 requests/s, merely offering 1,000 requests takes 10,000 seconds. Repeating that for multiple configurations exceeds a two-hour validation reserve. The pilot must either find higher supported arrival rates, narrow final conditions, or explicitly declare the tail study underpowered. Do not increase the authorized budget or claim 1,000-request evidence automatically.
+
+## Fixed-compute reasoning comparison
+
+After the development-only search, freeze default and tuned serving configurations and two development-selected output allowances. Compare all four conditions with the same held-out question cohort, seeds, total reserved device count, and shared deadline. This cohort experiment is separate from sustained open-loop stress testing. `fixed_compute_summary` enforces one request per question per seed and counts absent questions in the denominator. It reports conventional accuracy, deadline-constrained accuracy, authoritative generated tokens when complete, known token usage when incomplete, actual reservation cost, and per-question outcomes. A larger cap does not establish that more reasoning was used or useful.
+
+Startup/teardown overhead and the workload deadline are distinct, both recorded. If actual accelerator-seconds differ, plot the actual frontier and qualify the comparison. If tuning only changes cost with unchanged answer quality, describe that result; do not infer improved intrinsic reasoning. The current host has supplied three bounded development pilots: timeout failure, 1,024-token reasoning truncation, and one correct natural-EOS answer plus one timeout at 2,048 tokens. None establishes a feasible finalist. No final held-out accuracy, optimizer advantage, memory reduction, or fixed-compute reasoning benefit has been established.
+
+## Automated review boundary
+
+The evaluation agent's tests and audit notes are automated engineering checks. They are not course-required human peer review, teammate work, independent external validation, or accelerator experiments. Human reviewers must record their own names, findings, and approvals in the contribution/review log.

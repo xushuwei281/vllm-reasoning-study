@@ -1,0 +1,975 @@
+{
+  "common_cost_horizon_s": 3000.001091072001,
+  "cost_matched_checkpoints": [
+    {
+      "accelerator_seconds": 0.0,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": null,
+          "revealed_trials": 0
+        },
+        "neural": {
+          "best_feasible_goodput": null,
+          "revealed_trials": 0
+        },
+        "random": {
+          "best_feasible_goodput": null,
+          "revealed_trials": 0
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 300.0001091072001,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": null,
+          "revealed_trials": 0
+        },
+        "neural": {
+          "best_feasible_goodput": null,
+          "revealed_trials": 0
+        },
+        "random": {
+          "best_feasible_goodput": null,
+          "revealed_trials": 0
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 600.0002182144002,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 1
+        },
+        "neural": {
+          "best_feasible_goodput": 0.34444444444444444,
+          "revealed_trials": 2
+        },
+        "random": {
+          "best_feasible_goodput": 0.3888888888888889,
+          "revealed_trials": 1
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 900.0003273216004,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 2
+        },
+        "neural": {
+          "best_feasible_goodput": 0.34444444444444444,
+          "revealed_trials": 3
+        },
+        "random": {
+          "best_feasible_goodput": 0.3888888888888889,
+          "revealed_trials": 2
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 1200.0004364288004,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 4
+        },
+        "neural": {
+          "best_feasible_goodput": 0.34444444444444444,
+          "revealed_trials": 4
+        },
+        "random": {
+          "best_feasible_goodput": 0.3888888888888889,
+          "revealed_trials": 3
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 1500.0005455360006,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 5
+        },
+        "neural": {
+          "best_feasible_goodput": 0.35555555555555557,
+          "revealed_trials": 5
+        },
+        "random": {
+          "best_feasible_goodput": 0.3888888888888889,
+          "revealed_trials": 4
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 1800.0006546432007,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 6
+        },
+        "neural": {
+          "best_feasible_goodput": 0.43333333333333335,
+          "revealed_trials": 6
+        },
+        "random": {
+          "best_feasible_goodput": 0.3888888888888889,
+          "revealed_trials": 5
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 2100.000763750401,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 6
+        },
+        "neural": {
+          "best_feasible_goodput": 0.43333333333333335,
+          "revealed_trials": 7
+        },
+        "random": {
+          "best_feasible_goodput": 0.3888888888888889,
+          "revealed_trials": 6
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 2400.000872857601,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 7
+        },
+        "neural": {
+          "best_feasible_goodput": 0.43333333333333335,
+          "revealed_trials": 7
+        },
+        "random": {
+          "best_feasible_goodput": 0.3888888888888889,
+          "revealed_trials": 7
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 2700.000981964801,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 8
+        },
+        "neural": {
+          "best_feasible_goodput": 0.43333333333333335,
+          "revealed_trials": 9
+        },
+        "random": {
+          "best_feasible_goodput": 0.3888888888888889,
+          "revealed_trials": 8
+        }
+      }
+    },
+    {
+      "accelerator_seconds": 3000.001091072001,
+      "methods": {
+        "gp": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 9
+        },
+        "neural": {
+          "best_feasible_goodput": 0.43333333333333335,
+          "revealed_trials": 10
+        },
+        "random": {
+          "best_feasible_goodput": 0.4,
+          "revealed_trials": 9
+        }
+      }
+    }
+  ],
+  "curves": {
+    "gp": [
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 300.00012268999944,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-gp-00",
+        "trial": 1
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 600.0002368529995,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-gp-01",
+        "trial": 2
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 900.000341599999,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-gp-02",
+        "trial": 3
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 1200.0004205389987,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-gp-03",
+        "trial": 4
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 1500.000525594999,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-gp-04",
+        "trial": 5
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 1800.0006457539994,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-gp-05",
+        "trial": 6
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 2100.0007641209986,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "gp",
+        "optimizer_cpu_seconds": 0.05592702999999233,
+        "run_id": "live-gp-06",
+        "trial": 7
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 2400.000874311999,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "gp",
+        "optimizer_cpu_seconds": 0.09047069299998611,
+        "run_id": "live-gp-07",
+        "trial": 8
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 2700.001037433997,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "gp",
+        "optimizer_cpu_seconds": 0.10353704699997479,
+        "run_id": "live-gp-08",
+        "trial": 9
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 3000.0011495269964,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "gp",
+        "method_used": "gp",
+        "optimizer_cpu_seconds": 0.11468080099996314,
+        "run_id": "live-gp-09",
+        "trial": 10
+      }
+    ],
+    "neural": [
+      {
+        "best_feasible_goodput": 0.34444444444444444,
+        "cumulative_accelerator_seconds": 300.0001221780003,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.34444444444444444,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-neural-00",
+        "trial": 1
+      },
+      {
+        "best_feasible_goodput": 0.34444444444444444,
+        "cumulative_accelerator_seconds": 600.0002181079999,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.34444444444444444,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-neural-01",
+        "trial": 2
+      },
+      {
+        "best_feasible_goodput": 0.34444444444444444,
+        "cumulative_accelerator_seconds": 900.0003219890004,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.34444444444444444,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-neural-02",
+        "trial": 3
+      },
+      {
+        "best_feasible_goodput": 0.34444444444444444,
+        "cumulative_accelerator_seconds": 1200.0004265609987,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.34444444444444444,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-neural-03",
+        "trial": 4
+      },
+      {
+        "best_feasible_goodput": 0.35555555555555557,
+        "cumulative_accelerator_seconds": 1500.0005368780003,
+        "incumbent": {
+          "config_id": "d068f4153a1b",
+          "quality_goodput": 0.35555555555555557,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-neural-04",
+        "trial": 5
+      },
+      {
+        "best_feasible_goodput": 0.43333333333333335,
+        "cumulative_accelerator_seconds": 1800.0006432150003,
+        "incumbent": {
+          "config_id": "824c39833bb8",
+          "quality_goodput": 0.43333333333333335,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-neural-05",
+        "trial": 6
+      },
+      {
+        "best_feasible_goodput": 0.43333333333333335,
+        "cumulative_accelerator_seconds": 2100.0007477050003,
+        "incumbent": {
+          "config_id": "824c39833bb8",
+          "quality_goodput": 0.43333333333333335,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "neural",
+        "optimizer_cpu_seconds": 8.360813232999988,
+        "run_id": "live-neural-06",
+        "trial": 7
+      },
+      {
+        "best_feasible_goodput": 0.43333333333333335,
+        "cumulative_accelerator_seconds": 2400.0008757840005,
+        "incumbent": {
+          "config_id": "824c39833bb8",
+          "quality_goodput": 0.43333333333333335,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "neural",
+        "optimizer_cpu_seconds": 15.119509946999983,
+        "run_id": "live-neural-07",
+        "trial": 8
+      },
+      {
+        "best_feasible_goodput": 0.43333333333333335,
+        "cumulative_accelerator_seconds": 2700.0009817460013,
+        "incumbent": {
+          "config_id": "824c39833bb8",
+          "quality_goodput": 0.43333333333333335,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "neural",
+        "optimizer_cpu_seconds": 21.77103366199998,
+        "run_id": "live-neural-08",
+        "trial": 9
+      },
+      {
+        "best_feasible_goodput": 0.43333333333333335,
+        "cumulative_accelerator_seconds": 3000.001091072001,
+        "incumbent": {
+          "config_id": "824c39833bb8",
+          "quality_goodput": 0.43333333333333335,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "neural",
+        "method_used": "neural",
+        "optimizer_cpu_seconds": 49.116065021,
+        "run_id": "live-neural-09",
+        "trial": 10
+      }
+    ],
+    "random": [
+      {
+        "best_feasible_goodput": 0.3888888888888889,
+        "cumulative_accelerator_seconds": 300.0001270450002,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.3888888888888889,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-random-00",
+        "trial": 1
+      },
+      {
+        "best_feasible_goodput": 0.3888888888888889,
+        "cumulative_accelerator_seconds": 600.0002257489996,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.3888888888888889,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-random-01",
+        "trial": 2
+      },
+      {
+        "best_feasible_goodput": 0.3888888888888889,
+        "cumulative_accelerator_seconds": 900.000328619999,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.3888888888888889,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-random-02",
+        "trial": 3
+      },
+      {
+        "best_feasible_goodput": 0.3888888888888889,
+        "cumulative_accelerator_seconds": 1200.000457750999,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.3888888888888889,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-random-03",
+        "trial": 4
+      },
+      {
+        "best_feasible_goodput": 0.3888888888888889,
+        "cumulative_accelerator_seconds": 1500.000585246,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.3888888888888889,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-random-04",
+        "trial": 5
+      },
+      {
+        "best_feasible_goodput": 0.3888888888888889,
+        "cumulative_accelerator_seconds": 1800.0006837540004,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.3888888888888889,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "shared_initial_design",
+        "optimizer_cpu_seconds": 0.0,
+        "run_id": "live-random-05",
+        "trial": 6
+      },
+      {
+        "best_feasible_goodput": 0.3888888888888889,
+        "cumulative_accelerator_seconds": 2100.0007983090018,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.3888888888888889,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "random",
+        "optimizer_cpu_seconds": 0.00014132999999105778,
+        "run_id": "live-random-06",
+        "trial": 7
+      },
+      {
+        "best_feasible_goodput": 0.3888888888888889,
+        "cumulative_accelerator_seconds": 2400.000905920002,
+        "incumbent": {
+          "config_id": "a15d9493236d",
+          "quality_goodput": 0.3888888888888889,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "random",
+        "optimizer_cpu_seconds": 0.00031810999999493106,
+        "run_id": "live-random-07",
+        "trial": 8
+      },
+      {
+        "best_feasible_goodput": 0.4,
+        "cumulative_accelerator_seconds": 2700.0010138940015,
+        "incumbent": {
+          "config_id": "a51616051a1d",
+          "quality_goodput": 0.4,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "random",
+        "optimizer_cpu_seconds": 0.0004672099999822876,
+        "run_id": "live-random-08",
+        "trial": 9
+      },
+      {
+        "best_feasible_goodput": 0.43333333333333335,
+        "cumulative_accelerator_seconds": 3000.001140786002,
+        "incumbent": {
+          "config_id": "a283852d32ee",
+          "quality_goodput": 0.43333333333333335,
+          "scenario_id": "cloud-short-development"
+        },
+        "method": "random",
+        "method_used": "random",
+        "optimizer_cpu_seconds": 0.0006161699999722714,
+        "run_id": "live-random-09",
+        "trial": 10
+      }
+    ]
+  },
+  "environment_hash": "b2c034ec0c1ec3ce047810efecc163d64ad8f7b85ab20f90a3ed1d6ef7aa735e",
+  "final_method_cost_spread_s": 5.845499526913045e-05,
+  "methods": {
+    "gp": {
+      "actual_or_common_debited_accelerator_seconds": 3000.0011495269964,
+      "adaptive_live_trials": 4,
+      "best_observed": {
+        "config_id": "a15d9493236d",
+        "quality_goodput": 0.4,
+        "scenario_id": "cloud-short-development"
+      },
+      "optimizer_cpu_seconds": 0.11468080099996314,
+      "trials": 10,
+      "wall_seconds": 3000.0011495269964
+    },
+    "neural": {
+      "actual_or_common_debited_accelerator_seconds": 3000.001091072001,
+      "adaptive_live_trials": 4,
+      "best_observed": {
+        "config_id": "824c39833bb8",
+        "quality_goodput": 0.43333333333333335,
+        "scenario_id": "cloud-short-development"
+      },
+      "optimizer_cpu_seconds": 49.116065021,
+      "trials": 10,
+      "wall_seconds": 3000.001091072001
+    },
+    "random": {
+      "actual_or_common_debited_accelerator_seconds": 3000.001140786002,
+      "adaptive_live_trials": 4,
+      "best_observed": {
+        "config_id": "a283852d32ee",
+        "quality_goodput": 0.43333333333333335,
+        "scenario_id": "cloud-short-development"
+      },
+      "optimizer_cpu_seconds": 0.0006161699999722714,
+      "trials": 10,
+      "wall_seconds": 3000.001140786002
+    }
+  },
+  "mode": "live_optimizer_comparison",
+  "planned_trace_audit": {
+    "enabled": true,
+    "expected_trace_hashes": [
+      "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+      "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+      "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+      "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+      "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+      "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+      "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+      "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+      "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+      "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37"
+    ],
+    "methods": {
+      "gp": {
+        "matched_trials": 10,
+        "trials": [
+          {
+            "actual_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "audit_status": "matched",
+            "expected_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "run_id": "live-gp-00",
+            "run_status": "ok",
+            "trace_id": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "trial": 1
+          },
+          {
+            "actual_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "audit_status": "matched",
+            "expected_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "run_id": "live-gp-01",
+            "run_status": "ok",
+            "trace_id": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "trial": 2
+          },
+          {
+            "actual_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "audit_status": "matched",
+            "expected_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "run_id": "live-gp-02",
+            "run_status": "ok",
+            "trace_id": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "trial": 3
+          },
+          {
+            "actual_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "audit_status": "matched",
+            "expected_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "run_id": "live-gp-03",
+            "run_status": "ok",
+            "trace_id": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "trial": 4
+          },
+          {
+            "actual_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "audit_status": "matched",
+            "expected_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "run_id": "live-gp-04",
+            "run_status": "ok",
+            "trace_id": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "trial": 5
+          },
+          {
+            "actual_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "audit_status": "matched",
+            "expected_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "run_id": "live-gp-05",
+            "run_status": "ok",
+            "trace_id": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "trial": 6
+          },
+          {
+            "actual_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "audit_status": "matched",
+            "expected_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "run_id": "live-gp-06",
+            "run_status": "ok",
+            "trace_id": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "trial": 7
+          },
+          {
+            "actual_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "audit_status": "matched",
+            "expected_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "run_id": "live-gp-07",
+            "run_status": "ok",
+            "trace_id": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "trial": 8
+          },
+          {
+            "actual_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "audit_status": "matched",
+            "expected_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "run_id": "live-gp-08",
+            "run_status": "ok",
+            "trace_id": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "trial": 9
+          },
+          {
+            "actual_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "audit_status": "matched",
+            "expected_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "run_id": "live-gp-09",
+            "run_status": "ok",
+            "trace_id": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "trial": 10
+          }
+        ],
+        "unverified_failed_trials": 0
+      },
+      "neural": {
+        "matched_trials": 10,
+        "trials": [
+          {
+            "actual_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "audit_status": "matched",
+            "expected_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "run_id": "live-neural-00",
+            "run_status": "ok",
+            "trace_id": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "trial": 1
+          },
+          {
+            "actual_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "audit_status": "matched",
+            "expected_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "run_id": "live-neural-01",
+            "run_status": "ok",
+            "trace_id": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "trial": 2
+          },
+          {
+            "actual_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "audit_status": "matched",
+            "expected_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "run_id": "live-neural-02",
+            "run_status": "ok",
+            "trace_id": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "trial": 3
+          },
+          {
+            "actual_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "audit_status": "matched",
+            "expected_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "run_id": "live-neural-03",
+            "run_status": "ok",
+            "trace_id": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "trial": 4
+          },
+          {
+            "actual_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "audit_status": "matched",
+            "expected_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "run_id": "live-neural-04",
+            "run_status": "ok",
+            "trace_id": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "trial": 5
+          },
+          {
+            "actual_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "audit_status": "matched",
+            "expected_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "run_id": "live-neural-05",
+            "run_status": "ok",
+            "trace_id": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "trial": 6
+          },
+          {
+            "actual_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "audit_status": "matched",
+            "expected_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "run_id": "live-neural-06",
+            "run_status": "ok",
+            "trace_id": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "trial": 7
+          },
+          {
+            "actual_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "audit_status": "matched",
+            "expected_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "run_id": "live-neural-07",
+            "run_status": "ok",
+            "trace_id": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "trial": 8
+          },
+          {
+            "actual_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "audit_status": "matched",
+            "expected_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "run_id": "live-neural-08",
+            "run_status": "ok",
+            "trace_id": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "trial": 9
+          },
+          {
+            "actual_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "audit_status": "matched",
+            "expected_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "run_id": "live-neural-09",
+            "run_status": "ok",
+            "trace_id": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "trial": 10
+          }
+        ],
+        "unverified_failed_trials": 0
+      },
+      "random": {
+        "matched_trials": 10,
+        "trials": [
+          {
+            "actual_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "audit_status": "matched",
+            "expected_trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "run_id": "live-random-00",
+            "run_status": "ok",
+            "trace_id": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+            "trial": 1
+          },
+          {
+            "actual_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "audit_status": "matched",
+            "expected_trace_hash": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "run_id": "live-random-01",
+            "run_status": "ok",
+            "trace_id": "f171f1a04ebef15301638e453d366dcfaaa888856f11d5b0f26f2cfdd9980e41",
+            "trial": 2
+          },
+          {
+            "actual_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "audit_status": "matched",
+            "expected_trace_hash": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "run_id": "live-random-02",
+            "run_status": "ok",
+            "trace_id": "089dc82df8d71828245eb89eac6007cfa78d29e559de9e8d9e2ef30acc1b96b2",
+            "trial": 3
+          },
+          {
+            "actual_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "audit_status": "matched",
+            "expected_trace_hash": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "run_id": "live-random-03",
+            "run_status": "ok",
+            "trace_id": "8c92991de29f12ea6fd81ad3f7185349702729145b97e60d8eb5c71bc380462f",
+            "trial": 4
+          },
+          {
+            "actual_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "audit_status": "matched",
+            "expected_trace_hash": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "run_id": "live-random-04",
+            "run_status": "ok",
+            "trace_id": "1f357d37499cb6348acca67b313a0168322b01bc315968927ccb8e9d53ed861f",
+            "trial": 5
+          },
+          {
+            "actual_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "audit_status": "matched",
+            "expected_trace_hash": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "run_id": "live-random-05",
+            "run_status": "ok",
+            "trace_id": "6a55de3387e3b8f45dd0d2f5fee4c1242b6c26379ee8e45dda60a0d539f1651b",
+            "trial": 6
+          },
+          {
+            "actual_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "audit_status": "matched",
+            "expected_trace_hash": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "run_id": "live-random-06",
+            "run_status": "ok",
+            "trace_id": "edf5ba5b73d7f9390d192c7dafe1ee4cc192823b6647c5e1d1384dc0fdfa86cc",
+            "trial": 7
+          },
+          {
+            "actual_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "audit_status": "matched",
+            "expected_trace_hash": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "run_id": "live-random-07",
+            "run_status": "ok",
+            "trace_id": "67998516c9e815e80f167fa2d77f35d6f1633452e963c0467700e18d1bbae7b7",
+            "trial": 8
+          },
+          {
+            "actual_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "audit_status": "matched",
+            "expected_trace_hash": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "run_id": "live-random-08",
+            "run_status": "ok",
+            "trace_id": "7ac9cc88ba72c7239d0370885b8a54f41402a1f774dcf96cd650c52bc4380c4f",
+            "trial": 9
+          },
+          {
+            "actual_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "audit_status": "matched",
+            "expected_trace_hash": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "run_id": "live-random-09",
+            "run_status": "ok",
+            "trace_id": "c52428c3b1299c52649b9b709a67eaf9907ade5eb32bc9f626a00238e323af37",
+            "trial": 10
+          }
+        ],
+        "unverified_failed_trials": 0
+      }
+    },
+    "note": "Actual hashes are checked against the same per-index plan across methods. Failed rows without an actual hash remain charged and are explicitly unverified."
+  },
+  "scenario_id": "cloud-short-development",
+  "search_seed_repetitions": 1,
+  "shared_cost_note": "All optimizer observations are independently measured and charged.",
+  "shared_initial_run_ids": [],
+  "source": "measured",
+  "sum_method_debits_s": 9000.003381384999,
+  "uncertainty_note": "One live search per method has no between-search-seed confidence interval. Finalist validation remains separate.",
+  "unique_physical_accelerator_seconds": 9000.003381384999
+}

@@ -1,0 +1,9 @@
+{
+  "files": {
+    "ensemble.pt": "4891d89e87fafc1c6ad2d74b9eda85233846ba3d153cb6cf174bb9284b38d967",
+    "observations.json": "20bbfad42decb271f195289b86f9a61fc446495ea84a7f3d9d0f08777516b3ad",
+    "report.json": "45b10c41767004df906b041176756111715758b73a35ac3646a4dea43d3c1eeb"
+  },
+  "format_version": 1,
+  "proposal_sha256": "9fedc84b51b4cdd54a8dc5143921a4c3e31948bc87062ebfb81af2fe62ed013c"
+}

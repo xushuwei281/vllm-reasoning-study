@@ -1,0 +1,2807 @@
+{
+  "accounting": {
+    "active_run_ids": [],
+    "category_accelerator_seconds": {
+      "failed_prior_cloud_allocation": 77.502,
+      "heldout_trials": 1440.000433373003,
+      "independent_validation": 699.0771029490006,
+      "original_metal_development": 571.1714282079483,
+      "other_development_or_allocation": 1072.7995513940004,
+      "other_shared_cloud_overhead": 287.0577039354703,
+      "search_assigned_cloud_overhead": 20.374317036478715,
+      "search_raw_trials": 9000.003381384999,
+      "shared_setup_before_main": 828.4591419270473
+    },
+    "category_events": {
+      "failed_prior_cloud_allocation": [
+        {
+          "accelerator_seconds": 77.502,
+          "run_id": "hf-container-start-failure-6ae9c7870e0338d1bb7f1de1"
+        }
+      ],
+      "heldout_trials": [
+        {
+          "accelerator_seconds": 360.0001017370014,
+          "run_id": "fixed-default-2048-seed724"
+        },
+        {
+          "accelerator_seconds": 360.00010119999934,
+          "run_id": "fixed-default-4096-seed724"
+        },
+        {
+          "accelerator_seconds": 360.000117222,
+          "run_id": "fixed-tuned-2048-seed724"
+        },
+        {
+          "accelerator_seconds": 360.00011321400234,
+          "run_id": "fixed-tuned-4096-seed724"
+        }
+      ],
+      "independent_validation": [
+        {
+          "accelerator_seconds": 355.0803588819999,
+          "run_id": "independent-default-n150-seed724"
+        },
+        {
+          "accelerator_seconds": 343.9967440670007,
+          "run_id": "independent-tuned-n150-seed724"
+        }
+      ],
+      "original_metal_development": [
+        {
+          "accelerator_seconds": 165.92042654199759,
+          "run_id": "pilot-metal-default-001"
+        },
+        {
+          "accelerator_seconds": 145.6634052079753,
+          "run_id": "screen-metal-00"
+        },
+        {
+          "accelerator_seconds": 259.58759645797545,
+          "run_id": "allowance-metal-2048-00"
+        }
+      ],
+      "other_development_or_allocation": [
+        {
+          "accelerator_seconds": 172.79917938699964,
+          "run_id": "cloud-baseline-pilot-00"
+        },
+        {
+          "accelerator_seconds": 300.0001308630008,
+          "run_id": "cloud-default-profile-00"
+        },
+        {
+          "accelerator_seconds": 300.0001000960001,
+          "run_id": "unseen-context-default-seed13724"
+        },
+        {
+          "accelerator_seconds": 300.00014104799993,
+          "run_id": "unseen-context-tuned-seed13724"
+        }
+      ],
+      "other_shared_cloud_overhead": [
+        {
+          "accelerator_seconds": 287.0577039354703,
+          "run_id": "cloud-overhead-terminal"
+        }
+      ],
+      "search_assigned_cloud_overhead": [
+        {
+          "accelerator_seconds": 2.2841775738352226,
+          "run_id": "cloud-overhead-round00-random"
+        },
+        {
+          "accelerator_seconds": 0.43217430134882306,
+          "run_id": "cloud-overhead-round00-gp"
+        },
+        {
+          "accelerator_seconds": 0.4227212782679999,
+          "run_id": "cloud-overhead-round00-neural"
+        },
+        {
+          "accelerator_seconds": 0.44947485105331,
+          "run_id": "cloud-overhead-round01-gp"
+        },
+        {
+          "accelerator_seconds": 0.8329633809134975,
+          "run_id": "cloud-overhead-round01-neural"
+        },
+        {
+          "accelerator_seconds": 0.6061544431258881,
+          "run_id": "cloud-overhead-round01-random"
+        },
+        {
+          "accelerator_seconds": 0.45960981643293053,
+          "run_id": "cloud-overhead-round02-neural"
+        },
+        {
+          "accelerator_seconds": 0.425449735582788,
+          "run_id": "cloud-overhead-round02-random"
+        },
+        {
+          "accelerator_seconds": 0.43948427659097433,
+          "run_id": "cloud-overhead-round02-gp"
+        },
+        {
+          "accelerator_seconds": 0.4654651606870175,
+          "run_id": "cloud-overhead-round03-random"
+        },
+        {
+          "accelerator_seconds": 0.446991421184066,
+          "run_id": "cloud-overhead-round03-gp"
+        },
+        {
+          "accelerator_seconds": 0.4597891314624576,
+          "run_id": "cloud-overhead-round03-neural"
+        },
+        {
+          "accelerator_seconds": 0.47184952812131087,
+          "run_id": "cloud-overhead-round04-gp"
+        },
+        {
+          "accelerator_seconds": 0.452339720000964,
+          "run_id": "cloud-overhead-round04-neural"
+        },
+        {
+          "accelerator_seconds": 0.43403869800749817,
+          "run_id": "cloud-overhead-round04-random"
+        },
+        {
+          "accelerator_seconds": 0.4691836810816312,
+          "run_id": "cloud-overhead-round05-neural"
+        },
+        {
+          "accelerator_seconds": 0.46991725623593084,
+          "run_id": "cloud-overhead-round05-random"
+        },
+        {
+          "accelerator_seconds": 0.4966986218987586,
+          "run_id": "cloud-overhead-round05-gp"
+        },
+        {
+          "accelerator_seconds": 0.5019658855198941,
+          "run_id": "cloud-overhead-round06-random"
+        },
+        {
+          "accelerator_seconds": 0.5074585754446161,
+          "run_id": "cloud-overhead-round06-gp"
+        },
+        {
+          "accelerator_seconds": 1.1514932482659788,
+          "run_id": "cloud-overhead-round06-neural"
+        },
+        {
+          "accelerator_seconds": 0.45928927074601233,
+          "run_id": "cloud-overhead-round07-gp"
+        },
+        {
+          "accelerator_seconds": 1.0106563085882954,
+          "run_id": "cloud-overhead-round07-neural"
+        },
+        {
+          "accelerator_seconds": 0.4873730294111738,
+          "run_id": "cloud-overhead-round07-random"
+        },
+        {
+          "accelerator_seconds": 1.0122620017900772,
+          "run_id": "cloud-overhead-round08-neural"
+        },
+        {
+          "accelerator_seconds": 0.5029259024195198,
+          "run_id": "cloud-overhead-round08-random"
+        },
+        {
+          "accelerator_seconds": 0.4919714490770275,
+          "run_id": "cloud-overhead-round08-gp"
+        },
+        {
+          "accelerator_seconds": 0.49358291062708304,
+          "run_id": "cloud-overhead-round09-random"
+        },
+        {
+          "accelerator_seconds": 0.47652836987617775,
+          "run_id": "cloud-overhead-round09-gp"
+        },
+        {
+          "accelerator_seconds": 2.7603272088817903,
+          "run_id": "cloud-overhead-round09-neural"
+        }
+      ],
+      "search_raw_trials": [
+        {
+          "accelerator_seconds": 300.0001270450002,
+          "run_id": "live-random-00"
+        },
+        {
+          "accelerator_seconds": 300.00012268999944,
+          "run_id": "live-gp-00"
+        },
+        {
+          "accelerator_seconds": 300.0001221780003,
+          "run_id": "live-neural-00"
+        },
+        {
+          "accelerator_seconds": 300.00011416300003,
+          "run_id": "live-gp-01"
+        },
+        {
+          "accelerator_seconds": 300.0000959299996,
+          "run_id": "live-neural-01"
+        },
+        {
+          "accelerator_seconds": 300.00009870399936,
+          "run_id": "live-random-01"
+        },
+        {
+          "accelerator_seconds": 300.00010388100054,
+          "run_id": "live-neural-02"
+        },
+        {
+          "accelerator_seconds": 300.0001028709994,
+          "run_id": "live-random-02"
+        },
+        {
+          "accelerator_seconds": 300.00010474699957,
+          "run_id": "live-gp-02"
+        },
+        {
+          "accelerator_seconds": 300.000129131,
+          "run_id": "live-random-03"
+        },
+        {
+          "accelerator_seconds": 300.00007893899965,
+          "run_id": "live-gp-03"
+        },
+        {
+          "accelerator_seconds": 300.00010457199824,
+          "run_id": "live-neural-03"
+        },
+        {
+          "accelerator_seconds": 300.0001050560004,
+          "run_id": "live-gp-04"
+        },
+        {
+          "accelerator_seconds": 300.0001103170016,
+          "run_id": "live-neural-04"
+        },
+        {
+          "accelerator_seconds": 300.0001274950009,
+          "run_id": "live-random-04"
+        },
+        {
+          "accelerator_seconds": 300.00010633700003,
+          "run_id": "live-neural-05"
+        },
+        {
+          "accelerator_seconds": 300.0000985080005,
+          "run_id": "live-random-05"
+        },
+        {
+          "accelerator_seconds": 300.0001201590003,
+          "run_id": "live-gp-05"
+        },
+        {
+          "accelerator_seconds": 300.00011455500135,
+          "run_id": "live-random-06"
+        },
+        {
+          "accelerator_seconds": 300.00011836699923,
+          "run_id": "live-gp-06"
+        },
+        {
+          "accelerator_seconds": 300.00010449,
+          "run_id": "live-neural-06"
+        },
+        {
+          "accelerator_seconds": 300.0001101910002,
+          "run_id": "live-gp-07"
+        },
+        {
+          "accelerator_seconds": 300.0001280790002,
+          "run_id": "live-neural-07"
+        },
+        {
+          "accelerator_seconds": 300.0001076110002,
+          "run_id": "live-random-07"
+        },
+        {
+          "accelerator_seconds": 300.0001059620008,
+          "run_id": "live-neural-08"
+        },
+        {
+          "accelerator_seconds": 300.00010797399955,
+          "run_id": "live-random-08"
+        },
+        {
+          "accelerator_seconds": 300.0001631219984,
+          "run_id": "live-gp-08"
+        },
+        {
+          "accelerator_seconds": 300.0001268920005,
+          "run_id": "live-random-09"
+        },
+        {
+          "accelerator_seconds": 300.0001120929992,
+          "run_id": "live-gp-09"
+        },
+        {
+          "accelerator_seconds": 300.0001093259998,
+          "run_id": "live-neural-09"
+        }
+      ],
+      "shared_setup_before_main": [
+        {
+          "accelerator_seconds": 828.4591419270473,
+          "run_id": "cloud-overhead-before-main"
+        }
+      ]
+    },
+    "each_global_finish_counted_once": true,
+    "global_held_accelerator_seconds": 0.0,
+    "global_spent_accelerator_seconds": 13996.445060207949,
+    "original_budget_accelerator_seconds": 28800.0,
+    "shared_setup_note": "Setup and unassigned allocation are reported separately, never silently added equally to every method.",
+    "terminal_cloud": {
+      "accounting_note": "The provider confirms a terminal state but supplies no finish timestamp. Creation through the recorded terminal observation is charged as a conservative upper bound; actual allocation duration is unknown.",
+      "actual_accelerator_seconds": null,
+      "billing_note": "Estimated charge is not a verified billing invoice.",
+      "charge_upper_bound": true,
+      "charged_accelerator_seconds": 13347.771632,
+      "duration_basis": "terminal_observation_upper_bound",
+      "reasons": [],
+      "record": {
+        "accounting_end_at": "2026-11-03T15:22:54.343632+00:00",
+        "actual_accelerator_seconds": null,
+        "allocation_id": "6ae9c82a0e0338d1bb7f1ecf",
+        "billing_estimate_policy": "Conservative upper bound: charge job creation through recorded observation of terminal CANCELED state; provider omits finish timestamp. Round each job up to full minutes including hardware and port. Actual allocation may be shorter; invoice not verified.",
+        "billing_invoice_verified": false,
+        "cancellation_requested_at": "2026-11-03T15:19:43.718700+00:00",
+        "charge_upper_bound": true,
+        "charged_accelerator_seconds": 13347.771632,
+        "created_at": "2026-11-03T11:40:26.572000+00:00",
+        "current_allocation_estimated_charge_usd": 5.612166666666667,
+        "duration_basis": "terminal_observation_upper_bound",
+        "estimated_charge_usd": 5.6625000000000005,
+        "finished_at": null,
+        "global_ledger_spent_accelerator_seconds": 13996.445060207949,
+        "hardware_usd_per_minute": 0.025,
+        "port_usd_per_hour": 0.01,
+        "prior_allocations": [
+          {
+            "allocation_id": "6ae9c7870e0338d1bb7f1de1",
+            "charged_seconds": 77.502,
+            "estimated_charge_usd": 0.050333333333333334,
+            "rounded_minutes": 2
+          }
+        ],
+        "provider_durations": null,
+        "provider_finished_at": null,
+        "provider_observation_path": "results/continuation/cloud-terminal-observation.json",
+        "provider_observation_sha256": "604c8377f770c8d47405a91a4439c058abfe6408b86c07932f0955837315730a",
+        "reconciled": true,
+        "reconciled_at_utc": "2026-11-03T15:23:38.030798+00:00",
+        "rounded_current_allocation_minutes": 223,
+        "terminal_observed_at": "2026-11-03T15:22:54.343632+00:00",
+        "terminal_status": {
+          "expose_urls": [
+            "https://6ae9c82a0e0338d1bb7f1ecf--8765.hf.jobs"
+          ],
+          "message": null,
+          "ssh_url": null,
+          "stage": "CANCELED"
+        }
+      },
+      "verified": true
+    }
+  },
+  "analysis_spec_sha256": "a41acf862de1503fc6da6abbf2e6db548b5c6c35881bb582772ebe443ee24fe0",
+  "analyzer_sha256": "1aa30887f6a0f56f471b1608b47e01f744d98126d012ca30624a882041aaf707",
+  "completion_blockers": [],
+  "default_reference": {
+    "config": {
+      "chunked_prefill": true,
+      "gpu_memory_utilization": 0.8,
+      "kv_cache_dtype": "auto",
+      "max_num_batched_tokens": null,
+      "max_num_seqs": null,
+      "precision": "bf16",
+      "prefix_caching": false,
+      "tensor_parallel_size": 1
+    },
+    "config_id": "5c7e9b48a7b5",
+    "cost": {
+      "accelerator_seconds": 300.0001308630008,
+      "admission_bound_overshoot_seconds": 0,
+      "admission_wall_seconds": 445.0,
+      "allocated_after_shutdown_seconds": 117.14095609100059,
+      "allocated_devices": 1,
+      "allocated_idle_padding_seconds": 116.73566683200079,
+      "effective_startup_timeout_seconds": 180.0,
+      "lifecycle_status": "stopped",
+      "optimizer_cpu_seconds": 0.0,
+      "reservation_timing_policy": "minimum_allocated_slot",
+      "reserved_slot_seconds": 300,
+      "server_lifecycle_seconds": 182.8591747720002,
+      "slot_overshoot_seconds": 0.00013086300077702617,
+      "startup_seconds": 38.48798699600047,
+      "wall_seconds": 300.0001308630008
+    },
+    "environment_hash": "b2c034ec0c1ec3ce047810efecc163d64ad8f7b85ab20f90a3ed1d6ef7aa735e",
+    "is_default": true,
+    "known_valid": true,
+    "measurement_duration_s": 90,
+    "metrics": {
+      "accuracy": 0.8333333333333334,
+      "completed": 54,
+      "completed_in_window": 37,
+      "completed_requests_per_s": 0.4111111111111111,
+      "correct_completed_in_window": 32,
+      "correct_per_allocated_accelerator_second": 0.35555555555555557,
+      "deadline_constrained_accuracy": 0.5925925925925926,
+      "dispatched_requests_per_s": 0.6,
+      "drain_completed": 17,
+      "drain_duration_s": 43.567740798999694,
+      "error_count": 0,
+      "error_rate": 0.0,
+      "feasible": true,
+      "final_tokens_all": null,
+      "generated_output_tokens_all": 84520,
+      "input_tokens_per_s": 35.544444444444444,
+      "itl_observation_note": "Chunk gaps are transport observations; missing per-chunk token counts prohibit complete ITL reconstruction.",
+      "known_output_tokens_sum": 84520,
+      "latency_goodput": 0.4111111111111111,
+      "measurement_duration_s": 90,
+      "memory_constraint_status": "not_configured",
+      "missing_token_usage_count": 0,
+      "offered": 54,
+      "offered_requests_per_s": 0.6,
+      "output_tokens_per_s": 595.0,
+      "p50_completed_arrival_e2e_s": 22.181547809007284,
+      "p50_completed_client_queue_s": 0.0007632005593904978,
+      "p50_completed_e2e_s": 22.181131223999728,
+      "p50_completed_tpot_s": 0.018280951791941568,
+      "p50_completed_ttft_s": 0.03679339300015272,
+      "p95_completed_arrival_e2e_s": 57.57985481719888,
+      "p95_completed_client_queue_s": 0.0019040546967730165,
+      "p95_completed_e2e_s": 57.5794239249999,
+      "p95_completed_tpot_s": 0.020163987053489152,
+      "p95_completed_ttft_s": 0.04838932199982082,
+      "p99_client_queue_s": 0.0020253447090361476,
+      "p99_completed_arrival_e2e_s": 74.8921822131318,
+      "p99_completed_client_queue_s": 0.0020253447090361476,
+      "p99_completed_e2e_s": 74.891661441,
+      "p99_completed_tpot_s": 0.020498713777655816,
+      "p99_completed_ttft_s": 0.05344642100044439,
+      "p99_e2e_censored": false,
+      "p99_e2e_population": "all measurement-cohort arrivals; failures occupy infinite tail ranks",
+      "p99_e2e_s": 74.891661441,
+      "peak_memory_bytes": 20078133248.0,
+      "quality_constraint_status": "reference_self; candidate comparisons require development baseline",
+      "quality_goodput": 0.35555555555555557,
+      "quality_goodput_per_accelerator": 0.35555555555555557,
+      "quality_slo_completed_in_window": 32,
+      "reasoning_tokens_all": null,
+      "single_token_chunk_gap_p99_s": null,
+      "slo_constrained_accuracy": 0.5925925925925926,
+      "slo_violation_count": 0,
+      "status_counts": {
+        "ok": 54
+      },
+      "stream_chunk_gap_p99_s": 0.022157405000143626,
+      "tail_sample_warning": true,
+      "truncated_count": 3,
+      "unfinished_at_window_end": 17
+    },
+    "partition": "train",
+    "repetition": 0,
+    "request_count": 56,
+    "request_fingerprint": "cda7e57eefdb9b335b12b52b1bf21456c88a78f518b1e1283fb0be0d72815256",
+    "run_id": "cloud-default-profile-00",
+    "scenario_id": "cloud-short-development",
+    "seed": 724,
+    "source": "measured",
+    "status": "ok",
+    "trace_hash": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+    "trace_id": "cf2d2fb17dec7e61463cbd59640b2610becf966f948854ed1dda126cd02ac965",
+    "workload": {
+      "arrival_process": "regular_with_uniform_jitter",
+      "arrival_rate": 0.6,
+      "burstiness": 0.08,
+      "input_tokens_max": 148,
+      "input_tokens_mean": 89.30357142857143,
+      "input_tokens_p95": 129.0,
+      "output_token_limit": 4096,
+      "profile": "short",
+      "scenario_id": "cloud-short-development"
+    }
+  },
+  "generated_at_utc": "2026-11-03T15:25:29.735588+00:00",
+  "heldout": {
+    "analysis_note": "Full cohort denominator; unknown token usage stays unknown. Known-token sums are lower bounds when usage is missing.",
+    "arms": [
+      {
+        "actual_accelerator_seconds": 360.0001017370014,
+        "allowance": 2048,
+        "arm": "default",
+        "cost_match_note": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+        "effective_service_deadline_s": 291.1862533929998,
+        "execution_status": "ok",
+        "reserved_wall_seconds": 360,
+        "run_id": "fixed-default-2048-seed724",
+        "sampling_seed_base": 724,
+        "summary": {
+          "accelerator_seconds": 360.0001017370014,
+          "accuracy": 0.7265625,
+          "cohort_size": 128,
+          "correct_per_accelerator_second": 0.2583332603276354,
+          "deadline_constrained_accuracy": 0.7265625,
+          "deadline_s": 291.1862533929998,
+          "generated_tokens": 175235,
+          "known_output_tokens_sum": 175235,
+          "missing_token_usage_count": 0,
+          "offered_questions": 128,
+          "reservation_wall_seconds": 360.0001017370014,
+          "unoffered_questions": 0
+        },
+        "token_usage_status": "complete"
+      },
+      {
+        "actual_accelerator_seconds": 360.00010119999934,
+        "allowance": 4096,
+        "arm": "default",
+        "cost_match_note": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+        "effective_service_deadline_s": 291.07673366200106,
+        "execution_status": "ok",
+        "reserved_wall_seconds": 360,
+        "run_id": "fixed-default-4096-seed724",
+        "sampling_seed_base": 724,
+        "summary": {
+          "accelerator_seconds": 360.00010119999934,
+          "accuracy": 0.828125,
+          "cohort_size": 128,
+          "correct_per_accelerator_second": 0.2944443616728633,
+          "deadline_constrained_accuracy": 0.828125,
+          "deadline_s": 291.07673366200106,
+          "generated_tokens": 212639,
+          "known_output_tokens_sum": 212639,
+          "missing_token_usage_count": 0,
+          "offered_questions": 128,
+          "reservation_wall_seconds": 360.00010119999934,
+          "unoffered_questions": 0
+        },
+        "token_usage_status": "complete"
+      },
+      {
+        "actual_accelerator_seconds": 360.000117222,
+        "allowance": 2048,
+        "arm": "tuned",
+        "cost_match_note": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+        "effective_service_deadline_s": 293.2241387760005,
+        "execution_status": "ok",
+        "reserved_wall_seconds": 360,
+        "run_id": "fixed-tuned-2048-seed724",
+        "sampling_seed_base": 724,
+        "summary": {
+          "accelerator_seconds": 360.000117222,
+          "accuracy": 0.78125,
+          "cohort_size": 128,
+          "correct_per_accelerator_second": 0.2777776873287332,
+          "deadline_constrained_accuracy": 0.78125,
+          "deadline_s": 293.2241387760005,
+          "generated_tokens": 173274,
+          "known_output_tokens_sum": 173274,
+          "missing_token_usage_count": 0,
+          "offered_questions": 128,
+          "reservation_wall_seconds": 360.000117222,
+          "unoffered_questions": 0
+        },
+        "token_usage_status": "complete"
+      },
+      {
+        "actual_accelerator_seconds": 360.00011321400234,
+        "allowance": 4096,
+        "arm": "tuned",
+        "cost_match_note": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+        "effective_service_deadline_s": 293.7013696110007,
+        "execution_status": "ok",
+        "reserved_wall_seconds": 360,
+        "run_id": "fixed-tuned-4096-seed724",
+        "sampling_seed_base": 724,
+        "summary": {
+          "accelerator_seconds": 360.00011321400234,
+          "accuracy": 0.8828125,
+          "cohort_size": 128,
+          "correct_per_accelerator_second": 0.31388879017609383,
+          "deadline_constrained_accuracy": 0.8828125,
+          "deadline_s": 293.7013696110007,
+          "generated_tokens": 200564,
+          "known_output_tokens_sum": 200564,
+          "missing_token_usage_count": 0,
+          "offered_questions": 128,
+          "reservation_wall_seconds": 360.00011321400234,
+          "unoffered_questions": 0
+        },
+        "token_usage_status": "complete"
+      }
+    ],
+    "existing_comparisons": [
+      {
+        "comparisons": [
+          {
+            "accuracy_difference": {
+              "bootstrap_samples": 2000,
+              "candidate_accuracy": 0.78125,
+              "ci": [
+                0.0,
+                0.109375
+              ],
+              "confidence": 0.95,
+              "degenerate_bootstrap": false,
+              "difference_candidate_minus_reference": 0.0546875,
+              "method": "paired question-cluster percentile bootstrap; equal question weights",
+              "paired_requests": 128,
+              "quality_gate_usable": true,
+              "question_clusters": 128,
+              "reference_accuracy": 0.7265625,
+              "seed": 724,
+              "warning": null
+            },
+            "allowance": 2048,
+            "candidate_accelerator_seconds": 360.000117222,
+            "deadline_accuracy_difference": {
+              "bootstrap_samples": 2000,
+              "candidate_accuracy": 0.78125,
+              "ci": [
+                0.0,
+                0.109375
+              ],
+              "confidence": 0.95,
+              "degenerate_bootstrap": false,
+              "difference_candidate_minus_reference": 0.0546875,
+              "method": "paired question-cluster percentile bootstrap; equal question weights",
+              "paired_requests": 128,
+              "quality_gate_usable": true,
+              "question_clusters": 128,
+              "reference_accuracy": 0.7265625,
+              "seed": 724,
+              "warning": null
+            },
+            "interpretation": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+            "reference_accelerator_seconds": 360.0001017370014
+          },
+          {
+            "accuracy_difference": {
+              "bootstrap_samples": 2000,
+              "candidate_accuracy": 0.8828125,
+              "ci": [
+                0.0,
+                0.1171875
+              ],
+              "confidence": 0.95,
+              "degenerate_bootstrap": false,
+              "difference_candidate_minus_reference": 0.0546875,
+              "method": "paired question-cluster percentile bootstrap; equal question weights",
+              "paired_requests": 128,
+              "quality_gate_usable": true,
+              "question_clusters": 128,
+              "reference_accuracy": 0.828125,
+              "seed": 724,
+              "warning": null
+            },
+            "allowance": 4096,
+            "candidate_accelerator_seconds": 360.00011321400234,
+            "deadline_accuracy_difference": {
+              "bootstrap_samples": 2000,
+              "candidate_accuracy": 0.8828125,
+              "ci": [
+                0.0,
+                0.1171875
+              ],
+              "confidence": 0.95,
+              "degenerate_bootstrap": false,
+              "difference_candidate_minus_reference": 0.0546875,
+              "method": "paired question-cluster percentile bootstrap; equal question weights",
+              "paired_requests": 128,
+              "quality_gate_usable": true,
+              "question_clusters": 128,
+              "reference_accuracy": 0.828125,
+              "seed": 724,
+              "warning": null
+            },
+            "interpretation": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+            "reference_accelerator_seconds": 360.00010119999934
+          }
+        ],
+        "file": "results/continuation/final/fixed-compute-comparisons-seed724.json"
+      }
+    ],
+    "four_arms_per_seed_available": true,
+    "preregistered_paired_contrasts": [
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          0.0,
+          0.1171875
+        ],
+        "confidence": 0.95,
+        "endpoint": "deadline_constrained_accuracy",
+        "estimate": 0.0546875,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "tuned_minus_default_short",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      },
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          0.0,
+          0.1171875
+        ],
+        "confidence": 0.95,
+        "endpoint": "deadline_constrained_accuracy",
+        "estimate": 0.0546875,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "tuned_minus_default_long",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      },
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          0.0390625,
+          0.1640625
+        ],
+        "confidence": 0.95,
+        "endpoint": "deadline_constrained_accuracy",
+        "estimate": 0.1015625,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "allowance_effect_default",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      },
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          0.046875,
+          0.1640625
+        ],
+        "confidence": 0.95,
+        "endpoint": "deadline_constrained_accuracy",
+        "estimate": 0.1015625,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "allowance_effect_tuned",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      },
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          -0.0625,
+          0.0703125
+        ],
+        "confidence": 0.95,
+        "endpoint": "deadline_constrained_accuracy",
+        "estimate": 0.0,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "serving_by_allowance_interaction",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      },
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          0.0,
+          0.1171875
+        ],
+        "confidence": 0.95,
+        "endpoint": "accuracy",
+        "estimate": 0.0546875,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "tuned_minus_default_short",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      },
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          0.0,
+          0.1171875
+        ],
+        "confidence": 0.95,
+        "endpoint": "accuracy",
+        "estimate": 0.0546875,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "tuned_minus_default_long",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      },
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          0.0390625,
+          0.1640625
+        ],
+        "confidence": 0.95,
+        "endpoint": "accuracy",
+        "estimate": 0.1015625,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "allowance_effect_default",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      },
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          0.046875,
+          0.1640625
+        ],
+        "confidence": 0.95,
+        "endpoint": "accuracy",
+        "estimate": 0.1015625,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "allowance_effect_tuned",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      },
+      {
+        "bootstrap_samples": 2000,
+        "ci": [
+          -0.0625,
+          0.0703125
+        ],
+        "confidence": 0.95,
+        "endpoint": "accuracy",
+        "estimate": 0.0,
+        "method": "paired question-cluster percentile bootstrap",
+        "multiplicity": "Descriptive marginal intervals, not simultaneous confidence bounds.",
+        "name": "serving_by_allowance_interaction",
+        "paired_question_seed_rows": 128,
+        "question_clusters": 128,
+        "seed": 724
+      }
+    ]
+  },
+  "independent_validation": {
+    "evidence": {
+      "default": {
+        "metrics": {
+          "accuracy": 0.8466666666666667,
+          "completed": 150,
+          "completed_in_window": 148,
+          "completed_requests_per_s": 0.49333333333333335,
+          "correct_completed_in_window": 127,
+          "correct_per_allocated_accelerator_second": 0.42333333333333334,
+          "deadline_constrained_accuracy": 0.8466666666666667,
+          "dispatched_requests_per_s": 0.5,
+          "drain_completed": 2,
+          "drain_duration_s": 15.30141248000109,
+          "error_count": 0,
+          "error_rate": 0.0,
+          "feasible": true,
+          "final_tokens_all": null,
+          "generated_output_tokens_all": 268529,
+          "input_tokens_per_s": 43.236666666666665,
+          "itl_observation_note": "Chunk gaps are transport observations; missing per-chunk token counts prohibit complete ITL reconstruction.",
+          "known_output_tokens_sum": 268529,
+          "latency_goodput": 0.49333333333333335,
+          "measurement_duration_s": 300,
+          "memory_constraint_status": "not_configured",
+          "missing_token_usage_count": 0,
+          "offered": 150,
+          "offered_requests_per_s": 0.5,
+          "output_tokens_per_s": 867.79,
+          "p50_completed_arrival_e2e_s": 31.4364064399997,
+          "p50_completed_client_queue_s": 0.0007848183334573378,
+          "p50_completed_e2e_s": 31.435342442999172,
+          "p50_completed_tpot_s": 0.024765180242104796,
+          "p50_completed_ttft_s": 0.05276340800082835,
+          "p95_completed_arrival_e2e_s": 102.16641301933426,
+          "p95_completed_client_queue_s": 0.0020854953339153326,
+          "p95_completed_e2e_s": 102.16590244000145,
+          "p95_completed_tpot_s": 0.027073727735408244,
+          "p95_completed_ttft_s": 0.06877228400117019,
+          "p99_client_queue_s": 0.004762847000165493,
+          "p99_completed_arrival_e2e_s": 107.64849284133317,
+          "p99_completed_client_queue_s": 0.004762847000165493,
+          "p99_completed_e2e_s": 107.64735356500023,
+          "p99_completed_tpot_s": 0.027372826861947596,
+          "p99_completed_ttft_s": 0.0773075510005583,
+          "p99_e2e_censored": false,
+          "p99_e2e_population": "all measurement-cohort arrivals; failures occupy infinite tail ranks",
+          "p99_e2e_s": 107.64735356500023,
+          "peak_memory_bytes": 20078133248.0,
+          "quality_constraint_status": "reference_self; candidate comparisons require development baseline",
+          "quality_goodput": 0.42333333333333334,
+          "quality_goodput_per_accelerator": 0.42333333333333334,
+          "quality_slo_completed_in_window": 127,
+          "reasoning_tokens_all": null,
+          "single_token_chunk_gap_p99_s": null,
+          "slo_constrained_accuracy": 0.8466666666666667,
+          "slo_violation_count": 0,
+          "status_counts": {
+            "ok": 150
+          },
+          "stream_chunk_gap_p99_s": 0.030814474001090275,
+          "tail_sample_warning": true,
+          "truncated_count": 17,
+          "unfinished_at_window_end": 2
+        },
+        "partition": "development_validation",
+        "quality_gate_pass": true,
+        "question_count": 150,
+        "question_ids_hash": "11db041a6158f5680bbe33ef6ae894353a8c0138178f264e3a3ab9bcb8060eb9",
+        "run_ids": [
+          "independent-default-n150-seed724"
+        ],
+        "sampling_seeds_hash": "b72ef5160c72af1164c89adc4b6a652627d4881286daa36e6244dc1e64630490",
+        "scored_path": "runs/independent-default-n150-seed724/scored.jsonl",
+        "scored_sha256": "68676f9f3dce0f466141fb882f0456b5e75925fd9b9617e85c287c16863e7fda",
+        "source": "measured",
+        "validation_plan_hash": "aeb5934d49bc0d9b9aeec40e9ecf8d62ef46e9be566011eff75435e27ec071f7"
+      },
+      "tuned": {
+        "metrics": {
+          "accuracy": 0.8733333333333333,
+          "completed": 150,
+          "completed_in_window": 149,
+          "completed_requests_per_s": 0.49666666666666665,
+          "correct_completed_in_window": 131,
+          "correct_per_allocated_accelerator_second": 0.43666666666666665,
+          "deadline_constrained_accuracy": 0.8733333333333333,
+          "dispatched_requests_per_s": 0.5,
+          "drain_completed": 1,
+          "drain_duration_s": 6.862516799999867,
+          "error_count": 0,
+          "error_rate": 0.0,
+          "feasible": true,
+          "final_tokens_all": null,
+          "generated_output_tokens_all": 253838,
+          "input_tokens_per_s": 43.48,
+          "itl_observation_note": "Chunk gaps are transport observations; missing per-chunk token counts prohibit complete ITL reconstruction.",
+          "known_output_tokens_sum": 253838,
+          "latency_goodput": 0.49666666666666665,
+          "measurement_duration_s": 300,
+          "memory_constraint_status": "not_configured",
+          "missing_token_usage_count": 0,
+          "offered": 150,
+          "offered_requests_per_s": 0.5,
+          "output_tokens_per_s": 832.4733333333334,
+          "p50_completed_arrival_e2e_s": 29.015861903667115,
+          "p50_completed_client_queue_s": 0.0008106149998639012,
+          "p50_completed_e2e_s": 29.014951424000174,
+          "p50_completed_tpot_s": 0.022580188776042103,
+          "p50_completed_ttft_s": 0.04943749599988223,
+          "p95_completed_arrival_e2e_s": 91.5554177619997,
+          "p95_completed_client_queue_s": 0.002002866666458658,
+          "p95_completed_e2e_s": 91.55448244699983,
+          "p95_completed_tpot_s": 0.024570197498548066,
+          "p95_completed_ttft_s": 0.06421005400079594,
+          "p99_client_queue_s": 0.0022183483336704057,
+          "p99_completed_arrival_e2e_s": 96.36416986600125,
+          "p99_completed_client_queue_s": 0.0022183483336704057,
+          "p99_completed_e2e_s": 96.36247341600028,
+          "p99_completed_tpot_s": 0.025233812877688885,
+          "p99_completed_ttft_s": 0.1419317919990135,
+          "p99_e2e_censored": false,
+          "p99_e2e_population": "all measurement-cohort arrivals; failures occupy infinite tail ranks",
+          "p99_e2e_s": 96.36247341600028,
+          "peak_memory_bytes": 20289945600.0,
+          "quality_constraint_status": "pass",
+          "quality_goodput": 0.43666666666666665,
+          "quality_goodput_per_accelerator": 0.43666666666666665,
+          "quality_slo_completed_in_window": 131,
+          "reasoning_tokens_all": null,
+          "single_token_chunk_gap_p99_s": null,
+          "slo_constrained_accuracy": 0.8733333333333333,
+          "slo_violation_count": 0,
+          "status_counts": {
+            "ok": 150
+          },
+          "stream_chunk_gap_p99_s": 0.027915787999518216,
+          "tail_sample_warning": true,
+          "truncated_count": 16,
+          "unfinished_at_window_end": 1
+        },
+        "paired_accuracy_ci": {
+          "bootstrap_samples": 2000,
+          "candidate_accuracy": 0.8733333333333333,
+          "ci": [
+            -0.013333333333333334,
+            0.06666666666666667
+          ],
+          "confidence": 0.95,
+          "degenerate_bootstrap": false,
+          "difference_candidate_minus_reference": 0.02666666666666667,
+          "method": "paired question-cluster percentile bootstrap; equal question weights",
+          "paired_requests": 150,
+          "quality_gate_usable": true,
+          "question_clusters": 150,
+          "reference_accuracy": 0.8466666666666667,
+          "seed": 724,
+          "warning": null
+        },
+        "paired_noninferiority": {
+          "assumption": "Independent question clusters; equal question weights; fixed sample size before outcomes",
+          "candidate_accuracy": 0.8733333333333333,
+          "ci": [
+            -0.050877067978523934,
+            1.0
+          ],
+          "confidence": 0.95,
+          "difference_candidate_minus_reference": 0.02666666666666667,
+          "harmful_probability_upper": 0.050877067978523934,
+          "harmful_questions": 3,
+          "margin": 0.02,
+          "method": "exact-paired-harmful-discordance-v1",
+          "paired_requests": 150,
+          "planned_question_count": 150,
+          "quality_gate_pass": false,
+          "quality_gate_usable": true,
+          "question_clusters": 150,
+          "reference_accuracy": 0.8466666666666667,
+          "sidedness": "one-sided lower",
+          "warning": null
+        },
+        "partition": "development_validation",
+        "quality_claim_status": "empirical_pass_statistical_noninferiority_inconclusive",
+        "quality_gate_pass": true,
+        "question_count": 150,
+        "question_ids_hash": "11db041a6158f5680bbe33ef6ae894353a8c0138178f264e3a3ab9bcb8060eb9",
+        "run_ids": [
+          "independent-tuned-n150-seed724"
+        ],
+        "sampling_seeds_hash": "b72ef5160c72af1164c89adc4b6a652627d4881286daa36e6244dc1e64630490",
+        "scored_path": "runs/independent-tuned-n150-seed724/scored.jsonl",
+        "scored_sha256": "43966683012504b15c8c7bd67cc092f31a9d1e68954f2d7def62fe1995558aba",
+        "source": "measured",
+        "validation_plan_hash": "aeb5934d49bc0d9b9aeec40e9ecf8d62ef46e9be566011eff75435e27ec071f7"
+      }
+    },
+    "status": {
+      "candidate_identical_to_default": false,
+      "final_allowed": true,
+      "freeze_hash": "269b08b441e96fc943269bbb8c90c1623f88178788051272d18a4477b6a0a450",
+      "official_test_accessed": false,
+      "quality_claim_status": "empirical_pass_statistical_noninferiority_inconclusive",
+      "selected_method": "neural",
+      "status": "validated_and_frozen"
+    }
+  },
+  "input_sha256": {
+    "results/continuation/analysis-spec.json": "6b640906cdc02211171c805b8177d283ae887e32d4371b0148e771ac32ef0bb4",
+    "results/continuation/cloud-accounting-final.json": "0f1172b0e0c518dd1b917c9fee68b530799c1d1bb734f4072cf50f16be8b74d5",
+    "results/continuation/default-reference.json": "c20d9de738f12958255837fa25041d114fb84a0bb7a0e3618c12890607b0e0d4",
+    "results/continuation/final/fixed-compute-comparisons-seed724.json": "5fb1f37b665e9826f1b921e3403f10e91b301e27d5691bc82c0976cb5a1b74e0",
+    "results/continuation/final/fixed-compute-plan-seed724.json": "f7c0f92aa17c1e85908820240e62533bf8d188c017bb044fda1284ac31faa2ab",
+    "results/continuation/final/fixed-compute-summary-seed724.json": "61e81a0f6e222d19781e79e48dbd2b9ca9805799e1cc73f74318375a880e5c01",
+    "results/continuation/freeze.json": "0d4e60e442523b84f9c1da082e45833e363eba1a770da30fa9d96a7c6115f6ca",
+    "results/continuation/independent-validation-evidence.json": "cfc638d20af4cf7837f4d4f504aab54a734ade927a36a6c33c0c856891ae479a",
+    "results/continuation/search-plan.json": "4b2b81778a6b01e76ad7d65c632c1acf5f3c8359d5adf727763233047a221fc1",
+    "results/continuation/search/gp/observations.jsonl": "6e31a6595c6452e398c9090e12847ea374edc4bc464ce0888b5d7030fbde7dfc",
+    "results/continuation/search/neural/observations.jsonl": "4a2a1195234c14a3ca0d5e09552d5d9abd574be5ed1579a75e8627c3f0561eae",
+    "results/continuation/search/random/observations.jsonl": "1ba5fdf0f4c587f032cf1fa81a824d90f9c8b4ef7a721126c67e36adb3c91479",
+    "results/continuation/validation-status.json": "d9a45429c39472fe6538bdf8c97ffb18229acce381fa01b4974720923c76f37c",
+    "results/measured/budget.jsonl": "2766d86111d6396cf026a057131f8b6d5c562a81e0cad9fc0eab1851673bfe44"
+  },
+  "metric_definitions": {
+    "configuration_range": "Observed min/max across repeats, not a confidence interval.",
+    "latency": "Reported P99 E2E from measured cohort; small-sample warning retained.",
+    "quality_goodput": "Correct SLO-compliant measurement-window completions divided by measurement seconds.",
+    "search_cost_axis": "Actual raw trial allocation plus its uniquely tagged cloud overhead, per method.",
+    "whole_trial_efficiency": "Same window-correct numerator divided by whole attributed trial allocation; distinct from window goodput."
+  },
+  "plot_files": [
+    "live_goodput_vs_allocation.png",
+    "live_goodput_vs_allocation.svg",
+    "live_goodput_vs_trials.png",
+    "live_goodput_vs_trials.svg",
+    "configuration_goodput_ranges.png",
+    "configuration_goodput_ranges.svg",
+    "latency_goodput.png",
+    "latency_goodput.svg",
+    "heldout_accuracy_and_tokens.png",
+    "heldout_accuracy_and_tokens.svg"
+  ],
+  "report_status": "complete",
+  "schema_version": 1,
+  "search": {
+    "allocation_audit": {
+      "all_tagged_overheads_assigned_once": true,
+      "assigned_overhead_accelerator_seconds": 20.374317036478715,
+      "assigned_overhead_event_count": 30,
+      "complete": true,
+      "missing_overhead_run_ids": [],
+      "missing_trial_finish_run_ids": [],
+      "tagged_overhead_event_count": 30,
+      "unmatched_tagged_overhead_run_ids": []
+    },
+    "configuration_repeats": [
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "19dad4abf69a",
+        "count": 1,
+        "feasible_count": 1,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp"
+        ],
+        "quality_goodput_max": 0.1,
+        "quality_goodput_mean": 0.1,
+        "quality_goodput_min": 0.1,
+        "run_ids": [
+          "live-gp-08"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "3ca7dc843e77",
+        "count": 3,
+        "feasible_count": 3,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp",
+          "neural",
+          "random"
+        ],
+        "quality_goodput_max": 0.1111111111111111,
+        "quality_goodput_mean": 0.1074074074074074,
+        "quality_goodput_min": 0.1,
+        "run_ids": [
+          "live-random-06",
+          "live-gp-06",
+          "live-neural-08"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "3f49dcccf7a4",
+        "count": 3,
+        "feasible_count": 3,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp",
+          "neural",
+          "random"
+        ],
+        "quality_goodput_max": 0.3888888888888889,
+        "quality_goodput_mean": 0.3666666666666667,
+        "quality_goodput_min": 0.34444444444444444,
+        "run_ids": [
+          "live-random-07",
+          "live-gp-07",
+          "live-neural-07"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "6f84b442e942",
+        "count": 3,
+        "feasible_count": 3,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp",
+          "neural",
+          "random"
+        ],
+        "quality_goodput_max": 0.3888888888888889,
+        "quality_goodput_mean": 0.3703703703703704,
+        "quality_goodput_min": 0.34444444444444444,
+        "run_ids": [
+          "live-random-03",
+          "live-gp-03",
+          "live-neural-03"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "824c39833bb8",
+        "count": 3,
+        "feasible_count": 3,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp",
+          "neural",
+          "random"
+        ],
+        "quality_goodput_max": 0.43333333333333335,
+        "quality_goodput_mean": 0.37777777777777777,
+        "quality_goodput_min": 0.3333333333333333,
+        "run_ids": [
+          "live-random-05",
+          "live-gp-05",
+          "live-neural-05"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "8ba31d20c7eb",
+        "count": 3,
+        "feasible_count": 3,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp",
+          "neural",
+          "random"
+        ],
+        "quality_goodput_max": 0.1,
+        "quality_goodput_mean": 0.09629629629629631,
+        "quality_goodput_min": 0.08888888888888889,
+        "run_ids": [
+          "live-random-02",
+          "live-gp-02",
+          "live-neural-02"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a15d9493236d",
+        "count": 3,
+        "feasible_count": 3,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp",
+          "neural",
+          "random"
+        ],
+        "quality_goodput_max": 0.4,
+        "quality_goodput_mean": 0.37777777777777777,
+        "quality_goodput_min": 0.34444444444444444,
+        "run_ids": [
+          "live-random-00",
+          "live-gp-00",
+          "live-neural-00"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a283852d32ee",
+        "count": 2,
+        "feasible_count": 2,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "neural",
+          "random"
+        ],
+        "quality_goodput_max": 0.43333333333333335,
+        "quality_goodput_mean": 0.4111111111111111,
+        "quality_goodput_min": 0.3888888888888889,
+        "run_ids": [
+          "live-random-09",
+          "live-neural-09"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a51616051a1d",
+        "count": 2,
+        "feasible_count": 2,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp",
+          "random"
+        ],
+        "quality_goodput_max": 0.4,
+        "quality_goodput_mean": 0.31666666666666665,
+        "quality_goodput_min": 0.23333333333333334,
+        "run_ids": [
+          "live-random-08",
+          "live-gp-09"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "b99a5a32245f",
+        "count": 1,
+        "feasible_count": 1,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "neural"
+        ],
+        "quality_goodput_max": 0.3888888888888889,
+        "quality_goodput_mean": 0.3888888888888889,
+        "quality_goodput_min": 0.3888888888888889,
+        "run_ids": [
+          "live-neural-06"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "d068f4153a1b",
+        "count": 3,
+        "feasible_count": 3,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp",
+          "neural",
+          "random"
+        ],
+        "quality_goodput_max": 0.3888888888888889,
+        "quality_goodput_mean": 0.3703703703703704,
+        "quality_goodput_min": 0.35555555555555557,
+        "run_ids": [
+          "live-random-04",
+          "live-gp-04",
+          "live-neural-04"
+        ]
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "ebc2c40b859d",
+        "count": 3,
+        "feasible_count": 3,
+        "interval_kind": "observed range, not confidence interval",
+        "methods": [
+          "gp",
+          "neural",
+          "random"
+        ],
+        "quality_goodput_max": 0.36666666666666664,
+        "quality_goodput_mean": 0.35185185185185186,
+        "quality_goodput_min": 0.3333333333333333,
+        "run_ids": [
+          "live-random-01",
+          "live-gp-01",
+          "live-neural-01"
+        ]
+      }
+    ],
+    "cost_note": "Each raw trial plus its one unique method-tagged global-ledger overhead. Shared setup is separate; derived totals are not additional ledger charges.",
+    "curves": {
+      "gp": [
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.43217430134882306,
+          "best_feasible_goodput": 0.4,
+          "config_id": "a15d9493236d",
+          "cumulative_accelerator_seconds": 300.43229699134827,
+          "derived_trial_accelerator_seconds": 300.43229699134827,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round00-gp",
+          "raw_trial_accelerator_seconds": 300.00012268999944,
+          "run_id": "live-gp-00",
+          "run_status": "ok",
+          "trial": 1,
+          "window_correct_per_whole_trial_accelerator_second": 0.11982733001917138,
+          "window_quality_goodput": 0.4
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.44947485105331,
+          "best_feasible_goodput": 0.4,
+          "config_id": "ebc2c40b859d",
+          "cumulative_accelerator_seconds": 600.8818860054016,
+          "derived_trial_accelerator_seconds": 300.44958901405334,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round01-gp",
+          "raw_trial_accelerator_seconds": 300.00011416300003,
+          "run_id": "live-gp-01",
+          "run_status": "ok",
+          "trial": 2,
+          "window_correct_per_whole_trial_accelerator_second": 0.10650705199834112,
+          "window_quality_goodput": 0.35555555555555557
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.43948427659097433,
+          "best_feasible_goodput": 0.4,
+          "config_id": "8ba31d20c7eb",
+          "cumulative_accelerator_seconds": 901.3214750289922,
+          "derived_trial_accelerator_seconds": 300.43958902359054,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round02-gp",
+          "raw_trial_accelerator_seconds": 300.00010474699957,
+          "run_id": "live-gp-02",
+          "run_status": "ok",
+          "trial": 3,
+          "window_correct_per_whole_trial_accelerator_second": 0.029956105416231678,
+          "window_quality_goodput": 0.1
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.446991421184066,
+          "best_feasible_goodput": 0.4,
+          "config_id": "6f84b442e942",
+          "cumulative_accelerator_seconds": 1201.7685453891759,
+          "derived_trial_accelerator_seconds": 300.4470703601837,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round03-gp",
+          "raw_trial_accelerator_seconds": 300.00007893899965,
+          "run_id": "live-gp-03",
+          "run_status": "ok",
+          "trial": 4,
+          "window_correct_per_whole_trial_accelerator_second": 0.11649306467871727,
+          "window_quality_goodput": 0.3888888888888889
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.47184952812131087,
+          "best_feasible_goodput": 0.4,
+          "config_id": "d068f4153a1b",
+          "cumulative_accelerator_seconds": 1502.2404999732976,
+          "derived_trial_accelerator_seconds": 300.4719545841217,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round04-gp",
+          "raw_trial_accelerator_seconds": 300.0001050560004,
+          "run_id": "live-gp-04",
+          "run_status": "ok",
+          "trial": 5,
+          "window_correct_per_whole_trial_accelerator_second": 0.116483417057818,
+          "window_quality_goodput": 0.3888888888888889
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.4966986218987586,
+          "best_feasible_goodput": 0.4,
+          "config_id": "824c39833bb8",
+          "cumulative_accelerator_seconds": 1802.7373187541966,
+          "derived_trial_accelerator_seconds": 300.49681878089905,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round05-gp",
+          "raw_trial_accelerator_seconds": 300.0001201590003,
+          "run_id": "live-gp-05",
+          "run_status": "ok",
+          "trial": 6,
+          "window_correct_per_whole_trial_accelerator_second": 0.09983466754060338,
+          "window_quality_goodput": 0.3333333333333333
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.5074585754446161,
+          "best_feasible_goodput": 0.4,
+          "config_id": "3ca7dc843e77",
+          "cumulative_accelerator_seconds": 2103.2448956966405,
+          "derived_trial_accelerator_seconds": 300.50757694244385,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.05592702999999233,
+          "optimizer_wall_seconds": 0.018893361999289482,
+          "overhead_ledger_run_id": "cloud-overhead-round06-gp",
+          "raw_trial_accelerator_seconds": 300.00011836699923,
+          "run_id": "live-gp-06",
+          "run_status": "ok",
+          "trial": 7,
+          "window_correct_per_whole_trial_accelerator_second": 0.02994932803881936,
+          "window_quality_goodput": 0.1
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.45928927074601233,
+          "best_feasible_goodput": 0.4,
+          "config_id": "3f49dcccf7a4",
+          "cumulative_accelerator_seconds": 2403.7042951583867,
+          "derived_trial_accelerator_seconds": 300.4593994617462,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.034543662999993785,
+          "optimizer_wall_seconds": 0.010943933000817196,
+          "overhead_ledger_run_id": "cloud-overhead-round07-gp",
+          "raw_trial_accelerator_seconds": 300.0001101910002,
+          "run_id": "live-gp-07",
+          "run_status": "ok",
+          "trial": 8,
+          "window_correct_per_whole_trial_accelerator_second": 0.10983181108368514,
+          "window_quality_goodput": 0.36666666666666664
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.4919714490770275,
+          "best_feasible_goodput": 0.4,
+          "config_id": "19dad4abf69a",
+          "cumulative_accelerator_seconds": 2704.196429729462,
+          "derived_trial_accelerator_seconds": 300.49213457107544,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.013066353999988678,
+          "optimizer_wall_seconds": 0.010568073999820626,
+          "overhead_ledger_run_id": "cloud-overhead-round08-gp",
+          "raw_trial_accelerator_seconds": 300.0001631219984,
+          "run_id": "live-gp-08",
+          "run_status": "ok",
+          "trial": 9,
+          "window_correct_per_whole_trial_accelerator_second": 0.029950867142817774,
+          "window_quality_goodput": 0.1
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.47652836987617775,
+          "best_feasible_goodput": 0.4,
+          "config_id": "a51616051a1d",
+          "cumulative_accelerator_seconds": 3004.6730701923375,
+          "derived_trial_accelerator_seconds": 300.47664046287537,
+          "feasible": true,
+          "incumbent_run_id": "live-gp-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.011143753999988348,
+          "optimizer_wall_seconds": 0.010040043000117294,
+          "overhead_ledger_run_id": "cloud-overhead-round09-gp",
+          "raw_trial_accelerator_seconds": 300.0001120929992,
+          "run_id": "live-gp-09",
+          "run_status": "ok",
+          "trial": 10,
+          "window_correct_per_whole_trial_accelerator_second": 0.06988896031202332,
+          "window_quality_goodput": 0.23333333333333334
+        }
+      ],
+      "neural": [
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.4227212782679999,
+          "best_feasible_goodput": 0.34444444444444444,
+          "config_id": "a15d9493236d",
+          "cumulative_accelerator_seconds": 300.4228434562683,
+          "derived_trial_accelerator_seconds": 300.4228434562683,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round00-neural",
+          "raw_trial_accelerator_seconds": 300.0001221780003,
+          "run_id": "live-neural-00",
+          "run_status": "ok",
+          "trial": 1,
+          "window_correct_per_whole_trial_accelerator_second": 0.10318789224998658,
+          "window_quality_goodput": 0.34444444444444444
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.8329633809134975,
+          "best_feasible_goodput": 0.34444444444444444,
+          "config_id": "ebc2c40b859d",
+          "cumulative_accelerator_seconds": 601.2559027671814,
+          "derived_trial_accelerator_seconds": 300.8330593109131,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round01-neural",
+          "raw_trial_accelerator_seconds": 300.0000959299996,
+          "run_id": "live-neural-01",
+          "run_status": "ok",
+          "trial": 2,
+          "window_correct_per_whole_trial_accelerator_second": 0.09972308252529782,
+          "window_quality_goodput": 0.3333333333333333
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.45960981643293053,
+          "best_feasible_goodput": 0.34444444444444444,
+          "config_id": "8ba31d20c7eb",
+          "cumulative_accelerator_seconds": 901.7156164646149,
+          "derived_trial_accelerator_seconds": 300.4597136974335,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round02-neural",
+          "raw_trial_accelerator_seconds": 300.00010388100054,
+          "run_id": "live-neural-02",
+          "run_status": "ok",
+          "trial": 3,
+          "window_correct_per_whole_trial_accelerator_second": 0.029954098968033725,
+          "window_quality_goodput": 0.1
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.4597891314624576,
+          "best_feasible_goodput": 0.34444444444444444,
+          "config_id": "6f84b442e942",
+          "cumulative_accelerator_seconds": 1202.1755101680756,
+          "derived_trial_accelerator_seconds": 300.4598937034607,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round03-neural",
+          "raw_trial_accelerator_seconds": 300.00010457199824,
+          "run_id": "live-neural-03",
+          "run_status": "ok",
+          "trial": 4,
+          "window_correct_per_whole_trial_accelerator_second": 0.10317516796632929,
+          "window_quality_goodput": 0.34444444444444444
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.452339720000964,
+          "best_feasible_goodput": 0.35555555555555557,
+          "config_id": "d068f4153a1b",
+          "cumulative_accelerator_seconds": 1502.6279602050781,
+          "derived_trial_accelerator_seconds": 300.45245003700256,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-04",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round04-neural",
+          "raw_trial_accelerator_seconds": 300.0001103170016,
+          "run_id": "live-neural-04",
+          "run_status": "ok",
+          "trial": 5,
+          "window_correct_per_whole_trial_accelerator_second": 0.10650603779752504,
+          "window_quality_goodput": 0.35555555555555557
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.4691836810816312,
+          "best_feasible_goodput": 0.43333333333333335,
+          "config_id": "824c39833bb8",
+          "cumulative_accelerator_seconds": 1803.0972502231598,
+          "derived_trial_accelerator_seconds": 300.46929001808167,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-05",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round05-neural",
+          "raw_trial_accelerator_seconds": 300.00010633700003,
+          "run_id": "live-neural-05",
+          "run_status": "ok",
+          "trial": 6,
+          "window_correct_per_whole_trial_accelerator_second": 0.12979695860982352,
+          "window_quality_goodput": 0.43333333333333335
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 1.1514932482659788,
+          "best_feasible_goodput": 0.43333333333333335,
+          "config_id": "b99a5a32245f",
+          "cumulative_accelerator_seconds": 2104.248847961426,
+          "derived_trial_accelerator_seconds": 301.151597738266,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-05",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 8.360813232999988,
+          "optimizer_wall_seconds": 0.6508105329994578,
+          "overhead_ledger_run_id": "cloud-overhead-round06-neural",
+          "raw_trial_accelerator_seconds": 300.00010449,
+          "run_id": "live-neural-06",
+          "run_status": "ok",
+          "trial": 7,
+          "window_correct_per_whole_trial_accelerator_second": 0.11622053564669733,
+          "window_quality_goodput": 0.3888888888888889
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 1.0106563085882954,
+          "best_feasible_goodput": 0.43333333333333335,
+          "config_id": "3f49dcccf7a4",
+          "cumulative_accelerator_seconds": 2405.2596323490143,
+          "derived_trial_accelerator_seconds": 301.0107843875885,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-05",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 6.758696713999996,
+          "optimizer_wall_seconds": 0.5386139260008349,
+          "overhead_ledger_run_id": "cloud-overhead-round07-neural",
+          "raw_trial_accelerator_seconds": 300.0001280790002,
+          "run_id": "live-neural-07",
+          "run_status": "ok",
+          "trial": 8,
+          "window_correct_per_whole_trial_accelerator_second": 0.10298634337327821,
+          "window_quality_goodput": 0.34444444444444444
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 1.0122620017900772,
+          "best_feasible_goodput": 0.43333333333333335,
+          "config_id": "3ca7dc843e77",
+          "cumulative_accelerator_seconds": 2706.272000312805,
+          "derived_trial_accelerator_seconds": 301.0123679637909,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-05",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 6.651523714999996,
+          "optimizer_wall_seconds": 0.5329834839994874,
+          "overhead_ledger_run_id": "cloud-overhead-round08-neural",
+          "raw_trial_accelerator_seconds": 300.0001059620008,
+          "run_id": "live-neural-08",
+          "run_status": "ok",
+          "trial": 9,
+          "window_correct_per_whole_trial_accelerator_second": 0.03322122631586657,
+          "window_quality_goodput": 0.1111111111111111
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 2.7603272088817903,
+          "best_feasible_goodput": 0.43333333333333335,
+          "config_id": "a283852d32ee",
+          "cumulative_accelerator_seconds": 3009.0324368476868,
+          "derived_trial_accelerator_seconds": 302.7604365348816,
+          "feasible": true,
+          "incumbent_run_id": "live-neural-05",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 27.345031359000018,
+          "optimizer_wall_seconds": 2.249896659001024,
+          "overhead_ledger_run_id": "cloud-overhead-round09-neural",
+          "raw_trial_accelerator_seconds": 300.0001093259998,
+          "run_id": "live-neural-09",
+          "run_status": "ok",
+          "trial": 10,
+          "window_correct_per_whole_trial_accelerator_second": 0.11560295129898052,
+          "window_quality_goodput": 0.3888888888888889
+        }
+      ],
+      "random": [
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 2.2841775738352226,
+          "best_feasible_goodput": 0.3888888888888889,
+          "config_id": "a15d9493236d",
+          "cumulative_accelerator_seconds": 302.28430461883545,
+          "derived_trial_accelerator_seconds": 302.28430461883545,
+          "feasible": true,
+          "incumbent_run_id": "live-random-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round00-random",
+          "raw_trial_accelerator_seconds": 300.0001270450002,
+          "run_id": "live-random-00",
+          "run_status": "ok",
+          "trial": 1,
+          "window_correct_per_whole_trial_accelerator_second": 0.1157850390020519,
+          "window_quality_goodput": 0.3888888888888889
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.6061544431258881,
+          "best_feasible_goodput": 0.3888888888888889,
+          "config_id": "ebc2c40b859d",
+          "cumulative_accelerator_seconds": 602.8905577659607,
+          "derived_trial_accelerator_seconds": 300.60625314712524,
+          "feasible": true,
+          "incumbent_run_id": "live-random-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round01-random",
+          "raw_trial_accelerator_seconds": 300.00009870399936,
+          "run_id": "live-random-01",
+          "run_status": "ok",
+          "trial": 2,
+          "window_correct_per_whole_trial_accelerator_second": 0.10977815549249025,
+          "window_quality_goodput": 0.36666666666666664
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.425449735582788,
+          "best_feasible_goodput": 0.3888888888888889,
+          "config_id": "8ba31d20c7eb",
+          "cumulative_accelerator_seconds": 903.3161103725429,
+          "derived_trial_accelerator_seconds": 300.4255526065822,
+          "feasible": true,
+          "incumbent_run_id": "live-random-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round02-random",
+          "raw_trial_accelerator_seconds": 300.0001028709994,
+          "run_id": "live-random-02",
+          "run_status": "ok",
+          "trial": 3,
+          "window_correct_per_whole_trial_accelerator_second": 0.02662889335008158,
+          "window_quality_goodput": 0.08888888888888889
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.4654651606870175,
+          "best_feasible_goodput": 0.3888888888888889,
+          "config_id": "6f84b442e942",
+          "cumulative_accelerator_seconds": 1203.78170466423,
+          "derived_trial_accelerator_seconds": 300.465594291687,
+          "feasible": true,
+          "incumbent_run_id": "live-random-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round03-random",
+          "raw_trial_accelerator_seconds": 300.000129131,
+          "run_id": "live-random-03",
+          "run_status": "ok",
+          "trial": 4,
+          "window_correct_per_whole_trial_accelerator_second": 0.11315771471323058,
+          "window_quality_goodput": 0.37777777777777777
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.43403869800749817,
+          "best_feasible_goodput": 0.3888888888888889,
+          "config_id": "d068f4153a1b",
+          "cumulative_accelerator_seconds": 1504.2158708572383,
+          "derived_trial_accelerator_seconds": 300.4341661930084,
+          "feasible": true,
+          "incumbent_run_id": "live-random-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round04-random",
+          "raw_trial_accelerator_seconds": 300.0001274950009,
+          "run_id": "live-random-04",
+          "run_status": "ok",
+          "trial": 5,
+          "window_correct_per_whole_trial_accelerator_second": 0.109841035785523,
+          "window_quality_goodput": 0.36666666666666664
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.46991725623593084,
+          "best_feasible_goodput": 0.3888888888888889,
+          "config_id": "824c39833bb8",
+          "cumulative_accelerator_seconds": 1804.6858866214748,
+          "derived_trial_accelerator_seconds": 300.47001576423645,
+          "feasible": true,
+          "incumbent_run_id": "live-random-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.0,
+          "optimizer_wall_seconds": 0.0,
+          "overhead_ledger_run_id": "cloud-overhead-round05-random",
+          "raw_trial_accelerator_seconds": 300.0000985080005,
+          "run_id": "live-random-05",
+          "run_status": "ok",
+          "trial": 6,
+          "window_correct_per_whole_trial_accelerator_second": 0.10982793047108376,
+          "window_quality_goodput": 0.36666666666666664
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.5019658855198941,
+          "best_feasible_goodput": 0.3888888888888889,
+          "config_id": "3ca7dc843e77",
+          "cumulative_accelerator_seconds": 2105.187967061996,
+          "derived_trial_accelerator_seconds": 300.50208044052124,
+          "feasible": true,
+          "incumbent_run_id": "live-random-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.00014132999999105778,
+          "optimizer_wall_seconds": 0.00011850199916807469,
+          "overhead_ledger_run_id": "cloud-overhead-round06-random",
+          "raw_trial_accelerator_seconds": 300.00011455500135,
+          "run_id": "live-random-06",
+          "run_status": "ok",
+          "trial": 7,
+          "window_correct_per_whole_trial_accelerator_second": 0.03327763982645476,
+          "window_quality_goodput": 0.1111111111111111
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.4873730294111738,
+          "best_feasible_goodput": 0.3888888888888889,
+          "config_id": "3f49dcccf7a4",
+          "cumulative_accelerator_seconds": 2405.6754477024074,
+          "derived_trial_accelerator_seconds": 300.4874806404114,
+          "feasible": true,
+          "incumbent_run_id": "live-random-00",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.00017678000000387328,
+          "optimizer_wall_seconds": 0.00014745299995411187,
+          "overhead_ledger_run_id": "cloud-overhead-round07-random",
+          "raw_trial_accelerator_seconds": 300.0001076110002,
+          "run_id": "live-random-07",
+          "run_status": "ok",
+          "trial": 8,
+          "window_correct_per_whole_trial_accelerator_second": 0.11647739841076424,
+          "window_quality_goodput": 0.3888888888888889
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.5029259024195198,
+          "best_feasible_goodput": 0.4,
+          "config_id": "a51616051a1d",
+          "cumulative_accelerator_seconds": 2706.1784815788264,
+          "derived_trial_accelerator_seconds": 300.50303387641907,
+          "feasible": true,
+          "incumbent_run_id": "live-random-08",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.00014909999998735657,
+          "optimizer_wall_seconds": 0.0001177829999505775,
+          "overhead_ledger_run_id": "cloud-overhead-round08-random",
+          "raw_trial_accelerator_seconds": 300.00010797399955,
+          "run_id": "live-random-08",
+          "run_status": "ok",
+          "trial": 9,
+          "window_correct_per_whole_trial_accelerator_second": 0.11979912327542386,
+          "window_quality_goodput": 0.4
+        },
+        {
+          "allocation_verified": true,
+          "assigned_cloud_overhead_seconds": 0.49358291062708304,
+          "best_feasible_goodput": 0.43333333333333335,
+          "config_id": "a283852d32ee",
+          "cumulative_accelerator_seconds": 3006.672191381454,
+          "derived_trial_accelerator_seconds": 300.49370980262756,
+          "feasible": true,
+          "incumbent_run_id": "live-random-09",
+          "measurement_duration_seconds": 90,
+          "optimizer_cpu_seconds": 0.00014895999998998377,
+          "optimizer_wall_seconds": 0.00011979200098721776,
+          "overhead_ledger_run_id": "cloud-overhead-round09-random",
+          "raw_trial_accelerator_seconds": 300.0001268920005,
+          "run_id": "live-random-09",
+          "run_status": "ok",
+          "trial": 10,
+          "window_correct_per_whole_trial_accelerator_second": 0.12978641058948043,
+          "window_quality_goodput": 0.43333333333333335
+        }
+      ]
+    },
+    "environment_hash": "b2c034ec0c1ec3ce047810efecc163d64ad8f7b85ab20f90a3ed1d6ef7aa735e",
+    "latency_goodput_points": [
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a15d9493236d",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 57.173283944000104,
+        "quality_goodput": 0.3888888888888889,
+        "run_id": "live-random-00",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "ebc2c40b859d",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 71.260742157001,
+        "quality_goodput": 0.36666666666666664,
+        "run_id": "live-random-01",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "8ba31d20c7eb",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 94.62875098299992,
+        "quality_goodput": 0.08888888888888889,
+        "run_id": "live-random-02",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "6f84b442e942",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 70.50146618200051,
+        "quality_goodput": 0.37777777777777777,
+        "run_id": "live-random-03",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "d068f4153a1b",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 75.22755807300018,
+        "quality_goodput": 0.36666666666666664,
+        "run_id": "live-random-04",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "824c39833bb8",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 75.15434671700132,
+        "quality_goodput": 0.36666666666666664,
+        "run_id": "live-random-05",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "3ca7dc843e77",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 89.38442909100013,
+        "quality_goodput": 0.1111111111111111,
+        "run_id": "live-random-06",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "3f49dcccf7a4",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 68.60925008999948,
+        "quality_goodput": 0.3888888888888889,
+        "run_id": "live-random-07",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a51616051a1d",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 69.14279056799933,
+        "quality_goodput": 0.4,
+        "run_id": "live-random-08",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a283852d32ee",
+        "feasible": true,
+        "method": "random",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 64.04943986599937,
+        "quality_goodput": 0.43333333333333335,
+        "run_id": "live-random-09",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a15d9493236d",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 66.74418728900037,
+        "quality_goodput": 0.4,
+        "run_id": "live-gp-00",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "ebc2c40b859d",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 72.67441510200024,
+        "quality_goodput": 0.35555555555555557,
+        "run_id": "live-gp-01",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "8ba31d20c7eb",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 94.87133800599986,
+        "quality_goodput": 0.1,
+        "run_id": "live-gp-02",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "6f84b442e942",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 64.85531393900055,
+        "quality_goodput": 0.3888888888888889,
+        "run_id": "live-gp-03",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "d068f4153a1b",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 71.46670484700007,
+        "quality_goodput": 0.3888888888888889,
+        "run_id": "live-gp-04",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "824c39833bb8",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 78.4460442669988,
+        "quality_goodput": 0.3333333333333333,
+        "run_id": "live-gp-05",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "3ca7dc843e77",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 85.23054411200064,
+        "quality_goodput": 0.1,
+        "run_id": "live-gp-06",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "3f49dcccf7a4",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 74.09893851699962,
+        "quality_goodput": 0.36666666666666664,
+        "run_id": "live-gp-07",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "19dad4abf69a",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 85.56233294099911,
+        "quality_goodput": 0.1,
+        "run_id": "live-gp-08",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a51616051a1d",
+        "feasible": true,
+        "method": "gp",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 78.38403639599892,
+        "quality_goodput": 0.23333333333333334,
+        "run_id": "live-gp-09",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a15d9493236d",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 73.53159076599968,
+        "quality_goodput": 0.34444444444444444,
+        "run_id": "live-neural-00",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "ebc2c40b859d",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 76.91573954299929,
+        "quality_goodput": 0.3333333333333333,
+        "run_id": "live-neural-01",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "8ba31d20c7eb",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 82.06224031700003,
+        "quality_goodput": 0.1,
+        "run_id": "live-neural-02",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "6f84b442e942",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 76.56541217099948,
+        "quality_goodput": 0.34444444444444444,
+        "run_id": "live-neural-03",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 2048,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "d068f4153a1b",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 74.28784083299979,
+        "quality_goodput": 0.35555555555555557,
+        "run_id": "live-neural-04",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "824c39833bb8",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 67.57174734,
+        "quality_goodput": 0.43333333333333335,
+        "run_id": "live-neural-05",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 64,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "b99a5a32245f",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 73.72741884499919,
+        "quality_goodput": 0.3888888888888889,
+        "run_id": "live-neural-06",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 32,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "3f49dcccf7a4",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 76.04484776099889,
+        "quality_goodput": 0.34444444444444444,
+        "run_id": "live-neural-07",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 512,
+          "max_num_seqs": 8,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "3ca7dc843e77",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 91.87304408000091,
+        "quality_goodput": 0.1111111111111111,
+        "run_id": "live-neural-08",
+        "status": "ok",
+        "tail_sample_warning": true
+      },
+      {
+        "config": {
+          "chunked_prefill": true,
+          "gpu_memory_utilization": 0.8,
+          "kv_cache_dtype": "auto",
+          "max_num_batched_tokens": 1024,
+          "max_num_seqs": 16,
+          "precision": "bf16",
+          "prefix_caching": false,
+          "tensor_parallel_size": 1
+        },
+        "config_id": "a283852d32ee",
+        "feasible": true,
+        "method": "neural",
+        "p99_e2e_censored": false,
+        "p99_e2e_s": 56.95850764500028,
+        "quality_goodput": 0.3888888888888889,
+        "run_id": "live-neural-09",
+        "status": "ok",
+        "tail_sample_warning": true
+      }
+    ],
+    "method_cap_audit": {
+      "affects_completion_gate": false,
+      "declared_base_trial_admission_cap_seconds": 3175.0,
+      "interpretation": "closed_loop admission uses base trial accelerator charges. Method-tagged cloud overhead is assigned afterward; the same declared amount is audited against fully attributed totals, not asserted as an enforced end-to-end resource cap. Actual excess is retained without changing experiment completion status.",
+      "methods": {
+        "gp": {
+          "base_trial_accelerator_seconds": 3000.0011495269964,
+          "base_trial_excess_seconds": 0.0,
+          "base_trial_within_declared_amount": true,
+          "declared_base_trial_admission_cap_seconds": 3175.0,
+          "evidence_complete": true,
+          "fully_attributed_accelerator_seconds": 3004.6730701923375,
+          "fully_attributed_excess_seconds": 0.0,
+          "fully_attributed_within_declared_amount": true,
+          "status": "within_declared_amount"
+        },
+        "neural": {
+          "base_trial_accelerator_seconds": 3000.001091072001,
+          "base_trial_excess_seconds": 0.0,
+          "base_trial_within_declared_amount": true,
+          "declared_base_trial_admission_cap_seconds": 3175.0,
+          "evidence_complete": true,
+          "fully_attributed_accelerator_seconds": 3009.0324368476868,
+          "fully_attributed_excess_seconds": 0.0,
+          "fully_attributed_within_declared_amount": true,
+          "status": "within_declared_amount"
+        },
+        "random": {
+          "base_trial_accelerator_seconds": 3000.001140786002,
+          "base_trial_excess_seconds": 0.0,
+          "base_trial_within_declared_amount": true,
+          "declared_base_trial_admission_cap_seconds": 3175.0,
+          "evidence_complete": true,
+          "fully_attributed_accelerator_seconds": 3006.672191381454,
+          "fully_attributed_excess_seconds": 0.0,
+          "fully_attributed_within_declared_amount": true,
+          "status": "within_declared_amount"
+        }
+      }
+    },
+    "methods": {
+      "gp": {
+        "accounting_complete": true,
+        "assigned_cloud_overhead_seconds": 4.6719206653410765,
+        "best_feasible_quality_goodput": 0.4,
+        "incumbent_run_id": "live-gp-00",
+        "known_optimizer_wall_seconds_sum": 0.0504454120000446,
+        "missing_optimizer_wall_time_count": 0,
+        "optimizer_cpu_seconds": 0.11468080099996314,
+        "optimizer_wall_seconds": 0.0504454120000446,
+        "raw_trial_accelerator_seconds": 3000.0011495269964,
+        "total_attributed_accelerator_seconds": 3004.6730701923375,
+        "trials": 10
+      },
+      "neural": {
+        "accounting_complete": true,
+        "assigned_cloud_overhead_seconds": 9.031345775685622,
+        "best_feasible_quality_goodput": 0.43333333333333335,
+        "incumbent_run_id": "live-neural-05",
+        "known_optimizer_wall_seconds_sum": 3.972304602000804,
+        "missing_optimizer_wall_time_count": 0,
+        "optimizer_cpu_seconds": 49.116065021,
+        "optimizer_wall_seconds": 3.972304602000804,
+        "raw_trial_accelerator_seconds": 3000.001091072001,
+        "total_attributed_accelerator_seconds": 3009.0324368476868,
+        "trials": 10
+      },
+      "random": {
+        "accounting_complete": true,
+        "assigned_cloud_overhead_seconds": 6.671050595452016,
+        "best_feasible_quality_goodput": 0.43333333333333335,
+        "incumbent_run_id": "live-random-09",
+        "known_optimizer_wall_seconds_sum": 0.0005035300000599818,
+        "missing_optimizer_wall_time_count": 0,
+        "optimizer_cpu_seconds": 0.0006161699999722714,
+        "optimizer_wall_seconds": 0.0005035300000599818,
+        "raw_trial_accelerator_seconds": 3000.001140786002,
+        "total_attributed_accelerator_seconds": 3006.672191381454,
+        "trials": 10
+      }
+    },
+    "optimizer_timing": {
+      "optimizer_cpu_seconds_sum": 49.23136199199993,
+      "optimizer_wall_seconds_sum": 4.023253544000909,
+      "resource_note": "Policy CPU/wall timers are descriptive separate clocks, not extra accelerator debits. Reserved GPU wall during this work is already in the uniquely assigned cloud-overhead events. Global ledger optimizer_cpu_seconds may remain zero.",
+      "scope": "Recorded SearchPolicy.choose process CPU and elapsed wall timers, including fitting/acquisition/artifact work inside that call; not all tokenizer, setup, policy loading or later policy saving CPU time."
+    },
+    "planned_trials_complete": true,
+    "uncertainty_note": "One search seed per method; no between-search-seed confidence interval. Configuration ranges are descriptive."
+  },
+  "source": "measured"
+}

@@ -1,0 +1,59 @@
+{
+  "caveat": "Sequence limit is inferred from installed initialization code, not separately emitted by this startup log. Original null launch overrides remain untouched.",
+  "default_server_log": "outputs/vllm-reasoning-study/results/measured/runs/pilot-metal-default-001/server.log",
+  "default_server_log_sha256": "6f1132cbff7eaf58da2425120a941ae858c840978ab112d02afb5014e1f8a056",
+  "resolution_basis": {
+    "max_num_batched_tokens": "Actual Metal engine startup log emits 2048.",
+    "max_num_seqs": "Installed vLLM source inference: 16GB device takes ordinary-memory OPENAI_API_SERVER default256; Metal PlatformEnum.OOT is not PlatformEnum.CPU; balanced mode does not double it; min(256,2048)=256; no max_num_seqs override in logged non-default CLI arguments."
+  },
+  "resolved_values": {
+    "max_num_batched_tokens": 2048,
+    "max_num_seqs": 256
+  },
+  "source_evidence": [
+    {
+      "file": "work/metal-env/lib/python3.12/site-packages/vllm/engine/arg_utils.py",
+      "first_line": 2920,
+      "last_line": 2953,
+      "sha256": "c10281277fd9a90dc8b22670db4f1af53708c5caa2aefee7aa861fa579329219",
+      "text": "        # NOTE(Kuntai): Setting large `max_num_batched_tokens` for A100 reduces\n        # throughput, see PR #17885 for more details.\n        # So here we do an extra device name check to prevent such regression.\n        if device_memory >= 160 * GiB_bytes:\n            # for GPUs like B200/B300 with >= 160GB memory, use the largest defaults\n            default_max_num_batched_tokens = {\n                UsageContext.LLM_CLASS: 16384,\n                UsageContext.OPENAI_API_SERVER: 16384,\n            }\n            default_max_num_seqs = {\n                UsageContext.LLM_CLASS: 1024,\n                UsageContext.OPENAI_API_SERVER: 1024,\n            }\n        elif device_memory >= 70 * GiB_bytes and \"a100\" not in device_name:\n            # For GPUs like H100 and H200, use larger offline defaults.\n            default_max_num_batched_tokens = {\n                UsageContext.LLM_CLASS: 16384,\n                UsageContext.OPENAI_API_SERVER: 8192,\n            }\n            default_max_num_seqs = {\n                UsageContext.LLM_CLASS: 1024,\n                UsageContext.OPENAI_API_SERVER: 1024,\n            }\n        else:\n            # TODO(woosuk): Tune the default values for other hardware.\n            default_max_num_batched_tokens = {\n                UsageContext.LLM_CLASS: 8192,\n                UsageContext.OPENAI_API_SERVER: 2048,\n            }\n            default_max_num_seqs = {\n                UsageContext.LLM_CLASS: 256,\n                UsageContext.OPENAI_API_SERVER: 256,\n            }\n"
+    },
+    {
+      "file": "work/metal-env/lib/python3.12/site-packages/vllm/engine/arg_utils.py",
+      "first_line": 3110,
+      "last_line": 3134,
+      "sha256": "c10281277fd9a90dc8b22670db4f1af53708c5caa2aefee7aa861fa579329219",
+      "text": "        orig_max_num_seqs = self.max_num_seqs\n\n        if self.max_num_batched_tokens is None:\n            if parallel_config.use_batched_dp_moe:\n                self.max_num_batched_tokens = (\n                    SchedulerConfig.DEFAULT_MAX_NUM_BATCHED_TOKENS_FOR_BATCHED_DP\n                )\n            else:\n                self.max_num_batched_tokens = default_max_num_batched_tokens.get(\n                    usage_context,\n                    SchedulerConfig.DEFAULT_MAX_NUM_BATCHED_TOKENS,\n                )\n\n        if self.max_num_seqs is None:\n            self.max_num_seqs = default_max_num_seqs.get(\n                usage_context,\n                SchedulerConfig.DEFAULT_MAX_NUM_SEQS,\n            )\n\n        # If throughput mode is set, double max_num_batched_tokens and max_num_seqs.\n        if self.performance_mode == \"throughput\":\n            if orig_max_num_batched_tokens is None:\n                self.max_num_batched_tokens *= 2\n            if orig_max_num_seqs is None:\n                self.max_num_seqs *= 2"
+    },
+    {
+      "file": "work/metal-env/lib/python3.12/site-packages/vllm/engine/arg_utils.py",
+      "first_line": 3178,
+      "last_line": 3186,
+      "sha256": "c10281277fd9a90dc8b22670db4f1af53708c5caa2aefee7aa861fa579329219",
+      "text": "        if orig_max_num_seqs is None:\n            assert self.max_num_batched_tokens is not None  # For type checking\n            self.max_num_seqs = min(self.max_num_seqs, self.max_num_batched_tokens)\n\n            logger.debug(\n                \"Defaulting max_num_seqs to %d for %s usage context.\",\n                self.max_num_seqs,\n                usage_context.value if usage_context else None,\n            )"
+    },
+    {
+      "file": "work/metal-env/lib/python3.12/site-packages/vllm_metal/platform.py",
+      "first_line": 99,
+      "last_line": 106,
+      "sha256": "c507fb42c0da297f9e7cd87ba1b4bc1cb3c29969be8331c36eb7b88f4d72cc54",
+      "text": "    capabilities and handles device management.\n    \"\"\"\n\n    _enum: PlatformEnum = PlatformEnum.OOT  # Out-of-tree platform\n    device_name: str = \"cpu\"  # PyTorch device name (use CPU for compatibility)\n    device_type: str = \"cpu\"  # PyTorch device type (use CPU for compatibility)\n    dispatch_key: str = \"CPU\"  # PyTorch dispatch key\n"
+    },
+    {
+      "file": "work/metal-env/lib/python3.12/site-packages/vllm/platforms/interface.py",
+      "first_line": 208,
+      "last_line": 209,
+      "sha256": "637e120fcf2a45b02b81174b7ed4653364e9d16ff0063772f1fdfaf4f8dcd2b6",
+      "text": "    def is_cpu(self) -> bool:\n        return self._enum == PlatformEnum.CPU"
+    },
+    {
+      "file": "work/metal-env/lib/python3.12/site-packages/vllm/config/vllm.py",
+      "first_line": 430,
+      "last_line": 435,
+      "sha256": "573692a80364d5c373321754c6213b4792ae292ba6aea7d6573ae013c2c71ae9",
+      "text": "    performance. -O2 is used by default. See OptimizationLevel for full\n    description.\"\"\"\n\n    performance_mode: PerformanceMode = \"balanced\"\n    \"\"\"Performance mode for runtime behavior, 'balanced' is the default.\n    'interactivity' favors low end-to-end per-request latency at small batch"
+    }
+  ],
+  "vllm_metal_version": "0.32.0",
+  "vllm_version": "0.32.0+cpu"
+}

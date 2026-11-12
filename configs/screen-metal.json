@@ -1,0 +1,114 @@
+{
+  "benchmark": {
+    "drain_s": 180,
+    "max_in_flight": 32,
+    "measurement_s": 100,
+    "ramp_s": 5,
+    "telemetry_interval_s": 1,
+    "timeout_s": 180,
+    "warmup_output_token_limit": 64,
+    "warmup_s": 5
+  },
+  "budget": {
+    "allocated_devices": 1,
+    "initial_points": 6,
+    "search_method_seconds": 1800,
+    "seeds": [
+      11,
+      29,
+      47
+    ],
+    "total_accelerator_seconds": 28800,
+    "validation_fraction": 0.25
+  },
+  "constraints": {
+    "max_accuracy_drop": 0.02,
+    "max_error_rate": 0.01
+  },
+  "decoding": {
+    "max_tokens": 1024,
+    "min_p": 0.0,
+    "seed": 724,
+    "temperature": 0.6,
+    "top_k": 20,
+    "top_p": 0.95
+  },
+  "final": {
+    "deadline_s": 600,
+    "minimum_completed": 1000,
+    "question_count": 128,
+    "reasoning_allowances": [
+      1024,
+      2048
+    ],
+    "repetitions": 3
+  },
+  "fixed_config": {
+    "chunked_prefill": true,
+    "kv_cache_dtype": "auto",
+    "precision": "bf16",
+    "prefix_caching": false,
+    "tensor_parallel_size": 1
+  },
+  "model": {
+    "attention_heads": 16,
+    "kv_heads": 8,
+    "license": "Apache-2.0",
+    "max_model_len": 4096,
+    "name": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+  },
+  "screen_note": "Stage-gated completion diagnostic; two fixed training questions and same sampling seeds across configurations. One64-token warmup and one64-token ramp request excluded from scoring; two periodic measurement requests with jitter per100s. Stage1 seq1; stop broader screen if no valid final answer. Not final-quality feasibility evidence.",
+  "slos": {
+    "e2e_s": 180.0,
+    "tpot_s": 0.1,
+    "ttft_s": 5.0
+  },
+  "space": {
+    "gpu_memory_utilization": [
+      0.5
+    ],
+    "max_num_batched_tokens": [
+      512
+    ],
+    "max_num_seqs": [
+      1,
+      2,
+      4
+    ]
+  },
+  "status": "FROZEN_SMALL_DEVELOPMENT_SCREEN_NOT_FINAL_EVALUATION",
+  "title": "Learning to Tune vLLM for Compute-Budgeted Small-Model Reasoning",
+  "workloads": [
+    {
+      "arrival_rate": 0.1,
+      "burstiness": 1.0,
+      "output_token_limit": 1024,
+      "profile": "short",
+      "scenario_id": "short-low"
+    },
+    {
+      "arrival_rate": 0.1,
+      "burstiness": 1.0,
+      "output_token_limit": 2048,
+      "profile": "short",
+      "scenario_id": "short-mid"
+    },
+    {
+      "arrival_rate": 0.2,
+      "burstiness": 1.0,
+      "output_token_limit": 2048,
+      "profile": "short",
+      "scenario_id": "short-high"
+    },
+    {
+      "arrival_rate": 0.15,
+      "burstiness": 1.0,
+      "output_token_limit": 2048,
+      "partition": "holdout",
+      "profile": "mixed",
+      "scenario_id": "unseen-mix"
+    }
+  ]
+}

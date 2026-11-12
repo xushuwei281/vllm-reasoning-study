@@ -1,0 +1,19 @@
+{
+  "bootstrap_samples": 2000,
+  "candidate_accuracy": 0.5,
+  "ci": [
+    0.0,
+    1.0
+  ],
+  "confidence": 0.95,
+  "degenerate_bootstrap": false,
+  "difference_candidate_minus_reference": 0.5,
+  "interpretation": "Exploratory development allowance diagnostic; n=2, costs differ, no final accuracy or fixed-compute conclusion.",
+  "method": "paired question-cluster percentile bootstrap; equal question weights",
+  "paired_requests": 2,
+  "quality_gate_usable": false,
+  "question_clusters": 2,
+  "reference_accuracy": 0.0,
+  "seed": 724,
+  "warning": "Degenerate bootstrap or fewer than 30 question clusters: report descriptive differences; this interval alone does not establish noninferiority"
+}

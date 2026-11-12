@@ -1,0 +1,56 @@
+{
+  "run_id": "cloud-baseline-pilot-00",
+  "default": true,
+  "question_count": 10,
+  "config": {
+    "max_num_batched_tokens": null,
+    "max_num_seqs": null
+  },
+  "protocol": {
+    "measurement_s": 100,
+    "drain_s": 150,
+    "timeout_s": 150
+  },
+  "trace": [
+    {
+      "phase": "warmup",
+      "intended_arrival_s": 0.1
+    },
+    {
+      "phase": "ramp",
+      "intended_arrival_s": 5.1
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 10.1
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 13.1
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 16.1
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 19.1
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 22.1
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 25.1
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 28.1
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 31.1
+    }
+  ]
+}

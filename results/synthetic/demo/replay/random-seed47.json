@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "settings": {
+    "method": "random",
+    "seed": 47,
+    "beta": 1.0,
+    "p99_limit_s": null,
+    "neural_epochs": 100,
+    "minimum_neural_groups": 6,
+    "default_config_id": null
+  },
+  "rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 298588571299400869279268563672181350505,
+      "inc": 335126774553957544239705392126533740537
+    },
+    "has_uint32": 1,
+    "uinteger": 1997935198
+  },
+  "selected": [
+    "[\"44ef238a146d\",\"mid\"]",
+    "[\"af1b9c6c4157\",\"mid\"]",
+    "[\"91edf012faa2\",\"mid\"]",
+    "[\"9ef076af65f7\",\"mid\"]",
+    "[\"5643ddc6acba\",\"mid\"]"
+  ],
+  "last_decision": {
+    "requested_method": "random",
+    "observations_seen": 10,
+    "candidate_count": 8,
+    "method_used": "random",
+    "selected_key": "[\"5643ddc6acba\",\"mid\"]",
+    "optimizer_cpu_seconds": 5.8999999999809205e-05,
+    "optimizer_wall_seconds": 5.9125013649463654e-05
+  }
+}

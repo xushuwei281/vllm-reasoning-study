@@ -1,0 +1,239 @@
+{
+  "run_id": "cloud-default-profile-00",
+  "default": true,
+  "partition": "profiling",
+  "question_count": 56,
+  "config": {
+    "max_num_batched_tokens": null,
+    "max_num_seqs": null
+  },
+  "protocol": {
+    "reserved_wall_seconds": 300
+  },
+  "trace": [
+    {
+      "phase": "warmup",
+      "intended_arrival_s": 0.1
+    },
+    {
+      "phase": "ramp",
+      "intended_arrival_s": 5.1
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 10.107484438290303
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 11.843835079976479
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 13.542436113401786
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 15.103696427962273
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 16.82476887080057
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 18.528288134014527
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 20.171218808151856
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 21.956368004253058
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 23.5715101755555
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 25.29339374566785
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 26.958612185765446
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 28.441302249141117
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 30.200197696967553
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 31.909017870318475
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 33.46994734986824
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 35.16367305995716
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 36.79306580030332
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 38.55465991359524
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 40.16246883802974
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 41.81142691137771
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 43.4756882085204
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 45.261556551826914
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 46.945923567242204
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 48.60013570287294
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 50.21656413507801
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 51.91951142424559
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 53.47151863426277
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 55.23257329503409
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 56.94532354888917
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 58.49712306800026
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 60.256083803502406
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 61.88386624522981
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 63.59800282868098
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 65.19421877644308
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 66.78160497234893
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 68.51633436540251
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 70.10919535689158
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 71.82721202699234
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 73.57004566622093
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 75.25581172521717
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 76.86168787806733
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 78.5326865134399
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 80.1217786411102
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 81.95314569957834
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 83.43818523067003
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 85.12593835475947
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 86.8157989581624
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 88.6159339432113
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 90.27443893792336
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 91.78466666171624
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 93.53444331642689
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 95.12094422293438
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 96.93857607532443
+    },
+    {
+      "phase": "measure",
+      "intended_arrival_s": 98.61400404948698
+    }
+  ]
+}

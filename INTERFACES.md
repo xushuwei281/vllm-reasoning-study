@@ -1,0 +1,9 @@
+# Internal module contracts
+
+Package: `vllm_tuner`, Python 3.11+. All times seconds and monotonic relative to run start; no network identities in committed configs. Root owns cli.py, experiment.py, data.py, fake_server.py, plots.py, project metadata/configs, README/report and integration. Other agents own only assigned modules/tests/docs.
+
+One observation = dict with `run_id`, `config_id`, `scenario_id`, `repetition`, `partition` (train/validation/holdout), `source` (measured/synthetic), `environment_hash`, `config` dict, `workload` dict, `metrics` dict, `status`, `cost` dict. `config` has precision (bf16), max_num_batched_tokens, max_num_seqs, gpu_memory_utilization, tensor_parallel_size=1. `workload` has arrival_rate, input_tokens_mean, input_tokens_p95, output_token_limit, burstiness, profile. `metrics` has quality_goodput, p99_e2e_s (None if censored/unavailable), accuracy, feasible, peak_memory_bytes (None allowed), completed, offered; other metrics allowed. `cost` has accelerator_seconds, wall_seconds, optimizer_cpu_seconds. Failures retained, feasible false. No measured future outputs used as input features.
+
+Request dict contract: request_id, question_id, phase (warmup/ramp/measure), intended_arrival_s, dispatch_s (None permitted), first_token_s, completion_s, status (ok/timeout/error/rejected/cancelled), text (complete model output), output_tokens, input_tokens, finish_reason, correct bool, chunks list of {time_s, token_count: int or None}; optional reasoning_tokens, final_tokens. A timeout's completion_s is observation end, not true completion. No gold in generation payload.
+
+Evaluation module functions should use mappings and return JSON-serializable dictionaries. Expose exact signatures in agent completion notes. Use tests owned by module names. Root will adapt integration to modules.

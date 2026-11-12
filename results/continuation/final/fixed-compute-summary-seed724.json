@@ -1,0 +1,3178 @@
+[
+  {
+    "actual_accelerator_seconds": 360.0001017370014,
+    "allowance": 2048,
+    "arm": "default",
+    "cost_match_note": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+    "effective_service_deadline_s": 291.1862533929998,
+    "execution_status": "ok",
+    "reserved_wall_seconds": 360,
+    "run_id": "fixed-default-2048-seed724",
+    "summary": {
+      "accelerator_seconds": 360.0001017370014,
+      "accuracy": 0.7265625,
+      "cohort_size": 128,
+      "correct_per_accelerator_second": 0.2583332603276354,
+      "deadline_constrained_accuracy": 0.7265625,
+      "deadline_s": 291.1862533929998,
+      "generated_tokens": 175235,
+      "known_output_tokens_sum": 175235,
+      "missing_token_usage_count": 0,
+      "offered_questions": 128,
+      "question_outcomes": [
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01221",
+          "sampling_seed": 724
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00235",
+          "sampling_seed": 725
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00188",
+          "sampling_seed": 726
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00454",
+          "sampling_seed": 727
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00746",
+          "sampling_seed": 728
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01030",
+          "sampling_seed": 729
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00449",
+          "sampling_seed": 730
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01045",
+          "sampling_seed": 731
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01186",
+          "sampling_seed": 732
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01016",
+          "sampling_seed": 733
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00549",
+          "sampling_seed": 734
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00323",
+          "sampling_seed": 735
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01169",
+          "sampling_seed": 736
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00080",
+          "sampling_seed": 737
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00699",
+          "sampling_seed": 738
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00489",
+          "sampling_seed": 739
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00070",
+          "sampling_seed": 740
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00478",
+          "sampling_seed": 741
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00815",
+          "sampling_seed": 742
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00979",
+          "sampling_seed": 743
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00299",
+          "sampling_seed": 744
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00455",
+          "sampling_seed": 745
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00808",
+          "sampling_seed": 746
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00110",
+          "sampling_seed": 747
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00155",
+          "sampling_seed": 748
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00866",
+          "sampling_seed": 749
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00052",
+          "sampling_seed": 750
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00536",
+          "sampling_seed": 751
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01294",
+          "sampling_seed": 752
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00433",
+          "sampling_seed": 753
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00856",
+          "sampling_seed": 754
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00608",
+          "sampling_seed": 755
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00747",
+          "sampling_seed": 756
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00516",
+          "sampling_seed": 757
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01150",
+          "sampling_seed": 758
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00207",
+          "sampling_seed": 759
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00514",
+          "sampling_seed": 760
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00416",
+          "sampling_seed": 761
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00849",
+          "sampling_seed": 762
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00115",
+          "sampling_seed": 763
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01235",
+          "sampling_seed": 764
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00766",
+          "sampling_seed": 765
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00270",
+          "sampling_seed": 766
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01076",
+          "sampling_seed": 767
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01115",
+          "sampling_seed": 768
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01269",
+          "sampling_seed": 769
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00126",
+          "sampling_seed": 770
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01038",
+          "sampling_seed": 771
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01250",
+          "sampling_seed": 772
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00842",
+          "sampling_seed": 773
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00887",
+          "sampling_seed": 774
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00767",
+          "sampling_seed": 775
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00376",
+          "sampling_seed": 776
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00669",
+          "sampling_seed": 777
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00262",
+          "sampling_seed": 778
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00679",
+          "sampling_seed": 779
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00625",
+          "sampling_seed": 780
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00741",
+          "sampling_seed": 781
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00331",
+          "sampling_seed": 782
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00131",
+          "sampling_seed": 783
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00476",
+          "sampling_seed": 784
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00068",
+          "sampling_seed": 785
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00628",
+          "sampling_seed": 786
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00672",
+          "sampling_seed": 787
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01256",
+          "sampling_seed": 788
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01304",
+          "sampling_seed": 789
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00121",
+          "sampling_seed": 790
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01082",
+          "sampling_seed": 791
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00074",
+          "sampling_seed": 792
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01114",
+          "sampling_seed": 793
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01013",
+          "sampling_seed": 794
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00395",
+          "sampling_seed": 795
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00337",
+          "sampling_seed": 796
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00467",
+          "sampling_seed": 797
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00140",
+          "sampling_seed": 798
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00490",
+          "sampling_seed": 799
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01134",
+          "sampling_seed": 800
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01293",
+          "sampling_seed": 801
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00368",
+          "sampling_seed": 802
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00426",
+          "sampling_seed": 803
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00580",
+          "sampling_seed": 804
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00898",
+          "sampling_seed": 805
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01020",
+          "sampling_seed": 806
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00654",
+          "sampling_seed": 807
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01067",
+          "sampling_seed": 808
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00618",
+          "sampling_seed": 809
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01158",
+          "sampling_seed": 810
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00862",
+          "sampling_seed": 811
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01198",
+          "sampling_seed": 812
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00759",
+          "sampling_seed": 813
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00452",
+          "sampling_seed": 814
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01315",
+          "sampling_seed": 815
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00013",
+          "sampling_seed": 816
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00534",
+          "sampling_seed": 817
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01271",
+          "sampling_seed": 818
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00396",
+          "sampling_seed": 819
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00199",
+          "sampling_seed": 820
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00303",
+          "sampling_seed": 821
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00797",
+          "sampling_seed": 822
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00986",
+          "sampling_seed": 823
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00404",
+          "sampling_seed": 824
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01175",
+          "sampling_seed": 825
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00020",
+          "sampling_seed": 826
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00933",
+          "sampling_seed": 827
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00493",
+          "sampling_seed": 828
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01185",
+          "sampling_seed": 829
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01061",
+          "sampling_seed": 830
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00461",
+          "sampling_seed": 831
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01209",
+          "sampling_seed": 832
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00691",
+          "sampling_seed": 833
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01024",
+          "sampling_seed": 834
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01033",
+          "sampling_seed": 835
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01108",
+          "sampling_seed": 836
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01275",
+          "sampling_seed": 837
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01049",
+          "sampling_seed": 838
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00503",
+          "sampling_seed": 839
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01245",
+          "sampling_seed": 840
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00176",
+          "sampling_seed": 841
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00502",
+          "sampling_seed": 842
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00710",
+          "sampling_seed": 843
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00016",
+          "sampling_seed": 844
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00033",
+          "sampling_seed": 845
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00558",
+          "sampling_seed": 846
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00780",
+          "sampling_seed": 847
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00615",
+          "sampling_seed": 848
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00152",
+          "sampling_seed": 849
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00701",
+          "sampling_seed": 850
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00820",
+          "sampling_seed": 851
+        }
+      ],
+      "reservation_wall_seconds": 360.0001017370014,
+      "unoffered_questions": 0
+    }
+  },
+  {
+    "actual_accelerator_seconds": 360.00010119999934,
+    "allowance": 4096,
+    "arm": "default",
+    "cost_match_note": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+    "effective_service_deadline_s": 291.07673366200106,
+    "execution_status": "ok",
+    "reserved_wall_seconds": 360,
+    "run_id": "fixed-default-4096-seed724",
+    "summary": {
+      "accelerator_seconds": 360.00010119999934,
+      "accuracy": 0.828125,
+      "cohort_size": 128,
+      "correct_per_accelerator_second": 0.2944443616728633,
+      "deadline_constrained_accuracy": 0.828125,
+      "deadline_s": 291.07673366200106,
+      "generated_tokens": 212639,
+      "known_output_tokens_sum": 212639,
+      "missing_token_usage_count": 0,
+      "offered_questions": 128,
+      "question_outcomes": [
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01221",
+          "sampling_seed": 724
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00235",
+          "sampling_seed": 725
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00188",
+          "sampling_seed": 726
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00454",
+          "sampling_seed": 727
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00746",
+          "sampling_seed": 728
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01030",
+          "sampling_seed": 729
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00449",
+          "sampling_seed": 730
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01045",
+          "sampling_seed": 731
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01186",
+          "sampling_seed": 732
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01016",
+          "sampling_seed": 733
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00549",
+          "sampling_seed": 734
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00323",
+          "sampling_seed": 735
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01169",
+          "sampling_seed": 736
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00080",
+          "sampling_seed": 737
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00699",
+          "sampling_seed": 738
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00489",
+          "sampling_seed": 739
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00070",
+          "sampling_seed": 740
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00478",
+          "sampling_seed": 741
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00815",
+          "sampling_seed": 742
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00979",
+          "sampling_seed": 743
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00299",
+          "sampling_seed": 744
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00455",
+          "sampling_seed": 745
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00808",
+          "sampling_seed": 746
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00110",
+          "sampling_seed": 747
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00155",
+          "sampling_seed": 748
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00866",
+          "sampling_seed": 749
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00052",
+          "sampling_seed": 750
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00536",
+          "sampling_seed": 751
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01294",
+          "sampling_seed": 752
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00433",
+          "sampling_seed": 753
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00856",
+          "sampling_seed": 754
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00608",
+          "sampling_seed": 755
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00747",
+          "sampling_seed": 756
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00516",
+          "sampling_seed": 757
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01150",
+          "sampling_seed": 758
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00207",
+          "sampling_seed": 759
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00514",
+          "sampling_seed": 760
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00416",
+          "sampling_seed": 761
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00849",
+          "sampling_seed": 762
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00115",
+          "sampling_seed": 763
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01235",
+          "sampling_seed": 764
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00766",
+          "sampling_seed": 765
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00270",
+          "sampling_seed": 766
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01076",
+          "sampling_seed": 767
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01115",
+          "sampling_seed": 768
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01269",
+          "sampling_seed": 769
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00126",
+          "sampling_seed": 770
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01038",
+          "sampling_seed": 771
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01250",
+          "sampling_seed": 772
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00842",
+          "sampling_seed": 773
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00887",
+          "sampling_seed": 774
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00767",
+          "sampling_seed": 775
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00376",
+          "sampling_seed": 776
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00669",
+          "sampling_seed": 777
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00262",
+          "sampling_seed": 778
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00679",
+          "sampling_seed": 779
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00625",
+          "sampling_seed": 780
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00741",
+          "sampling_seed": 781
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00331",
+          "sampling_seed": 782
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00131",
+          "sampling_seed": 783
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00476",
+          "sampling_seed": 784
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00068",
+          "sampling_seed": 785
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00628",
+          "sampling_seed": 786
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00672",
+          "sampling_seed": 787
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01256",
+          "sampling_seed": 788
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01304",
+          "sampling_seed": 789
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00121",
+          "sampling_seed": 790
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01082",
+          "sampling_seed": 791
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00074",
+          "sampling_seed": 792
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01114",
+          "sampling_seed": 793
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01013",
+          "sampling_seed": 794
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00395",
+          "sampling_seed": 795
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00337",
+          "sampling_seed": 796
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00467",
+          "sampling_seed": 797
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00140",
+          "sampling_seed": 798
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00490",
+          "sampling_seed": 799
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01134",
+          "sampling_seed": 800
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01293",
+          "sampling_seed": 801
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00368",
+          "sampling_seed": 802
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00426",
+          "sampling_seed": 803
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00580",
+          "sampling_seed": 804
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00898",
+          "sampling_seed": 805
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01020",
+          "sampling_seed": 806
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00654",
+          "sampling_seed": 807
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01067",
+          "sampling_seed": 808
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00618",
+          "sampling_seed": 809
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01158",
+          "sampling_seed": 810
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00862",
+          "sampling_seed": 811
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01198",
+          "sampling_seed": 812
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00759",
+          "sampling_seed": 813
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00452",
+          "sampling_seed": 814
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01315",
+          "sampling_seed": 815
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00013",
+          "sampling_seed": 816
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00534",
+          "sampling_seed": 817
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01271",
+          "sampling_seed": 818
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00396",
+          "sampling_seed": 819
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00199",
+          "sampling_seed": 820
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00303",
+          "sampling_seed": 821
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00797",
+          "sampling_seed": 822
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00986",
+          "sampling_seed": 823
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00404",
+          "sampling_seed": 824
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01175",
+          "sampling_seed": 825
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00020",
+          "sampling_seed": 826
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00933",
+          "sampling_seed": 827
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00493",
+          "sampling_seed": 828
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01185",
+          "sampling_seed": 829
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01061",
+          "sampling_seed": 830
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00461",
+          "sampling_seed": 831
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01209",
+          "sampling_seed": 832
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00691",
+          "sampling_seed": 833
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01024",
+          "sampling_seed": 834
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01033",
+          "sampling_seed": 835
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01108",
+          "sampling_seed": 836
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01275",
+          "sampling_seed": 837
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01049",
+          "sampling_seed": 838
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00503",
+          "sampling_seed": 839
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01245",
+          "sampling_seed": 840
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00176",
+          "sampling_seed": 841
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00502",
+          "sampling_seed": 842
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00710",
+          "sampling_seed": 843
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00016",
+          "sampling_seed": 844
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00033",
+          "sampling_seed": 845
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00558",
+          "sampling_seed": 846
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00780",
+          "sampling_seed": 847
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00615",
+          "sampling_seed": 848
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00152",
+          "sampling_seed": 849
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00701",
+          "sampling_seed": 850
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00820",
+          "sampling_seed": 851
+        }
+      ],
+      "reservation_wall_seconds": 360.00010119999934,
+      "unoffered_questions": 0
+    }
+  },
+  {
+    "actual_accelerator_seconds": 360.000117222,
+    "allowance": 2048,
+    "arm": "tuned",
+    "cost_match_note": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+    "effective_service_deadline_s": 293.2241387760005,
+    "execution_status": "ok",
+    "reserved_wall_seconds": 360,
+    "run_id": "fixed-tuned-2048-seed724",
+    "summary": {
+      "accelerator_seconds": 360.000117222,
+      "accuracy": 0.78125,
+      "cohort_size": 128,
+      "correct_per_accelerator_second": 0.2777776873287332,
+      "deadline_constrained_accuracy": 0.78125,
+      "deadline_s": 293.2241387760005,
+      "generated_tokens": 173274,
+      "known_output_tokens_sum": 173274,
+      "missing_token_usage_count": 0,
+      "offered_questions": 128,
+      "question_outcomes": [
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01221",
+          "sampling_seed": 724
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00235",
+          "sampling_seed": 725
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00188",
+          "sampling_seed": 726
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00454",
+          "sampling_seed": 727
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00746",
+          "sampling_seed": 728
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01030",
+          "sampling_seed": 729
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00449",
+          "sampling_seed": 730
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01045",
+          "sampling_seed": 731
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01186",
+          "sampling_seed": 732
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01016",
+          "sampling_seed": 733
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00549",
+          "sampling_seed": 734
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00323",
+          "sampling_seed": 735
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01169",
+          "sampling_seed": 736
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00080",
+          "sampling_seed": 737
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00699",
+          "sampling_seed": 738
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00489",
+          "sampling_seed": 739
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00070",
+          "sampling_seed": 740
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00478",
+          "sampling_seed": 741
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00815",
+          "sampling_seed": 742
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00979",
+          "sampling_seed": 743
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00299",
+          "sampling_seed": 744
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00455",
+          "sampling_seed": 745
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00808",
+          "sampling_seed": 746
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00110",
+          "sampling_seed": 747
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00155",
+          "sampling_seed": 748
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00866",
+          "sampling_seed": 749
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00052",
+          "sampling_seed": 750
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00536",
+          "sampling_seed": 751
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01294",
+          "sampling_seed": 752
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00433",
+          "sampling_seed": 753
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00856",
+          "sampling_seed": 754
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00608",
+          "sampling_seed": 755
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00747",
+          "sampling_seed": 756
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00516",
+          "sampling_seed": 757
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01150",
+          "sampling_seed": 758
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00207",
+          "sampling_seed": 759
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00514",
+          "sampling_seed": 760
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00416",
+          "sampling_seed": 761
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00849",
+          "sampling_seed": 762
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00115",
+          "sampling_seed": 763
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01235",
+          "sampling_seed": 764
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00766",
+          "sampling_seed": 765
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00270",
+          "sampling_seed": 766
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01076",
+          "sampling_seed": 767
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01115",
+          "sampling_seed": 768
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01269",
+          "sampling_seed": 769
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00126",
+          "sampling_seed": 770
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01038",
+          "sampling_seed": 771
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01250",
+          "sampling_seed": 772
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00842",
+          "sampling_seed": 773
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00887",
+          "sampling_seed": 774
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00767",
+          "sampling_seed": 775
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00376",
+          "sampling_seed": 776
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00669",
+          "sampling_seed": 777
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00262",
+          "sampling_seed": 778
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00679",
+          "sampling_seed": 779
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00625",
+          "sampling_seed": 780
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00741",
+          "sampling_seed": 781
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00331",
+          "sampling_seed": 782
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00131",
+          "sampling_seed": 783
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00476",
+          "sampling_seed": 784
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00068",
+          "sampling_seed": 785
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00628",
+          "sampling_seed": 786
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00672",
+          "sampling_seed": 787
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01256",
+          "sampling_seed": 788
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01304",
+          "sampling_seed": 789
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00121",
+          "sampling_seed": 790
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01082",
+          "sampling_seed": 791
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00074",
+          "sampling_seed": 792
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01114",
+          "sampling_seed": 793
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01013",
+          "sampling_seed": 794
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00395",
+          "sampling_seed": 795
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00337",
+          "sampling_seed": 796
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00467",
+          "sampling_seed": 797
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00140",
+          "sampling_seed": 798
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00490",
+          "sampling_seed": 799
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01134",
+          "sampling_seed": 800
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01293",
+          "sampling_seed": 801
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00368",
+          "sampling_seed": 802
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00426",
+          "sampling_seed": 803
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00580",
+          "sampling_seed": 804
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00898",
+          "sampling_seed": 805
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01020",
+          "sampling_seed": 806
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00654",
+          "sampling_seed": 807
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01067",
+          "sampling_seed": 808
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00618",
+          "sampling_seed": 809
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01158",
+          "sampling_seed": 810
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00862",
+          "sampling_seed": 811
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01198",
+          "sampling_seed": 812
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00759",
+          "sampling_seed": 813
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00452",
+          "sampling_seed": 814
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01315",
+          "sampling_seed": 815
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00013",
+          "sampling_seed": 816
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00534",
+          "sampling_seed": 817
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01271",
+          "sampling_seed": 818
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00396",
+          "sampling_seed": 819
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00199",
+          "sampling_seed": 820
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00303",
+          "sampling_seed": 821
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00797",
+          "sampling_seed": 822
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00986",
+          "sampling_seed": 823
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00404",
+          "sampling_seed": 824
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01175",
+          "sampling_seed": 825
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00020",
+          "sampling_seed": 826
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00933",
+          "sampling_seed": 827
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00493",
+          "sampling_seed": 828
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01185",
+          "sampling_seed": 829
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01061",
+          "sampling_seed": 830
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00461",
+          "sampling_seed": 831
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01209",
+          "sampling_seed": 832
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00691",
+          "sampling_seed": 833
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01024",
+          "sampling_seed": 834
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01033",
+          "sampling_seed": 835
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01108",
+          "sampling_seed": 836
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01275",
+          "sampling_seed": 837
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01049",
+          "sampling_seed": 838
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00503",
+          "sampling_seed": 839
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01245",
+          "sampling_seed": 840
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00176",
+          "sampling_seed": 841
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00502",
+          "sampling_seed": 842
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00710",
+          "sampling_seed": 843
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00016",
+          "sampling_seed": 844
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00033",
+          "sampling_seed": 845
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00558",
+          "sampling_seed": 846
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00780",
+          "sampling_seed": 847
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00615",
+          "sampling_seed": 848
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00152",
+          "sampling_seed": 849
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00701",
+          "sampling_seed": 850
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00820",
+          "sampling_seed": 851
+        }
+      ],
+      "reservation_wall_seconds": 360.000117222,
+      "unoffered_questions": 0
+    }
+  },
+  {
+    "actual_accelerator_seconds": 360.00011321400234,
+    "allowance": 4096,
+    "arm": "tuned",
+    "cost_match_note": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+    "effective_service_deadline_s": 293.7013696110007,
+    "execution_status": "ok",
+    "reserved_wall_seconds": 360,
+    "run_id": "fixed-tuned-4096-seed724",
+    "summary": {
+      "accelerator_seconds": 360.00011321400234,
+      "accuracy": 0.8828125,
+      "cohort_size": 128,
+      "correct_per_accelerator_second": 0.31388879017609383,
+      "deadline_constrained_accuracy": 0.8828125,
+      "deadline_s": 293.7013696110007,
+      "generated_tokens": 200564,
+      "known_output_tokens_sum": 200564,
+      "missing_token_usage_count": 0,
+      "offered_questions": 128,
+      "question_outcomes": [
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01221",
+          "sampling_seed": 724
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00235",
+          "sampling_seed": 725
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00188",
+          "sampling_seed": 726
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00454",
+          "sampling_seed": 727
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00746",
+          "sampling_seed": 728
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01030",
+          "sampling_seed": 729
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00449",
+          "sampling_seed": 730
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01045",
+          "sampling_seed": 731
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01186",
+          "sampling_seed": 732
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01016",
+          "sampling_seed": 733
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00549",
+          "sampling_seed": 734
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00323",
+          "sampling_seed": 735
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01169",
+          "sampling_seed": 736
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00080",
+          "sampling_seed": 737
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00699",
+          "sampling_seed": 738
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00489",
+          "sampling_seed": 739
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00070",
+          "sampling_seed": 740
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00478",
+          "sampling_seed": 741
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00815",
+          "sampling_seed": 742
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00979",
+          "sampling_seed": 743
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00299",
+          "sampling_seed": 744
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00455",
+          "sampling_seed": 745
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00808",
+          "sampling_seed": 746
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00110",
+          "sampling_seed": 747
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00155",
+          "sampling_seed": 748
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00866",
+          "sampling_seed": 749
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00052",
+          "sampling_seed": 750
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00536",
+          "sampling_seed": 751
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01294",
+          "sampling_seed": 752
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00433",
+          "sampling_seed": 753
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00856",
+          "sampling_seed": 754
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00608",
+          "sampling_seed": 755
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00747",
+          "sampling_seed": 756
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00516",
+          "sampling_seed": 757
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01150",
+          "sampling_seed": 758
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00207",
+          "sampling_seed": 759
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00514",
+          "sampling_seed": 760
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00416",
+          "sampling_seed": 761
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00849",
+          "sampling_seed": 762
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00115",
+          "sampling_seed": 763
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01235",
+          "sampling_seed": 764
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00766",
+          "sampling_seed": 765
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00270",
+          "sampling_seed": 766
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01076",
+          "sampling_seed": 767
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01115",
+          "sampling_seed": 768
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01269",
+          "sampling_seed": 769
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00126",
+          "sampling_seed": 770
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01038",
+          "sampling_seed": 771
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01250",
+          "sampling_seed": 772
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00842",
+          "sampling_seed": 773
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00887",
+          "sampling_seed": 774
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00767",
+          "sampling_seed": 775
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00376",
+          "sampling_seed": 776
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00669",
+          "sampling_seed": 777
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00262",
+          "sampling_seed": 778
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00679",
+          "sampling_seed": 779
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00625",
+          "sampling_seed": 780
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00741",
+          "sampling_seed": 781
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00331",
+          "sampling_seed": 782
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00131",
+          "sampling_seed": 783
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00476",
+          "sampling_seed": 784
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00068",
+          "sampling_seed": 785
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00628",
+          "sampling_seed": 786
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00672",
+          "sampling_seed": 787
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01256",
+          "sampling_seed": 788
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01304",
+          "sampling_seed": 789
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00121",
+          "sampling_seed": 790
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01082",
+          "sampling_seed": 791
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00074",
+          "sampling_seed": 792
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01114",
+          "sampling_seed": 793
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:01013",
+          "sampling_seed": 794
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00395",
+          "sampling_seed": 795
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00337",
+          "sampling_seed": 796
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00467",
+          "sampling_seed": 797
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00140",
+          "sampling_seed": 798
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00490",
+          "sampling_seed": 799
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01134",
+          "sampling_seed": 800
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01293",
+          "sampling_seed": 801
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00368",
+          "sampling_seed": 802
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00426",
+          "sampling_seed": 803
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00580",
+          "sampling_seed": 804
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00898",
+          "sampling_seed": 805
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01020",
+          "sampling_seed": 806
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00654",
+          "sampling_seed": 807
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01067",
+          "sampling_seed": 808
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00618",
+          "sampling_seed": 809
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01158",
+          "sampling_seed": 810
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00862",
+          "sampling_seed": 811
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01198",
+          "sampling_seed": 812
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00759",
+          "sampling_seed": 813
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00452",
+          "sampling_seed": 814
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01315",
+          "sampling_seed": 815
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00013",
+          "sampling_seed": 816
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00534",
+          "sampling_seed": 817
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01271",
+          "sampling_seed": 818
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00396",
+          "sampling_seed": 819
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00199",
+          "sampling_seed": 820
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00303",
+          "sampling_seed": 821
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00797",
+          "sampling_seed": 822
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00986",
+          "sampling_seed": 823
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00404",
+          "sampling_seed": 824
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01175",
+          "sampling_seed": 825
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00020",
+          "sampling_seed": 826
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00933",
+          "sampling_seed": 827
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00493",
+          "sampling_seed": 828
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01185",
+          "sampling_seed": 829
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01061",
+          "sampling_seed": 830
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00461",
+          "sampling_seed": 831
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01209",
+          "sampling_seed": 832
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00691",
+          "sampling_seed": 833
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01024",
+          "sampling_seed": 834
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01033",
+          "sampling_seed": 835
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01108",
+          "sampling_seed": 836
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01275",
+          "sampling_seed": 837
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01049",
+          "sampling_seed": 838
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00503",
+          "sampling_seed": 839
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:01245",
+          "sampling_seed": 840
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00176",
+          "sampling_seed": 841
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00502",
+          "sampling_seed": 842
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00710",
+          "sampling_seed": 843
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00016",
+          "sampling_seed": 844
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00033",
+          "sampling_seed": 845
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00558",
+          "sampling_seed": 846
+        },
+        {
+          "correct": false,
+          "deadline_correct": false,
+          "question_id": "gsm8k:test:00780",
+          "sampling_seed": 847
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00615",
+          "sampling_seed": 848
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00152",
+          "sampling_seed": 849
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00701",
+          "sampling_seed": 850
+        },
+        {
+          "correct": true,
+          "deadline_correct": true,
+          "question_id": "gsm8k:test:00820",
+          "sampling_seed": 851
+        }
+      ],
+      "reservation_wall_seconds": 360.00011321400234,
+      "unoffered_questions": 0
+    }
+  }
+]

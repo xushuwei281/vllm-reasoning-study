@@ -1,0 +1,42 @@
+{
+  "reconciled": true,
+  "allocation_id": "6ae9c82a0e0338d1bb7f1ecf",
+  "created_at": "2026-11-03T11:40:26.572000+00:00",
+  "finished_at": null,
+  "provider_finished_at": null,
+  "duration_basis": "terminal_observation_upper_bound",
+  "charge_upper_bound": true,
+  "accounting_end_at": "2026-11-03T15:22:54.343632+00:00",
+  "terminal_observed_at": "2026-11-03T15:22:54.343632+00:00",
+  "actual_accelerator_seconds": null,
+  "charged_accelerator_seconds": 13347.771632,
+  "global_ledger_spent_accelerator_seconds": 13996.445060207949,
+  "estimated_charge_usd": 5.6625000000000005,
+  "current_allocation_estimated_charge_usd": 5.612166666666667,
+  "prior_allocations": [
+    {
+      "allocation_id": "6ae9c7870e0338d1bb7f1de1",
+      "charged_seconds": 77.502,
+      "rounded_minutes": 2,
+      "estimated_charge_usd": 0.050333333333333334
+    }
+  ],
+  "rounded_current_allocation_minutes": 223,
+  "hardware_usd_per_minute": 0.025,
+  "port_usd_per_hour": 0.01,
+  "billing_invoice_verified": false,
+  "provider_durations": null,
+  "terminal_status": {
+    "stage": "CANCELED",
+    "message": null,
+    "expose_urls": [
+      "https://6ae9c82a0e0338d1bb7f1ecf--8765.hf.jobs"
+    ],
+    "ssh_url": null
+  },
+  "provider_observation_path": "results/continuation/cloud-terminal-observation.json",
+  "provider_observation_sha256": "604c8377f770c8d47405a91a4439c058abfe6408b86c07932f0955837315730a",
+  "billing_estimate_policy": "Conservative upper bound: charge job creation through recorded observation of terminal CANCELED state; provider omits finish timestamp. Round each job up to full minutes including hardware and port. Actual allocation may be shorter; invoice not verified.",
+  "cancellation_requested_at": "2026-11-03T15:19:43.718700+00:00",
+  "reconciled_at_utc": "2026-11-03T15:23:38.030798+00:00"
+}

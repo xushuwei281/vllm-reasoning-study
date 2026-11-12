@@ -1,0 +1,65 @@
+{
+  "collected_at_utc": "2026-11-03T10:37:53.417457+00:00",
+  "os": {
+    "system": "Darwin",
+    "release": "27.0.0",
+    "macos": "27.0.1",
+    "architecture": "arm64"
+  },
+  "python": "3.12.12",
+  "cpu": {
+    "logical_count": 8,
+    "name": "Apple M2",
+    "model": "Mac14,2"
+  },
+  "host_ram_bytes": 17179869184,
+  "packages": {
+    "torch": "2.13.0",
+    "vllm": "0.32.0+cpu",
+    "vllm-metal": "0.32.0",
+    "mlx": "0.32.2",
+    "mlx-lm": "0.32.0",
+    "vllm-ascend": null,
+    "torch-npu": null,
+    "transformers": "5.19.0",
+    "huggingface-hub": "2.4.0",
+    "llmcompressor": null,
+    "compressed-tensors": "0.17.0",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "httpx": "0.28.1",
+    "aiohttp": "3.14.5",
+    "pytest": null,
+    "matplotlib": null
+  },
+  "accelerators": [
+    {
+      "type": "apple_metal",
+      "name": "Apple M2",
+      "cores": "8",
+      "memory_kind": "shared_unified",
+      "shared_memory_bytes": 17179869184,
+      "metal_support": null
+    }
+  ],
+  "topology": "single SoC; CPU and Apple GPU share unified memory",
+  "communication": {
+    "NCCL": null,
+    "HCCL": null,
+    "CANN": null
+  },
+  "drivers": {
+    "metal": "OS bundled; see os.macos"
+  },
+  "notes": [
+    "GPU memory is shared host unified memory on Apple Silicon; do not add it to host RAM."
+  ],
+  "npu_smi_available": false,
+  "torch_runtime": {
+    "cuda": null,
+    "cuda_available": false,
+    "mps_available": true
+  },
+  "environment_hash": "74c482d1202b23234bb606d55fb07330d95a17254cb640335ebe7813b625c68d"
+}

@@ -1,0 +1,6 @@
+# Preserve exact bytes for scientific provenance on every checkout platform.
+* -text
+*.png binary
+*.pdf binary
+*.docx binary
+*.pt binary

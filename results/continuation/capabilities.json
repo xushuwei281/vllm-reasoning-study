@@ -1,0 +1,22 @@
+{
+  "HCCL": false,
+  "allowed_tp_sizes": [
+    1
+  ],
+  "attention_heads": 16,
+  "backend": "cuda",
+  "chunked_prefill": true,
+  "device_count": 1,
+  "disaggregation": false,
+  "kv_heads": 8,
+  "max_memory_fraction": 0.9,
+  "max_model_len": 8192,
+  "prefix_caching": true,
+  "quantization_evidence": null,
+  "requires_live_smoke": true,
+  "runtime_installed": true,
+  "supported_precisions": [
+    "bf16",
+    "fp16"
+  ]
+}

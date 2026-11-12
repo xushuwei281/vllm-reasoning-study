@@ -1,0 +1,86 @@
+[
+  {
+    "accuracy_difference": {
+      "bootstrap_samples": 2000,
+      "candidate_accuracy": 0.78125,
+      "ci": [
+        0.0,
+        0.109375
+      ],
+      "confidence": 0.95,
+      "degenerate_bootstrap": false,
+      "difference_candidate_minus_reference": 0.0546875,
+      "method": "paired question-cluster percentile bootstrap; equal question weights",
+      "paired_requests": 128,
+      "quality_gate_usable": true,
+      "question_clusters": 128,
+      "reference_accuracy": 0.7265625,
+      "seed": 724,
+      "warning": null
+    },
+    "allowance": 2048,
+    "candidate_accelerator_seconds": 360.000117222,
+    "deadline_accuracy_difference": {
+      "bootstrap_samples": 2000,
+      "candidate_accuracy": 0.78125,
+      "ci": [
+        0.0,
+        0.109375
+      ],
+      "confidence": 0.95,
+      "degenerate_bootstrap": false,
+      "difference_candidate_minus_reference": 0.0546875,
+      "method": "paired question-cluster percentile bootstrap; equal question weights",
+      "paired_requests": 128,
+      "quality_gate_usable": true,
+      "question_clusters": 128,
+      "reference_accuracy": 0.7265625,
+      "seed": 724,
+      "warning": null
+    },
+    "interpretation": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+    "reference_accelerator_seconds": 360.0001017370014
+  },
+  {
+    "accuracy_difference": {
+      "bootstrap_samples": 2000,
+      "candidate_accuracy": 0.8828125,
+      "ci": [
+        0.0,
+        0.1171875
+      ],
+      "confidence": 0.95,
+      "degenerate_bootstrap": false,
+      "difference_candidate_minus_reference": 0.0546875,
+      "method": "paired question-cluster percentile bootstrap; equal question weights",
+      "paired_requests": 128,
+      "quality_gate_usable": true,
+      "question_clusters": 128,
+      "reference_accuracy": 0.828125,
+      "seed": 724,
+      "warning": null
+    },
+    "allowance": 4096,
+    "candidate_accelerator_seconds": 360.00011321400234,
+    "deadline_accuracy_difference": {
+      "bootstrap_samples": 2000,
+      "candidate_accuracy": 0.8828125,
+      "ci": [
+        0.0,
+        0.1171875
+      ],
+      "confidence": 0.95,
+      "degenerate_bootstrap": false,
+      "difference_candidate_minus_reference": 0.0546875,
+      "method": "paired question-cluster percentile bootstrap; equal question weights",
+      "paired_requests": 128,
+      "quality_gate_usable": true,
+      "question_clusters": 128,
+      "reference_accuracy": 0.828125,
+      "seed": 724,
+      "warning": null
+    },
+    "interpretation": "Equal nominal whole-device reservations include startup, serving, teardown and allocated idle padding; actual microsecond overshoot retained.",
+    "reference_accelerator_seconds": 360.00010119999934
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "best": {
+      "config_id": "a37c7c21314f",
+      "quality_goodput": 0.0715378870754931,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 90,
+    "initial_config_ids": [],
+    "method": "default",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 5.699999999997374e-05,
+    "repetition": 0,
+    "seed": 11,
+    "source": "synthetic",
+    "trials": 1
+  },
+  {
+    "best": {
+      "config_id": "e76f1a2d9a3d",
+      "quality_goodput": 0.07795326423014294,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 990,
+    "initial_config_ids": [
+      "a37c7c21314f",
+      "8b2949246b8c",
+      "87e6b31f19b9",
+      "9ef076af65f7",
+      "e76f1a2d9a3d",
+      "905e9ced82c4"
+    ],
+    "method": "random",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 0.0002869999999999262,
+    "repetition": 0,
+    "seed": 11,
+    "source": "synthetic",
+    "trials": 11
+  },
+  {
+    "best": {
+      "config_id": "e76f1a2d9a3d",
+      "quality_goodput": 0.07795326423014294,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 990,
+    "initial_config_ids": [
+      "a37c7c21314f",
+      "8b2949246b8c",
+      "87e6b31f19b9",
+      "9ef076af65f7",
+      "e76f1a2d9a3d",
+      "905e9ced82c4"
+    ],
+    "method": "gp",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 0.02498900000000015,
+    "repetition": 0,
+    "seed": 11,
+    "source": "synthetic",
+    "trials": 11
+  },
+  {
+    "best": {
+      "config_id": "e76f1a2d9a3d",
+      "quality_goodput": 0.07795326423014294,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 990,
+    "initial_config_ids": [
+      "a37c7c21314f",
+      "8b2949246b8c",
+      "87e6b31f19b9",
+      "9ef076af65f7",
+      "e76f1a2d9a3d",
+      "905e9ced82c4"
+    ],
+    "method": "neural",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 1.3488730000000007,
+    "repetition": 0,
+    "seed": 11,
+    "source": "synthetic",
+    "trials": 11
+  },
+  {
+    "best": {
+      "config_id": "a37c7c21314f",
+      "quality_goodput": 0.0715378870754931,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 90,
+    "initial_config_ids": [],
+    "method": "default",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 5.3999999999998494e-05,
+    "repetition": 0,
+    "seed": 29,
+    "source": "synthetic",
+    "trials": 1
+  },
+  {
+    "best": {
+      "config_id": "e76f1a2d9a3d",
+      "quality_goodput": 0.07795326423014294,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 990,
+    "initial_config_ids": [
+      "a37c7c21314f",
+      "8b2949246b8c",
+      "905e9ced82c4",
+      "91edf012faa2",
+      "911661dbbb1d",
+      "e76f1a2d9a3d"
+    ],
+    "method": "random",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 0.00029299999999965465,
+    "repetition": 0,
+    "seed": 29,
+    "source": "synthetic",
+    "trials": 11
+  },
+  {
+    "best": {
+      "config_id": "e76f1a2d9a3d",
+      "quality_goodput": 0.07795326423014294,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 990,
+    "initial_config_ids": [
+      "a37c7c21314f",
+      "8b2949246b8c",
+      "905e9ced82c4",
+      "91edf012faa2",
+      "911661dbbb1d",
+      "e76f1a2d9a3d"
+    ],
+    "method": "gp",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 0.018699000000000687,
+    "repetition": 0,
+    "seed": 29,
+    "source": "synthetic",
+    "trials": 11
+  },
+  {
+    "best": {
+      "config_id": "e76f1a2d9a3d",
+      "quality_goodput": 0.07795326423014294,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 990,
+    "initial_config_ids": [
+      "a37c7c21314f",
+      "8b2949246b8c",
+      "905e9ced82c4",
+      "91edf012faa2",
+      "911661dbbb1d",
+      "e76f1a2d9a3d"
+    ],
+    "method": "neural",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 0.8446479999999998,
+    "repetition": 0,
+    "seed": 29,
+    "source": "synthetic",
+    "trials": 11
+  },
+  {
+    "best": {
+      "config_id": "a37c7c21314f",
+      "quality_goodput": 0.0715378870754931,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 90,
+    "initial_config_ids": [],
+    "method": "default",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 5.600000000027805e-05,
+    "repetition": 0,
+    "seed": 47,
+    "source": "synthetic",
+    "trials": 1
+  },
+  {
+    "best": {
+      "config_id": "e76f1a2d9a3d",
+      "quality_goodput": 0.07795326423014294,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 990,
+    "initial_config_ids": [
+      "a37c7c21314f",
+      "8b2949246b8c",
+      "87e6b31f19b9",
+      "d954afc8c33f",
+      "911661dbbb1d",
+      "e76f1a2d9a3d"
+    ],
+    "method": "random",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 0.0002969999999993256,
+    "repetition": 0,
+    "seed": 47,
+    "source": "synthetic",
+    "trials": 11
+  },
+  {
+    "best": {
+      "config_id": "e76f1a2d9a3d",
+      "quality_goodput": 0.07795326423014294,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 990,
+    "initial_config_ids": [
+      "a37c7c21314f",
+      "8b2949246b8c",
+      "87e6b31f19b9",
+      "d954afc8c33f",
+      "911661dbbb1d",
+      "e76f1a2d9a3d"
+    ],
+    "method": "gp",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 0.02228899999999978,
+    "repetition": 0,
+    "seed": 47,
+    "source": "synthetic",
+    "trials": 11
+  },
+  {
+    "best": {
+      "config_id": "e76f1a2d9a3d",
+      "quality_goodput": 0.07795326423014294,
+      "scenario_id": "mid"
+    },
+    "cost_interpretation": "prescribed synthetic fixture",
+    "cost_s": 990,
+    "initial_config_ids": [
+      "a37c7c21314f",
+      "8b2949246b8c",
+      "87e6b31f19b9",
+      "d954afc8c33f",
+      "911661dbbb1d",
+      "e76f1a2d9a3d"
+    ],
+    "method": "neural",
+    "mode": "offline_replay",
+    "optimizer_cpu_seconds": 0.8503399999999992,
+    "repetition": 0,
+    "seed": 47,
+    "source": "synthetic",
+    "trials": 11
+  }
+]
