@@ -72,7 +72,7 @@ The Git checkout retains the small evidence files, including the original resour
 - `results/continuation/final/runs/`
 - `results/measured/runs/`
 
-The archive's SHA-256 and extraction layout are documented in [github-release.md](docs/github-release.md). Model weights, full dataset downloads and software environments are separate dependencies; dataset manifests identify the pinned data used by the study.
+The release supplies six archive pieces and `SHA256SUMS`. Follow [github-release.md](docs/github-release.md) to verify the pieces, reconstruct the original ZIP and check its SHA-256 before extraction. Model weights, full dataset downloads and software environments are separate dependencies; dataset manifests identify the pinned data used by the study.
 
 For a new CPU-only uncertainty replay, choose a fresh destination instead of overwriting the saved result:
 

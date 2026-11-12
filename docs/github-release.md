@@ -1,18 +1,21 @@
 # Complete evidence release
 
-The Git repository contains source, tests, documentation, reports and the smaller evidence files. The full raw records are distributed with the original project snapshot in a versioned release archive. This keeps ordinary clones smaller while preserving the measurements needed for independent audits.
+The Git repository contains source, tests, documentation, reports and the smaller evidence files. The full raw records are distributed with the original project snapshot in a versioned release archive. The archive is supplied as six binary pieces with a `SHA256SUMS` file; join the verified pieces to reconstruct the original ZIP. This keeps ordinary clones smaller while preserving the measurements needed for independent audits.
 
 | Item | Value |
 |---|---|
 | Repository | `xushuwei281/vllm-reasoning-study` |
 | Release tag | `evidence-2026-11-03` |
-| Archive | `vllm-reasoning-study-full-evidence.zip` |
-| Size | 119,917,708 bytes |
-| SHA-256 | `5fd8bac621e6c36dc58e2748e75046ebb8ace4ffa4fbef021abfc3eba98bc6a0` |
+| Reconstructed archive | `vllm-reasoning-study-full-evidence.zip` |
+| Download pieces | `vllm-reasoning-study-full-evidence.zip.part-01` through `.part-06` |
+| Piece sizes | Parts 01–05: 20,000,000 bytes each; part 06: 19,917,708 bytes |
+| Piece checksum file | `SHA256SUMS` |
+| Reconstructed size | 119,917,708 bytes |
+| Reconstructed SHA-256 | `5fd8bac621e6c36dc58e2748e75046ebb8ace4ffa4fbef021abfc3eba98bc6a0` |
 | Extraction root | `vllm-reasoning-study/` |
 | Original snapshot | 757 payload files plus `MANIFEST.sha256` |
 
-[Open the release](https://github.com/xushuwei281/vllm-reasoning-study/releases/tag/evidence-2026-11-03) or [download the archive](https://github.com/xushuwei281/vllm-reasoning-study/releases/download/evidence-2026-11-03/vllm-reasoning-study-full-evidence.zip).
+[Open the release](https://github.com/xushuwei281/vllm-reasoning-study/releases/tag/evidence-2026-11-03) to download all six pieces and `SHA256SUMS`, or use the commands below. The individual pieces are not separately extractable ZIP files.
 
 ## What is included
 
@@ -46,26 +49,37 @@ mkdir work/evidence-2026-11-03
 
 gh release download evidence-2026-11-03 \
   --repo xushuwei281/vllm-reasoning-study \
-  --pattern vllm-reasoning-study-full-evidence.zip \
+  --pattern 'vllm-reasoning-study-full-evidence.zip.part-*' \
+  --pattern SHA256SUMS \
   --dir work/evidence-2026-11-03
 
+cd work/evidence-2026-11-03
+shasum -a 256 -c SHA256SUMS
+
+cat vllm-reasoning-study-full-evidence.zip.part-01 \
+    vllm-reasoning-study-full-evidence.zip.part-02 \
+    vllm-reasoning-study-full-evidence.zip.part-03 \
+    vllm-reasoning-study-full-evidence.zip.part-04 \
+    vllm-reasoning-study-full-evidence.zip.part-05 \
+    vllm-reasoning-study-full-evidence.zip.part-06 \
+    > vllm-reasoning-study-full-evidence.zip
+
 shasum -a 256 -c <<'SHA256'
-5fd8bac621e6c36dc58e2748e75046ebb8ace4ffa4fbef021abfc3eba98bc6a0  work/evidence-2026-11-03/vllm-reasoning-study-full-evidence.zip
+5fd8bac621e6c36dc58e2748e75046ebb8ace4ffa4fbef021abfc3eba98bc6a0  vllm-reasoning-study-full-evidence.zip
 SHA256
 
-mkdir work/evidence-2026-11-03/extracted
-unzip -q work/evidence-2026-11-03/vllm-reasoning-study-full-evidence.zip \
-  -d work/evidence-2026-11-03/extracted
+mkdir extracted
+unzip -q vllm-reasoning-study-full-evidence.zip -d extracted
 
-cd work/evidence-2026-11-03/extracted/vllm-reasoning-study
+cd extracted/vllm-reasoning-study
 shasum -a 256 -c MANIFEST.sha256
 ```
 
-Verify the archive before extracting and the payload manifest before running anything. Run the manifest check inside the extracted project: its paths describe the original delivery, not the later publication checkout. A failed verification is a reason to stop and obtain a matching copy, rather than editing the checksums to accept changed evidence.
+Verify all six piece checksums first, concatenate in the explicit 01-to-06 order, and verify the reconstructed archive before extracting. Then verify the payload manifest before running anything. Run the manifest check inside the extracted project: its paths describe the original delivery, not the later publication checkout. A missing piece or failed verification is a reason to stop and obtain a matching copy, rather than editing the checksums to accept changed evidence.
 
 ## Regenerate the saved analysis
 
-Continue from the extracted project directory above. Keep the downloaded ZIP as the unchanged reference snapshot; these commands write regenerated JSON, figures and reports only inside the extracted working copy.
+Continue from the extracted project directory above. Keep the verified reconstructed ZIP as the unchanged reference snapshot; these commands write regenerated JSON, figures and reports only inside the extracted working copy.
 
 ```sh
 python3.11 -m venv work/analysis-env
